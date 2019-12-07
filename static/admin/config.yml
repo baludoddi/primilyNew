@@ -127,6 +127,65 @@ collections:
                   { label: "Description", name: "description", widget: "string" },
                 ],
             }
+      - file: "src/pages/temp/index.md"
+        label: "Temp"
+        name: "temp"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "temp-page" }
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Main Image",
+              name: "mainImage",
+              widget: "object",
+              fields:
+                [
+                  { label: "Image", name: "image", widget: "image" },
+                  { label: "Image Description", name: "imageAlt", widget: "string" },
+                ],
+            }
+          - { label: "Body", name: "body", widget: "markdown" }
+          - {
+              label: "Image Gallery",
+              name: "gallery",
+              widget: "list",
+              fields:
+                [
+                  { label: "Image", name: "image", widget: "image" },
+                  { label: "Image Description", name: "imageAlt", widget: "string" },
+                ],
+            }
+          - { label: "Developer Groups", name: "developerGroups", widget: "markdown" }
+          - {
+              label: "Meetup Organizers",
+              name: "organizers",
+              widget: "object",
+              fields:
+                [
+                  { label: "Title", name: "title", widget: "string" },
+                  {
+                    label: "Images",
+                    name: "gallery",
+                    widget: "list",
+                    fields:
+                      [
+                        { label: "Name", name: "name", widget: "string" },
+                        { label: "Image", name: "image", widget: "image" },
+                        { label: "Image Description", name: "imageAlt", widget: "string" },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: "SEO & Meta",
+              name: "seo",
+              widget: "object",
+              fields:
+                [
+                  { label: "Browser Tab Title", name: "browserTitle", widget: "string"},
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Description", name: "description", widget: "string" },
+                ],
+            }
       - file: "src/pages/pastMeetups/index.md"
         label: "Past Meetups"
         name: "pastMeetups"
