@@ -2,7 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 
-import "../styles";
+// import "../styles";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
@@ -11,6 +11,9 @@ const TemplateWrapper = ({ footerData = null, navbarData = null, children }) => 
     <Helmet>
       <html lang="en" />
       <meta name="keywords" content="montreal, javascript, programming, meetup" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      </link>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </Helmet>
     <Navbar data={navbarData} />
     <main>{children}</main>

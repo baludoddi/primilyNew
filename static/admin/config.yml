@@ -330,7 +330,224 @@ collections:
                   }
                 ],
             }
-          - {
+            - {
+              label: "Describe",
+              name: "describe",
+              widget: "object",
+              fields:
+                [
+                  {
+                    label: "Cards",
+                    name: "cards",
+                    widget: "object",
+                    fields:
+                      [
+                        { 
+                          label: "Card 1", 
+                          name: "card1", 
+                          widget: "object",
+                          fields: 
+                            [
+                              { label: "Head", name: "head", widget: "string" },
+                              { label: "Description", name: "description", widget: "string" }
+                            ] 
+                        },
+                        { 
+                          label: "Card 2", 
+                          name: "card2", 
+                          widget: "object",
+                          fields: 
+                            [
+                              { label: "Head", name: "head", widget: "string" },
+                              { label: "Description", name: "description", widget: "string" }
+                            ] 
+                        },
+                        { 
+                          label: "Card 3", 
+                          name: "card3", 
+                          widget: "object",
+                          fields: 
+                            [
+                              { label: "Icon", name: "icon", widget: "string" },
+                              { label: "Head", name: "head", widget: "string" },
+                              { label: "Description", name: "description", widget: "string" }
+                            ] 
+                        },
+                        { 
+                          label: "Card 4", 
+                          name: "card4", 
+                          widget: "object",
+                          fields: 
+                            [
+                              { label: "Icon", name: "icon", widget: "string" },
+                              { label: "Head", name: "head", widget: "string" },
+                              { label: "Description", name: "description", widget: "string" }
+                            ] 
+                        },
+                        { 
+                          label: "Card 5", 
+                          name: "card5", 
+                          widget: "object",
+                          fields: 
+                            [
+                              { label: "Icon", name: "icon", widget: "string" },
+                              { label: "Head", name: "head", widget: "string" },
+                              { label: "Description", name: "description", widget: "string" }
+                            ] 
+                        },
+                        { 
+                          label: "Card 6", 
+                          name: "card6", 
+                          widget: "object",
+                          fields: 
+                            [
+                              { label: "Icon", name: "icon", widget: "string" },
+                              { label: "Head", name: "head", widget: "string" },
+                              { label: "Description", name: "description", widget: "string" }
+                            ] 
+                        },
+                        { 
+                          label: "Card 7", 
+                          name: "card7", 
+                          widget: "object",
+                          fields: 
+                            [
+                              { label: "Icon", name: "icon", widget: "string" },
+                              { label: "Head", name: "head", widget: "string" },
+                              { label: "Description", name: "description", widget: "string" }
+                            ] 
+                        }
+                      ]
+                  },
+                  { 
+                    label: "Image", 
+                    name: "image", 
+                    widget: "object",
+                    fields: 
+                      [
+                        { label: "src", name: "src", widget: "image" }
+                      ] 
+                  },
+                  { 
+                    label: "Video", 
+                    name: "video", 
+                    widget: "object",
+                    fields: 
+                      [
+                        { label: "src", name: "src", widget: "string" }
+                      ] 
+                  }
+                ]
+              }
+            - {
+              label: "App Galley",
+              name: "appGalley",
+              required: true,
+              widget: "object",
+              fields:
+                [
+                  { label: "App Head", name: "appHead", widget: "string" },
+                  {
+                    label: "Slider Images",
+                    name: "sliderImages",
+                    required: true,
+                    widget: "object",
+                    fields:
+                      [
+                        { label: "slider Image 1", name: "slideImg1", widget: "image" },
+                        { label: "slider Image 2", name: "slideImg2", widget: "image" },
+                        { label: "slider Image 3", name: "slideImg3", widget: "image" },
+                        { label: "slider Image 4", name: "slideImg4", widget: "image" }
+                      ]
+                  }
+                ]
+              }
+            - {
+              label: "Pricing",
+              name: "pricing",
+              widget: "object",
+              fields:
+                [
+                  { label: "Pricing Head", name: "pricingHead", widget: "string" },
+                  { label: "Description 1", name: "description1", widget: "string" },
+                  { label: "Description 2", name: "description2", widget: "string" },
+                  {
+                    label: "Price Box 1",
+                    name: "priceBox1",
+                    required: true,
+                    widget: "object",
+                    fields:
+                      [
+                        { label: "Head", name: "head", widget: "string" },
+                        { label: "Head 2", name: "head2", widget: "string" },
+                        { label: "Description", name: "description", widget: "string" },
+                        { 
+                          label: "List",
+                          name: "list", 
+                          widget: "object", 
+                          fields:
+                            [
+                              { label: "Image", name: "img", widget: "image" },
+                              { label: "List 1", name: "list1", widget: "string" },
+                              { label: "List 2", name: "list1", widget: "string" },
+                              { label: "List 3", name: "list1", widget: "string" },
+                              { label: "List 4", name: "list1", widget: "string" },
+                            ]
+                        }
+                        { label: "Price", name: "price", widget: "string" },
+                      ]
+                  },
+                  {
+                    label: "Price Box 2",
+                    name: "priceBox2",
+                    required: true,
+                    widget: "object",
+                    fields:
+                      [
+                        { label: "Head", name: "head", widget: "string" },
+                        { label: "Head 2", name: "head2", widget: "string" },
+                        { label: "Description", name: "description", widget: "string" },
+                        { 
+                          label: "List",
+                          name: "list", 
+                          widget: "object", 
+                          fields:
+                            [
+                              { label: "Image", name: "img", widget: "image" },
+                              { label: "List 1", name: "list1", widget: "string" },
+                              { label: "List 2", name: "list1", widget: "string" },
+                              { label: "List 3", name: "list1", widget: "string" },
+                              { label: "List 4", name: "list1", widget: "string" },
+                            ]
+                        }
+                        { label: "Price", name: "price", widget: "string" },
+                      ]
+                  }
+                ]
+              }
+            - {
+              label: "Demo",
+              name: "demo",
+              required: true,
+              widget: "object",
+              fields:
+                [
+                  { label: "Demo Head", name: "demoHead", widget: "string" },
+                  { label: "Description", name: "description", widget: "string" },
+                  {
+                    label: "Demo Images",
+                    name: "demoImages",
+                    required: true,
+                    widget: "object",
+                    fields:
+                      [
+                        { label: "Sourse 1", name: "src1", widget: "image" },
+                        { label: "Sourse 2", name: "src2", widget: "image" }
+                      ]
+                  }
+                ],
+              }
+            - {
               label: "Call to Actions",
               name: "callToActions",
               required: true,
@@ -384,18 +601,18 @@ collections:
                       ]
                   }
                 ],
-            }
-          - {
-              label: "SEO & Meta",
-              name: "seo",
-              widget: "object",
-              fields:
-                [
-                  { label: "Browser Tab Title", name: "browserTitle", widget: "string"},
-                  { label: "Title", name: "title", widget: "string" },
-                  { label: "Description", name: "description", widget: "string" },
-                ],
-            }
+              }
+            - {
+                label: "SEO & Meta",
+                name: "seo",
+                widget: "object",
+                fields:
+                  [
+                    { label: "Browser Tab Title", name: "browserTitle", widget: "string"},
+                    { label: "Title", name: "title", widget: "string" },
+                    { label: "Description", name: "description", widget: "string" },
+                  ],
+              }
   - name: "navbarAndFooter"
     label: "Navbar & Footer"
     files:

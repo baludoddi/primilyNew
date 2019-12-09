@@ -41,3 +41,56 @@
 
     text-align: center;
 }
+
+
+.pricing-h {
+    font-weight: 700;
+    color: #585b60;
+}
+
+.pricing-sub-head {
+    font-weight: 600;
+    color: #585b60;
+}
+
+.pricing-head {
+    font-weight: 700;
+    color: #585b60;
+}
+
+.price p, ul li {
+    color: #9da6ac;
+}
+
+.price-list {
+    padding-left: 7px;
+}
+
+.price-padding {
+    padding-left: 10px;
+}
+
+.price-border {
+    border: 1px solid #9da6ac;
+}
+
+.price-border-red {
+    border: 1px solid red;
+}
+
+.h-style {
+    font-weight: 700;
+}
+
+/* .describe {
+    background-color: #9da6ac;
+} */
+
+.description-font {
+    font-weight: 700;
+}
+
+.nav-div {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
