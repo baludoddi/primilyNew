@@ -13,5 +13,8 @@ menuItems:
   - label: temp
     linkType: temp
     linkURL: /temp
+  - label: features
+    linkType: features
+    linkURL: /features
 ---
 

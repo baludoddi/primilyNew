@@ -127,6 +127,12 @@ collections:
                   { label: "Description", name: "description", widget: "string" },
                 ],
             }
+      - file: "src/pages/features/index.md"
+        label: "Features"
+        name: "feature"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "feature-page" }
+          - { label: "Title", name: "title", widget: "string" }
       - file: "src/pages/temp/index.md"
         label: "Temp"
         name: "temp"
@@ -228,6 +234,102 @@ collections:
           - { label: "Upcoming Meetup Heading", name: "upcomingMeetupHeading", widget: "string" }
           - { label: "No Upcoming Meetup Text", name: "noUpcomingMeetupText", hint: "This text will be displayed when there are no upcoming meetups", required: true, widget: "string" }
           - { label: "Maps Note", name: "mapsNote", required: true, widget: "string" }
+          - {
+              label: "Feature",
+              name: "feature",
+              widget: "object",
+              fields:
+                [
+                  {
+                    label: "FeatureIcon1",
+                    name: "featureIcon1",
+                    widget: "object",
+                    fields:
+                      [
+                        { label: "Icon", name: "icon", widget: "string" },
+                        { label: "Head", name: "head", widget: "string" },
+                        { label: "Description", name: "description", widget: "string" }
+                      ]
+                  },
+                  {
+                    label: "FeatureIcon2",
+                    name: "featureIcon2",
+                    widget: "object",
+                    fields:
+                      [
+                        { label: "Icon", name: "icon", widget: "string" },
+                        { label: "Head", name: "head", widget: "string" },
+                        { label: "Description", name: "description", widget: "string" }
+                      ]
+                  },
+                  {
+                    label: "FeatureIcon3",
+                    name: "featureIcon3",
+                    widget: "object",
+                    fields:
+                      [
+                        { label: "Icon", name: "icon", widget: "string" },
+                        { label: "Head", name: "head", widget: "string" },
+                        { label: "Description", name: "description", widget: "string" }
+                      ]
+                  },
+                  {
+                    label: "FeatureIcon4",
+                    name: "featureIcon4",
+                    widget: "object",
+                    fields:
+                      [
+                        { label: "Icon", name: "icon", widget: "string" },
+                        { label: "Head", name: "head", widget: "string" },
+                        { label: "Description", name: "description", widget: "string" }
+                      ]
+                  },
+                  {
+                    label: "FeatureIcon5",
+                    name: "featureIcon5",
+                    widget: "object",
+                    fields:
+                      [
+                        { label: "Icon", name: "icon", widget: "string" },
+                        { label: "Head", name: "head", widget: "string" },
+                        { label: "Description", name: "description", widget: "string" }
+                      ]
+                  },
+                  {
+                    label: "FeatureIcon6",
+                    name: "featureIcon6",
+                    widget: "object",
+                    fields:
+                      [
+                        { label: "Icon", name: "icon", widget: "string" },
+                        { label: "Head", name: "head", widget: "string" },
+                        { label: "Description", name: "description", widget: "string" }
+                      ]
+                  },
+                  {
+                    label: "FeatureIcon7",
+                    name: "featureIcon7",
+                    widget: "object",
+                    fields:
+                      [
+                        { label: "Icon", name: "icon", widget: "string" },
+                        { label: "Head", name: "head", widget: "string" },
+                        { label: "Description", name: "description", widget: "string" }
+                      ]
+                  },
+                  {
+                    label: "FeatureIcon8",
+                    name: "featureIcon8",
+                    widget: "object",
+                    fields:
+                      [
+                        { label: "Icon", name: "icon", widget: "string" },
+                        { label: "Head", name: "head", widget: "string" },
+                        { label: "Description", name: "description", widget: "string" }
+                      ]
+                  }
+                ],
+            }
           - {
               label: "Call to Actions",
               name: "callToActions",

@@ -9,6 +9,7 @@ import Map from "../components/Map";
 import HeadshotPlaceholder from "../img/headshot-placeholder.svg";
 import CustomLink from "../components/CustomLink";
 import "../styles/home.scss";
+import "../styles/features.css";
 
 export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
   const presenters = upcomingMeetup && upcomingMeetup.presenters;
@@ -16,6 +17,79 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
   const longitude = upcomingMeetup && parseFloat(upcomingMeetup.location.mapsLongitude);
   return (
     <>
+    <section>
+    <div className="container">
+          <div className="row">
+              <div className="col s3">
+                <div className="center-align feature-items">
+                    <i className="Large material-iconss">{home.feature.featureIcon1.icon}</i>
+                    <div className="row"></div>
+                    <h5>{home.feature.featureIcon1.head}</h5>
+                    <p>{home.feature.featureIcon1.description}</p>
+                </div>
+              </div>
+              <div className="col s3">
+              <div className="center-align feature-items">
+                    <i className="Large material-iconss">{home.feature.featureIcon2.icon}</i>
+                    <div className="row"></div>
+                    <h5>{home.feature.featureIcon2.head}</h5>
+                    <p>{home.feature.featureIcon2.description}</p>
+                </div>
+              </div>
+              <div className="col s3">
+              <div className="center-align feature-items">
+                    <i className="Large material-iconss">{home.feature.featureIcon3.icon}</i>
+                    <div className="row"></div>
+                    <h5>{home.feature.featureIcon3.head}</h5>
+                    <p>{home.feature.featureIcon3.description}</p>
+                </div>
+              </div>
+              <div className="col s3">
+              <div className="center-align feature-items">
+                    <i className="Large material-iconss">{home.feature.featureIcon4.icon}</i>
+                    <div className="row"></div>
+                    <h5>{home.feature.featureIcon4.head}</h5>
+                    <p>{home.feature.featureIcon4.description}</p>
+                </div>
+              </div>
+          </div>
+          <div className="row"></div>
+          <div className="row">
+              <div className="col s3">
+              <div className="center-align feature-items">
+                    <i className="Large material-iconss">{home.feature.featureIcon5.icon}</i>
+                    <div className="row"></div>
+                    <h5>{home.feature.featureIcon5.head}</h5>
+                    <p>{home.feature.featureIcon5.description}</p>
+                </div>
+              </div>
+              <div className="col s3">
+              <div className="center-align feature-items">
+                    <i className="Large material-iconss">{home.feature.featureIcon6.icon}</i>
+                    <div className="row"></div>
+                    <h5>{home.feature.featureIcon6.head}</h5>
+                    <p>{home.feature.featureIcon6.description}</p>
+                </div>
+              </div>
+              <div className="col s3">
+              <div className="center-align feature-items">
+                    <i className="Large material-iconss">{home.feature.featureIcon7.icon}</i>
+                    <div className="row"></div>
+                    <h5>{home.feature.featureIcon7.head}</h5>
+                    <p>{home.feature.featureIcon7.description}</p>
+                </div>
+              </div>
+              <div className="col s3">
+              <div className="center-align feature-items">
+                    <i className="Large material-iconss">{home.feature.featureIcon8.icon}</i>
+                    <div className="row"></div>
+                    <h5>{home.feature.featureIcon8.head}</h5>
+                    <p>{home.feature.featureIcon8.description}</p>
+                </div>
+              </div>
+          </div>
+          </div>
+    </section>
       <section className="header">
         <div className="header-container  container">
           {home.headerImage && <img className="header-image" src={home.headerImage.image} alt={home.headerImage.imageAlt} />}
@@ -126,6 +200,7 @@ class HomePage extends React.Component {
         <Helmet>
           <meta name="title" content={seoTitle} />
           <meta name="description" content={seoDescription} />
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
           <title>{browserTitle}</title>
         </Helmet>
         <HomePageTemplate home={home} upcomingMeetup={upcomingMeetup} />
@@ -181,6 +256,48 @@ export const pageQuery = graphql`
             headerImage {
               image
               imageAlt
+            }
+            feature {
+              featureIcon1 {
+                icon
+                head
+                description
+              }
+              featureIcon2 {
+                icon
+                head
+                description
+              }
+              featureIcon3 {
+                icon
+                head
+                description
+              }
+              featureIcon4 {
+                icon
+                head
+                description
+              }
+              featureIcon5 {
+                icon
+                head
+                description
+              }
+              featureIcon6 {
+                icon
+                head
+                description
+              }
+              featureIcon7 {
+                icon
+                head
+                description
+              }
+              featureIcon8 {
+                icon
+                head
+                description
+              }
             }
             upcomingMeetupHeading
             noUpcomingMeetupText
