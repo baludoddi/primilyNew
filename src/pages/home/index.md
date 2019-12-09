@@ -10,7 +10,7 @@ mapsNote: Clicking the pin opens Google Maps in a new tab.
 feature:
   featureIcon1:
     description: One or more phone numbers. Selectable area codes and numbers.
-    head: Multiple Numberss
+    head: Multiple Numbers
     icon: call
   featureIcon2:
     description: Acknowledgement and notification using SMS and/or Email.
