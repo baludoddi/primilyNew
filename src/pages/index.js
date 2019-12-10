@@ -394,21 +394,6 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
     <br></br>
 
     </div>
-
-    <div className="container">
-      <div className="row">
-        <div className="col s12 feature-items center-align">
-          <h5>{home.demo.demoHead}</h5>
-          <p>{home.demo.description}</p>
-        </div>
-        <div className="col s3"></div>
-        <div className="col s3"><img src={home.demo.demoImages.src1} alt="" /></div>
-        <div className="col s0"></div>
-        <div className="col s3"><img src={home.demo.demoImages.src2} alt="" /></div>
-        <div className="col s3"></div>
-      </div>
-    <br></br>
-    </div>
     </div>
     </section>
     </>
