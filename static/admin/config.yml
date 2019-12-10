@@ -328,9 +328,9 @@ collections:
                         { label: "Description", name: "description", widget: "string" }
                       ]
                   }
-                ],
+                ]
             }
-            - {
+          - {
               label: "Describe",
               name: "describe",
               widget: "object",
@@ -438,8 +438,8 @@ collections:
                       ] 
                   }
                 ]
-              }
-            - {
+            }
+          - {
               label: "App Galley",
               name: "appGalley",
               required: true,
@@ -461,8 +461,8 @@ collections:
                       ]
                   }
                 ]
-              }
-            - {
+            }
+          - {
               label: "Pricing",
               name: "pricing",
               widget: "object",
@@ -481,6 +481,7 @@ collections:
                         { label: "Head", name: "head", widget: "string" },
                         { label: "Head 2", name: "head2", widget: "string" },
                         { label: "Description", name: "description", widget: "string" },
+                        { label: "Price", name: "price", widget: "string" },
                         { 
                           label: "List",
                           name: "list", 
@@ -494,7 +495,6 @@ collections:
                               { label: "List 4", name: "list1", widget: "string" },
                             ]
                         }
-                        { label: "Price", name: "price", widget: "string" },
                       ]
                   },
                   {
@@ -519,13 +519,13 @@ collections:
                               { label: "List 3", name: "list1", widget: "string" },
                               { label: "List 4", name: "list1", widget: "string" },
                             ]
-                        }
+                        },
                         { label: "Price", name: "price", widget: "string" },
                       ]
                   }
                 ]
-              }
-            - {
+            }
+          - {
               label: "Demo",
               name: "demo",
               required: true,
@@ -546,8 +546,8 @@ collections:
                       ]
                   }
                 ],
-              }
-            - {
+            }
+          - {
               label: "Call to Actions",
               name: "callToActions",
               required: true,
@@ -601,18 +601,18 @@ collections:
                       ]
                   }
                 ],
-              }
-            - {
-                label: "SEO & Meta",
-                name: "seo",
-                widget: "object",
-                fields:
-                  [
-                    { label: "Browser Tab Title", name: "browserTitle", widget: "string"},
-                    { label: "Title", name: "title", widget: "string" },
-                    { label: "Description", name: "description", widget: "string" },
-                  ],
-              }
+            }
+          - {
+              label: "SEO & Meta",
+              name: "seo",
+              widget: "object",
+              fields:
+                [
+                  { label: "Browser Tab Title", name: "browserTitle", widget: "string"},
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Description", name: "description", widget: "string" },
+                ],
+            }
   - name: "navbarAndFooter"
     label: "Navbar & Footer"
     files:
