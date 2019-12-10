@@ -328,7 +328,7 @@ collections:
                         { label: "Description", name: "description", widget: "string" }
                       ]
                   }
-                ],
+                ]
             }
           - {
               label: "Describe",
@@ -481,6 +481,7 @@ collections:
                         { label: "Head", name: "head", widget: "string" },
                         { label: "Head 2", name: "head2", widget: "string" },
                         { label: "Description", name: "description", widget: "string" },
+                        { label: "Price", name: "price", widget: "string" },
                         { 
                           label: "List",
                           name: "list", 
@@ -494,7 +495,6 @@ collections:
                               { label: "List 4", name: "list1", widget: "string" },
                             ]
                         }
-                        { label: "Price", name: "price", widget: "string" },
                       ]
                   },
                   {
@@ -519,7 +519,7 @@ collections:
                               { label: "List 3", name: "list1", widget: "string" },
                               { label: "List 4", name: "list1", widget: "string" },
                             ]
-                        }
+                        },
                         { label: "Price", name: "price", widget: "string" },
                       ]
                   }
