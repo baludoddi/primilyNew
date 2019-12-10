@@ -440,6 +440,76 @@ collections:
                 ]
             }
           - {
+            label: "Description",
+            name: "description",
+            widget: "object",
+            fields:
+              [
+                { label: "Main Image", name: "mainImage", widget: "image" },
+                { label: "Play Store Image", name: "playstoreImage", widget: "image" },
+                {
+                  label: "Card",
+                  name: "card",
+                  widget: "object",
+                  fields:
+                    [
+                      {
+                        label: "Sub Cards",
+                        name: "subCards",
+                        widget: "object",
+                        fields:
+                          [
+                            {
+                              label: "Sub Card 1",
+                              name: "subCard1",
+                              widget: "object",
+                              fields:
+                                [
+                                  { label: "Icon", name: "icon", widget: "string" },
+                                  { label: "Head", name: "head", widget: "string" },
+                                  { label: "Description", name: "description", widget: "string" },
+                                ]
+                            },
+                            {
+                              label: "Sub Card 2",
+                              name: "subCard2",
+                              widget: "object",
+                              fields:
+                                [
+                                  { label: "Icon", name: "icon", widget: "string" },
+                                  { label: "Head", name: "head", widget: "string" },
+                                  { label: "Description", name: "description", widget: "string" },
+                                ]
+                            },
+                            {
+                              label: "Sub Card 3",
+                              name: "subCard3",
+                              widget: "object",
+                              fields:
+                                [
+                                  { label: "Icon", name: "icon", widget: "string" },
+                                  { label: "Head", name: "head", widget: "string" },
+                                  { label: "Description", name: "description", widget: "string" },
+                                ]
+                            },
+                            {
+                              label: "Sub Card 4",
+                              name: "subCard4",
+                              widget: "object",
+                              fields:
+                                [
+                                  { label: "Icon", name: "icon", widget: "string" },
+                                  { label: "Head", name: "head", widget: "string" },
+                                  { label: "Description", name: "description", widget: "string" },
+                                ]
+                            },
+                          ]
+                      }
+                    ]
+                }   
+              ]
+            }
+          - {
               label: "App Galley",
               name: "appGalley",
               required: true,
