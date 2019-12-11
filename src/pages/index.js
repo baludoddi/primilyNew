@@ -8,6 +8,7 @@ import Layout from "../components/Layout";
 import Map from "../components/Map";
 import HeadshotPlaceholder from "../img/headshot-placeholder.svg";
 import CustomLink from "../components/CustomLink";
+import CarouselComponent from "../components/carousel";
 import "../styles/features.css";
 
 export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
@@ -17,385 +18,426 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
 
   return (
     <>
-    <section>
-    <div className="row"></div>
-    <div className="row"></div>
-    <div className="container">
-          <div className="row">
-              <div className="col s3">
-                <div className="center-align feature-items">
-                <div className="row">
-                  <div className="col s4"></div>
-                  <div className="col s3">
-                    <i className="Large material-iconss">{home.feature.featureIcon1.icon}</i>
-                  </div>
-                </div>
+      <div className="row">
+        <div className="col s12 m12 l12">
+          <div id="home" className="section scrollspy">
+          <CarouselComponent content={home.appGalley.sliderImages} />
+          </div>
+
+          <div id="features" className="section scrollspy">
+            <div className="row"></div>
+            <div className="row"></div>
+            <div className="container">
+              <div className="row">
+                <div className="col s3">
+                  <div className="center-align feature-items">
+                    <div className="row">
+                      <div className="col s4"></div>
+                      <div className="col s3">
+                        <i className="Large material-iconss">{home.feature.featureIcon1.icon}</i>
+                      </div>
+                    </div>
                     <h5>{home.feature.featureIcon1.head}</h5>
                     <p>{home.feature.featureIcon1.description}</p>
-                </div>
-              </div>
-              <div className="col s3">
-              <div className="center-align feature-items">
-              <div className="row">
-                  <div className="col s4"></div>
-                  <div className="col s3">
-                    <i className="Large material-iconss">{home.feature.featureIcon2.icon}</i>
                   </div>
                 </div>
+                <div className="col s3">
+                  <div className="center-align feature-items">
+                    <div className="row">
+                      <div className="col s4"></div>
+                      <div className="col s3">
+                        <i className="Large material-iconss">{home.feature.featureIcon2.icon}</i>
+                      </div>
+                    </div>
                     <h5>{home.feature.featureIcon2.head}</h5>
                     <p>{home.feature.featureIcon2.description}</p>
-                </div>
-              </div>
-              <div className="col s3">
-              <div className="center-align feature-items">
-              <div className="row">
-                  <div className="col s4"></div>
-                  <div className="col s3">
-                    <i className="Large material-iconss">{home.feature.featureIcon3.icon}</i>
                   </div>
                 </div>
+                <div className="col s3">
+                  <div className="center-align feature-items">
+                    <div className="row">
+                      <div className="col s4"></div>
+                      <div className="col s3">
+                        <i className="Large material-iconss">{home.feature.featureIcon3.icon}</i>
+                      </div>
+                    </div>
                     <h5>{home.feature.featureIcon3.head}</h5>
                     <p>{home.feature.featureIcon3.description}</p>
-                </div>
-              </div>
-              <div className="col s3">
-              <div className="center-align feature-items">
-              <div className="row">
-                  <div className="col s4"></div>
-                  <div className="col s3">
-                    <i className="Large material-iconss">{home.feature.featureIcon4.icon}</i>
                   </div>
                 </div>
+                <div className="col s3">
+                  <div className="center-align feature-items">
+                    <div className="row">
+                      <div className="col s4"></div>
+                      <div className="col s3">
+                        <i className="Large material-iconss">{home.feature.featureIcon4.icon}</i>
+                      </div>
+                    </div>
                     <h5>{home.feature.featureIcon4.head}</h5>
                     <p>{home.feature.featureIcon4.description}</p>
-                </div>
-              </div>
-          </div>
-          <div className="row"></div>
-          <div className="row">
-              <div className="col s3">
-              <div className="center-align feature-items">
-              <div className="row">
-                  <div className="col s4"></div>
-                  <div className="col s3">
-                    <i className="Large material-iconss">{home.feature.featureIcon5.icon}</i>
                   </div>
                 </div>
+              </div>
+              <div className="row"></div>
+              <div className="row">
+                <div className="col s3">
+                  <div className="center-align feature-items">
+                    <div className="row">
+                      <div className="col s4"></div>
+                      <div className="col s3">
+                        <i className="Large material-iconss">{home.feature.featureIcon5.icon}</i>
+                      </div>
+                    </div>
                     <h5>{home.feature.featureIcon5.head}</h5>
                     <p>{home.feature.featureIcon5.description}</p>
-                </div>
-              </div>
-              <div className="col s3">
-              <div className="center-align feature-items">
-              <div className="row">
-                  <div className="col s4"></div>
-                  <div className="col s3">
-                    <i className="Large material-iconss">{home.feature.featureIcon6.icon}</i>
                   </div>
                 </div>
+                <div className="col s3">
+                  <div className="center-align feature-items">
+                    <div className="row">
+                      <div className="col s4"></div>
+                      <div className="col s3">
+                        <i className="Large material-iconss">{home.feature.featureIcon6.icon}</i>
+                      </div>
+                    </div>
                     <h5>{home.feature.featureIcon6.head}</h5>
                     <p>{home.feature.featureIcon6.description}</p>
-                </div>
-              </div>
-              <div className="col s3">
-              <div className="center-align feature-items">
-              <div className="row">
-                  <div className="col s4"></div>
-                  <div className="col s3">
-                    <i className="Large material-iconss">{home.feature.featureIcon7.icon}</i>
                   </div>
                 </div>
+                <div className="col s3">
+                  <div className="center-align feature-items">
+                    <div className="row">
+                      <div className="col s4"></div>
+                      <div className="col s3">
+                        <i className="Large material-iconss">{home.feature.featureIcon7.icon}</i>
+                      </div>
+                    </div>
                     <h5>{home.feature.featureIcon7.head}</h5>
                     <p>{home.feature.featureIcon7.description}</p>
-                </div>
-              </div>
-              <div className="col s3">
-              <div className="center-align feature-items">
-              <div className="row">
-                  <div className="col s4"></div>
-                  <div className="col s3">
-                    <i className="Large material-iconss">{home.feature.featureIcon8.icon}</i>
                   </div>
                 </div>
+                <div className="col s3">
+                  <div className="center-align feature-items">
+                    <div className="row">
+                      <div className="col s4"></div>
+                      <div className="col s3">
+                        <i className="Large material-iconss">{home.feature.featureIcon8.icon}</i>
+                      </div>
+                    </div>
                     <h5>{home.feature.featureIcon8.head}</h5>
                     <p>{home.feature.featureIcon8.description}</p>
+                  </div>
                 </div>
               </div>
+            </div>
+            <div className="row"></div>
+            <div className="row"></div>
           </div>
-          </div>
-          <div className="row"></div>
-    <div className="row"></div>
-    </section>
-    <section>
-      <div className="grey lighten-5">
-    <div className="row"><div className="col s12"></div></div>
-    <div className="row"><div className="col s12"></div></div>
-    
-    <div className="row"><div className="col s12"></div></div>
-    <div className="row"><div className="col s12"></div></div>
-    <div className="container">
-          <div className="row">
-              <div className="col s4">
-                <div className="feature-items">
-                    <h5 className="center-align">{home.describe.cards.card1.head}</h5>
-                    <p>{home.describe.cards.card1.description}</p>
-                    <img className="responsive-img" src={home.describe.image.src} />
-                    <h5 className="center-align">{home.describe.cards.card2.head}</h5>
-                    <p>{home.describe.cards.card2.description}</p>
-                </div>
-              </div>
-              <div className="col s4">
-                  <div className="row">
+
+          <div id="describe" className="section scrollspy">
+            <div className="grey lighten-5">
+              <div className="row"><div className="col s12"></div></div>
+              <div className="row"><div className="col s12"></div></div>
+
+              <div className="row"><div className="col s12"></div></div>
+              <div className="row"><div className="col s12"></div></div>
+              <div className="container">
+                <div className="row">
+                  <div className="col s4">
+                    <div className="feature-items">
+                      <h5 className="center-align">{home.describe.cards.card1.head}</h5>
+                      <p>{home.describe.cards.card1.description}</p>
+                      <img className="responsive-img" src={home.describe.image.src} />
+                      <h5 className="center-align">{home.describe.cards.card2.head}</h5>
+                      <p>{home.describe.cards.card2.description}</p>
+                    </div>
+                  </div>
+                  <div className="col s4">
+                    <div className="row">
                       <div className="col s1"><i className="Large material-icons">{home.describe.cards.card3.icon}</i></div>
                       <div className="col s11">
                         <div className="feature-items">
-                        <h5 className="center-align">{home.describe.cards.card3.head}</h5>
-                        <p>{home.describe.cards.card3.description}</p>
+                          <h5 className="center-align">{home.describe.cards.card3.head}</h5>
+                          <p>{home.describe.cards.card3.description}</p>
                         </div>
                       </div>
-                  </div>
-                  <div className="row"></div>
-                  <div className="row"></div>
-                  <div className="row"></div>
-                  <div className="row">
+                    </div>
+                    <div className="row"></div>
+                    <div className="row"></div>
+                    <div className="row"></div>
+                    <div className="row">
                       <div className="col s1"><i className="Large material-icons">{home.describe.cards.card4.icon}</i></div>
                       <div className="col s11">
                         <div className="feature-items">
-                        <h5 className="center-align">{home.describe.cards.card4.head}</h5>
-                        <p>{home.describe.cards.card4.description}</p>
+                          <h5 className="center-align">{home.describe.cards.card4.head}</h5>
+                          <p>{home.describe.cards.card4.description}</p>
                         </div>
                       </div>
-                  </div>
+                    </div>
 
-              </div>
-              <div className="col s4">
-              <div className="row">
+                  </div>
+                  <div className="col s4">
+                    <div className="row">
                       <div className="col s1"><i className="Large material-icons">{home.describe.cards.card5.icon}</i></div>
                       <div className="col s11">
                         <div className="feature-items">
-                        <h5 className="center-align">{home.describe.cards.card5.head}</h5>
-                        <p>{home.describe.cards.card5.description}</p>
+                          <h5 className="center-align">{home.describe.cards.card5.head}</h5>
+                          <p>{home.describe.cards.card5.description}</p>
                         </div>
                       </div>
-                  </div>
-                  <div className="row">
+                    </div>
+                    <div className="row">
                       <div className="col s1"><i className="Large material-icons">{home.describe.cards.card6.icon}</i></div>
                       <div className="col s11">
                         <div className="feature-items">
-                        <h5 className="center-align">{home.describe.cards.card6.head}</h5>
-                        <p>{home.describe.cards.card6.description}</p>
+                          <h5 className="center-align">{home.describe.cards.card6.head}</h5>
+                          <p>{home.describe.cards.card6.description}</p>
                         </div>
                       </div>
-                  </div>
-                  <div className="row">
+                    </div>
+                    <div className="row">
                       <div className="col s1"><i className="Large material-icons">{home.describe.cards.card7.icon}</i></div>
                       <div className="col s11">
                         <div className="feature-items">
-                        <h5 className="center-align">{home.describe.cards.card7.head}</h5>
-                        <p>{home.describe.cards.card7.description}</p>
+                          <h5 className="center-align">{home.describe.cards.card7.head}</h5>
+                          <p>{home.describe.cards.card7.description}</p>
                         </div>
                       </div>
+                    </div>
                   </div>
+                </div>
+                <div className="row"><div className="col s12"></div></div>
+                <div className="row"><div className="col s12"></div></div>
+
+                <div className="row"><div className="col s12"></div></div>
+                <div className="row"><div className="col s12"></div></div>
+                <div className="row">
+                  <div className="col s1">
+                  </div>
+                  <div className="col s10">
+                    <div className="video-container">
+                      <iframe width="853" height="480" src={home.describe.video.src} frameBorder="0" allowFullScreen></iframe>
+                    </div>
+                  </div>
+                  <div className="col s1">
+                  </div>
+                </div>
               </div>
+              <div className="row"><div className="col s12"></div></div>
+              <div className="row"><div className="col s12"></div></div>
+
+              <div className="row"><div className="col s12"></div></div>
+              <div className="row"><div className="col s12"></div></div>
+            </div>
           </div>
-          <div className="row"><div className="col s12"></div></div>
-    <div className="row"><div className="col s12"></div></div>
-    
-    <div className="row"><div className="col s12"></div></div>
-    <div className="row"><div className="col s12"></div></div>
-          <div className="row">
-              <div className="col s1">
-              </div>
-              <div className="col s10">
-              <div className="video-container">
-        <iframe width="853" height="480" src={home.describe.video.src} frameBorder="0" allowFullScreen></iframe>
-      </div>
-              </div>
-              <div className="col s1">
-              </div>
-          </div>
-          </div>
-          <div className="row"><div className="col s12"></div></div>
-    <div className="row"><div className="col s12"></div></div>
-    
-    <div className="row"><div className="col s12"></div></div>
-    <div className="row"><div className="col s12"></div></div>
-          </div>
-    </section>  
-    <section>
-    <div className="container">
-    <div className="row">
-        <div className="col s4 center-align">
+        </div>
+
+        <div id="description" className="section scrollspy">
+          <div className="container">
+            <div className="row">
+              <div className="col s4 center-align">
                 <img src={home.description.mainImage} className="responsive-img" alt="" />
                 <img src={home.description.playstoreImage} className="responsive-img" height="67"
-                     width="232"/>
-        </div>
-        <div className="col s2"></div>
-        <div className="col s6">
-            <div className="feature-items">
-                <h4 className="description-font">{home.description.card.cardHead}</h4>
-                <p>{home.description.card.description}</p>
-                <div className="row"></div>
-                <div className="row"></div>
-                <div className="row">
-                      <div className="col s1"><i className="Large material-icons">{home.description.card.subCards.subCard1.icon}</i></div>
-                      <div className="col s11">
-                        <div className="feature-items">
-                            <h5>{home.description.card.subCards.subCard1.head}</h5>
-                            <p>{home.description.card.subCards.subCard1.description}</p>
-                        </div>
+                  width="232" />
+              </div>
+              <div className="col s2"></div>
+              <div className="col s6">
+                <div className="feature-items">
+                  <h4 className="description-font">{home.description.card.cardHead}</h4>
+                  <p>{home.description.card.description}</p>
+                  <div className="row"></div>
+                  <div className="row"></div>
+                  <div className="row">
+                    <div className="col s1"><i className="Large material-icons">{home.description.card.subCards.subCard1.icon}</i></div>
+                    <div className="col s11">
+                      <div className="feature-items">
+                        <h5>{home.description.card.subCards.subCard1.head}</h5>
+                        <p>{home.description.card.subCards.subCard1.description}</p>
                       </div>
+                    </div>
                   </div>
                   <div className="row">
-                  <div className="col s1"><i className="Large material-icons">{home.description.card.subCards.subCard2.icon}</i></div>
-                      <div className="col s11">
-                        <div className="feature-items">
-                            <h5>{home.description.card.subCards.subCard2.head}</h5>
-                            <p>{home.description.card.subCards.subCard2.description}</p>
-                        </div>
+                    <div className="col s1"><i className="Large material-icons">{home.description.card.subCards.subCard2.icon}</i></div>
+                    <div className="col s11">
+                      <div className="feature-items">
+                        <h5>{home.description.card.subCards.subCard2.head}</h5>
+                        <p>{home.description.card.subCards.subCard2.description}</p>
                       </div>
+                    </div>
                   </div>
                   <div className="row">
-                  <div className="col s1"><i className="Large material-icons">{home.description.card.subCards.subCard3.icon}</i></div>
-                      <div className="col s11">
-                        <div className="feature-items">
-                            <h5>{home.description.card.subCards.subCard3.head}</h5>
-                            <p>{home.description.card.subCards.subCard3.description}</p>
-                        </div>
+                    <div className="col s1"><i className="Large material-icons">{home.description.card.subCards.subCard3.icon}</i></div>
+                    <div className="col s11">
+                      <div className="feature-items">
+                        <h5>{home.description.card.subCards.subCard3.head}</h5>
+                        <p>{home.description.card.subCards.subCard3.description}</p>
                       </div>
+                    </div>
                   </div>
                   <div className="row">
-                  <div className="col s1"><i className="Large material-icons">{home.description.card.subCards.subCard4.icon}</i></div>
-                      <div className="col s11">
-                        <div className="feature-items">
-                            <h5>{home.description.card.subCards.subCard4.head}</h5>
-                            <p>{home.description.card.subCards.subCard4.description}</p>
-                        </div>
+                    <div className="col s1"><i className="Large material-icons">{home.description.card.subCards.subCard4.icon}</i></div>
+                    <div className="col s11">
+                      <div className="feature-items">
+                        <h5>{home.description.card.subCards.subCard4.head}</h5>
+                        <p>{home.description.card.subCards.subCard4.description}</p>
                       </div>
+                    </div>
                   </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</div>
-    </section>  
-    <section>
-    <div className="container">
-        <div className="row">
-  <div className="col s12"><h3 className="center-align white-text h-style">{home.appGalley.appHead}</h3></div>
-        </div>
-    <div className="row">
-    <div className="col s4"></div>
-        <div className="col s4 center-align">
-        <div className="slider">
-    <ul className="slides">
-      <li>
-        <img src={home.appGalley.sliderImages.slideImg1} /> 
-      </li>
-      <li>
-        <img src={home.appGalley.sliderImages.slideImg2} /> 
-      </li>
-      <li>
-        <img src={home.appGalley.sliderImages.slideImg3} />
-      </li>
-      <li>
-        <img src={home.appGalley.sliderImages.slideImg4} />
-      </li>
-    </ul>
+
+        <div id="appgallery" className="section scrollspy">
+          <div className="container">
+            <div className="row">
+              <div className="col s12"><h3 className="center-align white-text h-style">{home.appGalley.appHead}</h3></div>
+            </div>
+            <div className="row">
+              <div className="col s12">
+              {/* <div className="col s4 center-align">
+                <div className="slider">
+                  <ul className="slides">
+                    <li>
+                      <img src={home.appGalley.sliderImages.slideImg1} />
+                    </li>
+                    <li>
+                      <img src={home.appGalley.sliderImages.slideImg2} />
+                    </li>
+                    <li>
+                      <img src={home.appGalley.sliderImages.slideImg3} />
+                    </li>
+                    <li>
+                      <img src={home.appGalley.sliderImages.slideImg4} />
+                    </li>
+                  </ul>
+                </div>
+              </div> */}
+                <div class="carousel carousel-slider center">
+  <div class="carousel-item" href="#one!">
+  <div className="row">
+              <div className="col s4">
+                <img src={home.appGalley.sliderImages.slideImg4} />
+                </div>
+                <div className="col s4">
+                <img src={home.appGalley.sliderImages.slideImg4} />
+                </div>
+                <div className="col s4">
+                <img src={home.appGalley.sliderImages.slideImg4} />
+                </div>
+                </div>
+
   </div>
-        </div>
-    </div>
+  <div class="carousel-item" href="#two!">
+  <div className="row">
+  <div className="col s4">
+                <img src={home.appGalley.sliderImages.slideImg4} />
+                </div>
+                <div className="col s4">
+                <img src={home.appGalley.sliderImages.slideImg4} />
+                </div>
+                <div className="col s4">
+                <img src={home.appGalley.sliderImages.slideImg4} />
+                </div>
+                </div>
+  </div>
 </div>
-    </section>
-    <section>
-    <div>
-      <br></br>
-    <div className="row">
-        <div className="col s12 center-align feature-items">
-            <h4 className="pricing-h">{home.pricing.pricingHead}</h4>
-            <p>{home.pricing.description1} 
-                <br></br>
-                {home.pricing.description2}</p>
+</div>
+            </div>
+          </div>
         </div>
-        <div className="col s12"></div>
+        <div id="pricing" className="section scrollspy">
+          <div>
+            <br></br>
+            <div className="row">
+              <div className="col s12 center-align feature-items">
+                <h4 className="pricing-h">{home.pricing.pricingHead}</h4>
+                <p>{home.pricing.description1}
+                  <br></br>
+                  {home.pricing.description2}</p>
+              </div>
+              <div className="col s12"></div>
 
-        <div className="col s2"></div>
-            <div className="col s4 price-border">
+              <div className="col s2"></div>
+              <div className="col s4 price-border">
                 <div className="single_pricing wow fadeIn price" data-wow-duration="1.5s">
-                    <div className="top_text">
-                        <h5 className="pricing-head">{home.pricing.priceBox1.head}</h5>
-                        <br></br>
-                        <h6 className="pricing-sub-head">{home.pricing.priceBox1.head2}</h6>
-                        <p>{home.pricing.priceBox1.description}</p>
-                    </div>
-                    <ul>
-                        <li><img src={home.pricing.priceBox1.list.img} alt="" /><span className="price-list">{home.pricing.priceBox1.list.list1}</span></li>
-                        <br></br>
-                        <li><img src={home.pricing.priceBox1.list.img} alt="" /><span className="price-list">{home.pricing.priceBox1.list.list2}</span></li>
-                        <br></br>
-                        <li><img src={home.pricing.priceBox1.list.img} alt="" /><span className="price-list">{home.pricing.priceBox1.list.list3}</span></li>
-                        <br></br>
-                        <li><img src={home.pricing.priceBox1.list.img} alt="" /><span className="price-list">{home.pricing.priceBox1.list.list4}</span></li>
-                    </ul>
+                  <div className="top_text">
+                    <h5 className="pricing-head">{home.pricing.priceBox1.head}</h5>
                     <br></br>
+                    <h6 className="pricing-sub-head">{home.pricing.priceBox1.head2}</h6>
+                    <p>{home.pricing.priceBox1.description}</p>
+                  </div>
+                  <ul>
+                    <li><img src={home.pricing.priceBox1.list.img} alt="" /><span className="price-list">{home.pricing.priceBox1.list.list1}</span></li>
                     <br></br>
-                    <div className="table_info">
-                        <div className="info_head_text">
-                            <h2>${home.pricing.priceBox1.price}</h2>
-                        </div>
-                        <a href="" className="waves-effect waves-light btn">sign up</a> <a href="" className="price-padding">Free Live Trial</a>
+                    <li><img src={home.pricing.priceBox1.list.img} alt="" /><span className="price-list">{home.pricing.priceBox1.list.list2}</span></li>
+                    <br></br>
+                    <li><img src={home.pricing.priceBox1.list.img} alt="" /><span className="price-list">{home.pricing.priceBox1.list.list3}</span></li>
+                    <br></br>
+                    <li><img src={home.pricing.priceBox1.list.img} alt="" /><span className="price-list">{home.pricing.priceBox1.list.list4}</span></li>
+                  </ul>
+                  <br></br>
+                  <br></br>
+                  <div className="table_info">
+                    <div className="info_head_text">
+                      <h2>${home.pricing.priceBox1.price}</h2>
                     </div>
+                    <a href="" className="waves-effect waves-light btn">sign up</a> <a href="" className="price-padding">Free Live Trial</a>
+                  </div>
                 </div>
                 <br></br>
-            </div>
-            <div className="col s0"></div>
-            <div className="col s4 price-border-red">
+              </div>
+              <div className="col s0"></div>
+              <div className="col s4 price-border-red">
                 <div className="single_pricing economy_table wow fadeIn price" data-wow-duration="1.6s">
-                    <div className="top_text">
-                        <h5 className="pricing-head">{home.pricing.priceBox2.head}</h5>
-                        <br></br>
-                        <h6 className="pricing-sub-head"> {home.pricing.priceBox2.head2}</h6>
-                        <p>{home.pricing.priceBox2.description}</p>
+                  <div className="top_text">
+                    <h5 className="pricing-head">{home.pricing.priceBox2.head}</h5>
+                    <br></br>
+                    <h6 className="pricing-sub-head"> {home.pricing.priceBox2.head2}</h6>
+                    <p>{home.pricing.priceBox2.description}</p>
+                  </div>
+                  <ul>
+                    <li><img src={home.pricing.priceBox2.list.img} alt="" /><span className="price-list">{home.pricing.priceBox2.list.list4}</span></li>
+                    <br></br>
+                    <li><img src={home.pricing.priceBox2.list.img} alt="" /><span className="price-list">{home.pricing.priceBox2.list.list4}</span></li>
+                    <br></br>
+                    <li><img src={home.pricing.priceBox2.list.img} alt="" /><span className="price-list">{home.pricing.priceBox2.list.list4}</span></li>
+                    <br></br>
+                    <li><img src={home.pricing.priceBox2.list.img} alt="" /><span className="price-list">{home.pricing.priceBox2.list.list4}</span></li>
+                  </ul>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                  <div className="table_info">
+                    <div className="info_head_text">
+                      <h2>${home.pricing.priceBox2.price}</h2>
                     </div>
-                    <ul>
-                        <li><img src={home.pricing.priceBox2.list.img} alt="" /><span className="price-list">{home.pricing.priceBox2.list.list4}</span></li>
-                        <br></br>
-                        <li><img src={home.pricing.priceBox2.list.img} alt="" /><span className="price-list">{home.pricing.priceBox2.list.list4}</span></li>
-                        <br></br>
-                        <li><img src={home.pricing.priceBox2.list.img} alt="" /><span className="price-list">{home.pricing.priceBox2.list.list4}</span></li>
-                        <br></br>
-                        <li><img src={home.pricing.priceBox2.list.img} alt="" /><span className="price-list">{home.pricing.priceBox2.list.list4}</span></li>
-                    </ul>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <div className="table_info">
-                        <div className="info_head_text">
-                            <h2>${home.pricing.priceBox2.price}</h2>
-                        </div>
-                        <a href="" className="waves-effect waves-light btn">sign up</a> <a href="" className="price-padding">No monthly commitment.</a>
-                    </div>
+                    <a href="" className="waves-effect waves-light btn">sign up</a> <a href="" className="price-padding">No monthly commitment.</a>
+                  </div>
                 </div>
                 <br></br>
+              </div>
             </div>
-    </div>
-    <br></br>
-    <div className="container">
-    <div className="row">
-        <div className="col s12 feature-items center-align">
-            <h5>{home.demo.demoHead}</h5>
-            <p>{home.demo.description}</p>
-        </div>
-        <div className="col s3"></div>
-        <div className="col s3"><img src={home.demo.demoImages.src1} alt="" /></div>
-        <div className="col s0"></div>
-        <div className="col s3"><img src={home.demo.demoImages.src2} alt="" /></div>
-        <div className="col s3"></div>
-    </div>
-    <br></br>
+            <br></br>
+            <div className="container">
+              <div className="row">
+                <div className="col s12 feature-items center-align">
+                  <h5>{home.demo.demoHead}</h5>
+                  <p>{home.demo.description}</p>
+                </div>
+                <div className="col s3"></div>
+                <div className="col s3"><img src={home.demo.demoImages.src1} alt="" /></div>
+                <div className="col s0"></div>
+                <div className="col s3"><img src={home.demo.demoImages.src2} alt="" /></div>
+                <div className="col s3"></div>
+              </div>
+              <br></br>
 
-    </div>
-    </div>
-    </section>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
