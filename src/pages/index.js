@@ -314,8 +314,8 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
                   </ul>
                 </div>
               </div> */}
-                <div class="carousel carousel-slider center">
-  <div class="carousel-item" href="#one!">
+                <div className="carousel carousel-slider center">
+  <div className="carousel-item" href="#one!">
   <div className="row">
               <div className="col s4">
                 <img src={home.appGalley.sliderImages.slideImg4} />
@@ -329,7 +329,7 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
                 </div>
 
   </div>
-  <div class="carousel-item" href="#two!">
+  <div className="carousel-item" href="#two!">
   <div className="row">
   <div className="col s4">
                 <img src={home.appGalley.sliderImages.slideImg4} />
