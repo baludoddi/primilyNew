@@ -7,3 +7,8 @@ public/
 static/admin/*.bundle.*
 .DS_Store
 yarn-error.log
+.idea/Balud-Prime-New2.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/.gitignore
