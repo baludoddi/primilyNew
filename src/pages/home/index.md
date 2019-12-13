@@ -106,8 +106,12 @@ describe:
   video:
     src: 'https://www.youtube.com/embed/mzW3382PST8'
 description:
+  mainImage: /img/iphone-w1.png
+  playstoreImage: /img/d1.png
   card:
-    subCards:
+    cardHead: [Description of the Mobile App]
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt efficitur vestibulum. Phasellus nisl leo, congue eu malesuada lobortis, fringilla et nulla.
+    subCards: 
       subCard1:
         description: >-
           We offer cloud hosted virtual mobile number solution that help
@@ -135,8 +139,6 @@ description:
           products, etc.
         head: Automated Surveys
         icon: monetization_on
-  mainImage: /img/iphone-w1.png
-  playstoreImage: /img/d1.png
 appGalley:
   appHead: Our Mobile Application Gallery
   sliderImages:
@@ -158,6 +160,9 @@ pricing:
     list:
       img: /img/tic.png
       list1: Store Hours
+      list2: Location
+      list3: Greeting
+      list4: Free trial phone number
     price: 0
   priceBox2:
     description: No monthly commitment or payments. Purchase credits as you need them.
@@ -166,6 +171,9 @@ pricing:
     list:
       img: /img/tic.png
       list1: Phone Number(s)
+      list2: Fully customizable starter templates
+      list3: Summary and Detailed Call Log Reports
+      list4: Select you US area code
     price: 20
   pricingHead: Our pricing is simple
 demo:

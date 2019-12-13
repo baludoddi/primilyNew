@@ -5,7 +5,7 @@ import CustomLink from "../CustomLink";
 
 export const NavbarTemplate = ({ data }) => (
   <div className="navbar-fixed nav-div">
-  <nav className="blue">
+  <nav className="indigo darken-4">
     <div className="nav-wrapper container">
       <a href="#" className="brand-logo">Primily</a>
       <ul id="nav-mobile" className="right hide-on-med-and-down">
