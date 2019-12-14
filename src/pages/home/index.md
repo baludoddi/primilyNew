@@ -10,7 +10,7 @@ mapsNote: Clicking the pin opens Google Maps in a new tab.
 feature:
   featureIcon1:
     description: One or more phone numbers. Selectable area codes and numbers.
-    head: Multiple Numberss
+    head: Multiple Numbers
     icon: call
   featureIcon2:
     description: Acknowledgement and notification using SMS and/or Email.
@@ -106,12 +106,14 @@ describe:
   video:
     src: 'https://www.youtube.com/embed/mzW3382PST8'
 description:
-  mainImage: /img/iphone-w1.png
-  playstoreImage: /img/d1.png
   card:
-    cardHead: [Description of the Mobile App]
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt efficitur vestibulum. Phasellus nisl leo, congue eu malesuada lobortis, fringilla et nulla.
-    subCards: 
+    cardHead:
+      - Description of the Mobile App
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt
+      efficitur vestibulum. Phasellus nisl leo, congue eu malesuada lobortis,
+      fringilla et nulla.
+    subCards:
       subCard1:
         description: >-
           We offer cloud hosted virtual mobile number solution that help
@@ -139,6 +141,8 @@ description:
           products, etc.
         head: Automated Surveys
         icon: monetization_on
+  mainImage: /img/iphone-w1.png
+  playstoreImage: /img/d1.png
 appGalley:
   appHead: Our Mobile Application Gallery
   sliderImages:
