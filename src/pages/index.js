@@ -18,16 +18,21 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
 
   return (
     <>
+      <p>CAROUSEL SECTION</p>
       <div className="row">
         <div className="col s12 m12 l12">
+
           <div id="home" className="section scrollspy">
-          <CarouselComponent content={home.appGalley.sliderImages} />
+            <CarouselComponent content={home.appGalley.sliderImages} />
           </div>
 
           <div id="features" className="section scrollspy">
-            <div className="row"></div>
-            <div className="row"></div>
+            <p>ID FEATURES SECTION MARKER</p>
+            <div className="row">SP1-C</div>
+            <div className="row">SP2-C</div>
+
             <div className="container">
+
               <div className="row">
                 <div className="col s3">
                   <div className="center-align feature-items">
@@ -130,18 +135,21 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
                 </div>
               </div>
             </div>
-            <div className="row"></div>
-            <div className="row"></div>
+            <div className="row">SP1</div>
+            <div className="row">SP2</div>
           </div>
 
           <div id="describe" className="section scrollspy">
+            <p>ID DESCRIBE SECTION MARKER</p>
             <div className="grey lighten-5">
-              <div className="row"><div className="col s12"></div></div>
-              <div className="row"><div className="col s12"></div></div>
 
-              <div className="row"><div className="col s12"></div></div>
-              <div className="row"><div className="col s12"></div></div>
+              <div className="row"><div className="col s12"></div>SPACER 1D</div>
+              <div className="row"><div className="col s12"></div>SPACER 2D</div>
+              <div className="row"><div className="col s12"></div>SPACER 3D</div>
+              <div className="row"><div className="col s12"></div>SPACER 4D</div>
+
               <div className="container">
+
                 <div className="row">
                   <div className="col s4">
                     <div className="feature-items">
@@ -162,9 +170,10 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
                         </div>
                       </div>
                     </div>
-                    <div className="row"></div>
-                    <div className="row"></div>
-                    <div className="row"></div>
+                    <div className="row">SP1</div>
+                    <div className="row">SP2</div>
+                    <div className="row">SP3</div>
+
                     <div className="row">
                       <div className="col s1"><i className="Large material-icons">{home.describe.cards.card4.icon}</i></div>
                       <div className="col s11">
@@ -206,15 +215,16 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
                     </div>
                   </div>
                 </div>
-                <div className="row"><div className="col s12"></div></div>
-                <div className="row"><div className="col s12"></div></div>
 
-                <div className="row"><div className="col s12"></div></div>
-                <div className="row"><div className="col s12"></div></div>
+                <div className="row"><div className="col s12"></div>SPACER 1V</div>
+                <div className="row"><div className="col s12"></div>SPACER 2V</div>
+                <div className="row"><div className="col s12"></div>SPACER 3V</div>
+                <div className="row"><div className="col s12"></div>SPACER 4V</div>
+
                 <div className="row">
-                  <div className="col s1">
-                  </div>
+                  <div className="col s1"></div>
                   <div className="col s10">
+
                     <div className="video-container">
                       <iframe width="853" height="480" src={home.describe.video.src} frameBorder="0" allowFullScreen></iframe>
                     </div>
@@ -223,16 +233,17 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
                   </div>
                 </div>
               </div>
-              <div className="row"><div className="col s12"></div></div>
-              <div className="row"><div className="col s12"></div></div>
-
-              <div className="row"><div className="col s12"></div></div>
-              <div className="row"><div className="col s12"></div></div>
+              <div className="row"><div className="col s12"></div>SPACER 1VV</div>
+              <div className="row"><div className="col s12"></div>SPACER 2VV</div>
+              <div className="row"><div className="col s12"></div>SPACER 3VV</div>
+              <div className="row"><div className="col s12"></div>SPACER 4VV</div>
             </div>
           </div>
         </div>
 
         <div id="description" className="section scrollspy">
+          <p>ID DESCRIPTION SECTION MARKER</p>
+
           <div className="container">
             <div className="row">
               <div className="col s4 center-align">
@@ -290,6 +301,8 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
         </div>
 
         <div id="appgallery" className="section scrollspy">
+          <p>ID APPGALLERY SECTION MARKER</p>
+
           <div className="container">
             <div className="row">
               <div className="col s12"><h3 className="center-align white-text h-style">{home.appGalley.appHead}</h3></div>
@@ -315,39 +328,40 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
                 </div>
               </div> */}
                 <div className="carousel carousel-slider center">
-  <div className="carousel-item" href="#one!">
-  <div className="row">
-              <div className="col s4">
-                <img src={home.appGalley.sliderImages.slideImg4} />
-                </div>
-                <div className="col s4">
-                <img src={home.appGalley.sliderImages.slideImg4} />
-                </div>
-                <div className="col s4">
-                <img src={home.appGalley.sliderImages.slideImg4} />
-                </div>
+                    <div className="carousel-item" href="#one!"><div className="row">
+                      <div className="col s4">
+                        <img src={home.appGalley.sliderImages.slideImg4} />
+                      </div>
+                      <div className="col s4">
+                        <img src={home.appGalley.sliderImages.slideImg4} />
+                      </div>
+                      <div className="col s4">
+                        <img src={home.appGalley.sliderImages.slideImg4} />
+                      </div>
+                    </div>
                 </div>
 
-  </div>
-  <div className="carousel-item" href="#two!">
-  <div className="row">
-  <div className="col s4">
-                <img src={home.appGalley.sliderImages.slideImg4} />
+                <div className="carousel-item" href="#two!">
+                  <div className="row">
+                    <div className="col s4">
+                      <img src={home.appGalley.sliderImages.slideImg4}/>
+                    </div>
+                    <div className="col s4">
+                      <img src={home.appGalley.sliderImages.slideImg4}/>
+                    </div>
+                    <div className="col s4">
+                      <img src={home.appGalley.sliderImages.slideImg4}/>
+                    </div>
+                  </div>
                 </div>
-                <div className="col s4">
-                <img src={home.appGalley.sliderImages.slideImg4} />
-                </div>
-                <div className="col s4">
-                <img src={home.appGalley.sliderImages.slideImg4} />
-                </div>
-                </div>
-  </div>
-</div>
-</div>
+
+              </div>
             </div>
           </div>
         </div>
+      </div>
         <div id="pricing" className="section scrollspy">
+          <p>ID PRICING SECTION MARKER</p>
           <div>
             <br></br>
             <div className="row">
@@ -419,7 +433,8 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
                 <br></br>
               </div>
             </div>
-            <br></br>
+            <br/>
+            <p>ID FOOTER SECTION MARKER</p>
             <div className="container">
               <div className="row">
                 <div className="col s12 feature-items center-align">
@@ -427,9 +442,9 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
                   <p>{home.demo.description}</p>
                 </div>
                 <div className="col s3"></div>
-                <div className="col s3"><img src={home.demo.demoImages.src1} alt="" /></div>
+                <div className="col s3"><img src={home.demo.demoImages.src1} alt="" />SRC1</div>
                 <div className="col s0"></div>
-                <div className="col s3"><img src={home.demo.demoImages.src2} alt="" /></div>
+                <div className="col s3"><img src={home.demo.demoImages.src2} alt="" />SRC2</div>
                 <div className="col s3"></div>
               </div>
               <br></br>
