@@ -55,7 +55,7 @@ describe:
     card1:
       description: >-
         A major chunk of the business comes through phone and if any call goes
-        unanswered, it simply means you are missing out on leads.
+        unanswered, it simply means you are missing out on business.
       head: No Lost Calls
     card2:
       description: >-
