@@ -12,7 +12,7 @@ feature:
     description: >-
       Easily modify Call Menu on your Operating Hours, Holidays, Location,
       Services, Products and Call Routing.
-    head: 'Simple Call Menu '
+    head: 'Simple<br/>Call Menu '
     icon: call
   featureIcon2:
     description: Acknowledgement and notification using SMS and/or Email.
@@ -46,8 +46,8 @@ feature:
     icon: pie_chart
   featureIcon8:
     description: >-
-      Create and modify interactive selection routing amd response using your
-      mobile device.
+      Create and modify interactive selection routing amd responce using your
+      modile device.
     head: Mobile App for Routing
     icon: phone_android
 describe:
