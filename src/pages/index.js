@@ -29,8 +29,8 @@ export const HomePageTemplate = ({ home }) => {
           </div>
 
           <div id="features" className="section scrollspy">
-            <p>ID FEATURES SECTION MARKER</p>
-            {/*<div className="row">SP1-C</div>
+            {/*<p>ID FEATURES SECTION MARKER</p>
+            *<div className="row">SP1-C</div>
             <div className="row">SP2-C</div>*/}
 
             <div className="container">
