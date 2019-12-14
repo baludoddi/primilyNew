@@ -9,8 +9,10 @@ noUpcomingMeetupText: Details to be announced.
 mapsNote: Clicking the pin opens Google Maps in a new tab.
 feature:
   featureIcon1:
-    description: One or more phone numbers. Selectable area codes and numbers.
-    head: Multiple Numbers
+    description: >-
+      Easily modify Call Menu on your Operating Hours, Holidays, Location,
+      Services, Products and Call Routing.
+    head: 'Simple Call Menu '
     icon: call
   featureIcon2:
     description: Acknowledgement and notification using SMS and/or Email.
