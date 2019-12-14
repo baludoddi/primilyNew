@@ -309,7 +309,7 @@ export const HomePageTemplate = ({ home }) => {
 
           <div className="container">
             <div className="row">
-              <div className="col s12"><h3 className="center-align white-text h-style">{home.appGalley.appHead}</h3></div>
+              <div className="col s12"><h3 className="center-align grey-text h-style">{home.appGalley.appHead}</h3></div>
             </div>
             <div className="row">
               <div className="col s12">
