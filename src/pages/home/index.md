@@ -46,8 +46,8 @@ feature:
     icon: pie_chart
   featureIcon8:
     description: >-
-      Create and modify interactive selection routing amd response using your
-      mobile device.
+      Create and modify interactive selection routing amd responce using your
+      modile device.
     head: Mobile App for Routing
     icon: phone_android
 describe:
@@ -55,7 +55,7 @@ describe:
     card1:
       description: >-
         A major chunk of the business comes through phone and if any call goes
-        unanswered, it simply means you are missing out on leads.
+        unanswered, it simply means you are missing out on business.
       head: No Lost Calls
     card2:
       description: >-
