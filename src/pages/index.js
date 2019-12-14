@@ -21,6 +21,8 @@ export const HomePageTemplate = ({ home }) => {
   return (
     <>
       {/*<p>CAROUSEL SECTION</p>*/}
+
+      <div className="row"></div>
       <div className="row">
         <div className="col s12 m12 l12">
 
@@ -30,8 +32,8 @@ export const HomePageTemplate = ({ home }) => {
 
           <div id="features" className="section scrollspy">
             {/*<p>ID FEATURES SECTION MARKER</p>
-            *<div className="row">SP1-C</div>
-            <div className="row">SP2-C</div>*/}
+            *<div className="row">SP1-C</div>*/}
+            <div className="row"></div>
 
             <div className="container">
 
@@ -143,12 +145,12 @@ export const HomePageTemplate = ({ home }) => {
 
           <div id="describe" className="section scrollspy">
             {/*<p>ID DESCRIBE SECTION MARKER</p>*/}
-            <div className="grey lighten-5">
+            <div className="grey lighten-4">
 
               {/*<div className="row"><div className="col s12"></div>SPACER 1D</div>
-              <div className="row"><div className="col s12"></div>SPACER 2D</div>
-              <div className="row"><div className="col s12"></div>SPACER 3D</div>
-              <div className="row"><div className="col s12"></div>SPACER 4D</div>*/}
+              <div className="row"><div className="col s12"></div>SPACER 2D</div>*/}
+              <div className="row"><div className="col s12"></div></div>
+              <div className="row"><div className="col s12"></div></div>
 
               <div className="container">
 
@@ -236,9 +238,9 @@ export const HomePageTemplate = ({ home }) => {
                 </div>
               </div>
               {/*<div className="row"><div className="col s12"></div>SPACER 1VV</div>
-              <div className="row"><div className="col s12"></div>SPACER 2VV</div>
-              <div className="row"><div className="col s12"></div>SPACER 3VV</div>
-              <div className="row"><div className="col s12"></div>SPACER 4VV</div>*/}
+              <div className="row"><div className="col s12"></div>SPACER 2VV</div>*/}
+              <div className="row"><div className="col s12"></div></div>
+              <div className="row"><div className="col s12"></div></div>
             </div>
           </div>
         </div>
@@ -302,7 +304,7 @@ export const HomePageTemplate = ({ home }) => {
           </div>
         </div>
 
-        <div id="appgallery" className="section scrollspy">
+        <div id="appgallery" className="section scrollspy grey lighten-4">
           {/*<p>ID APPGALLERY SECTION MARKER</p>*/}
 
           <div className="container">
@@ -356,12 +358,14 @@ export const HomePageTemplate = ({ home }) => {
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
+              <div className="row"><div className="col s12"></div></div>
+              {/*<div className="row"><div className="col s12"></div></div>*/}
           </div>
         </div>
       </div>
+
         <div id="pricing" className="section scrollspy">
           {/*<p>ID PRICING SECTION MARKER</p>*/}
           <div>
