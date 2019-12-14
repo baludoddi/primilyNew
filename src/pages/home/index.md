@@ -12,7 +12,7 @@ feature:
     description: >-
       Easily modify Call Menu on your Operating Hours, Holidays, Location,
       Services, Products and Call Routing.
-    head: 'Simple<br/>Call Menu '
+    head: 'Simple Call Menu '
     icon: call
   featureIcon2:
     description: Acknowledgement and notification using SMS and/or Email.
