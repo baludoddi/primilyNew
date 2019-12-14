@@ -5,20 +5,22 @@ import Helmet from "react-helmet";
 import isAfter from "date-fns/is_after";
 
 import Layout from "../components/Layout";
-import Map from "../components/Map";
-import HeadshotPlaceholder from "../img/headshot-placeholder.svg";
-import CustomLink from "../components/CustomLink";
+//import Map from "../components/Map";
+//import HeadshotPlaceholder from "../img/headshot-placeholder.svg";
+//import CustomLink from "../components/CustomLink";
 import CarouselComponent from "../components/carousel";
 import "../styles/features.css";
 
-export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
-  const presenters = upcomingMeetup && upcomingMeetup.presenters;
-  const latitude = upcomingMeetup && parseFloat(upcomingMeetup.location.mapsLatitude);
-  const longitude = upcomingMeetup && parseFloat(upcomingMeetup.location.mapsLongitude);
+
+//export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
+export const HomePageTemplate = ({ home }) => {
+  //const presenters = upcomingMeetup && upcomingMeetup.presenters;
+  //const latitude = upcomingMeetup && parseFloat(upcomingMeetup.location.mapsLatitude);
+  //const longitude = upcomingMeetup && parseFloat(upcomingMeetup.location.mapsLongitude);
 
   return (
     <>
-      <p>CAROUSEL SECTION</p>
+      {/*<p>CAROUSEL SECTION</p>*/}
       <div className="row">
         <div className="col s12 m12 l12">
 
@@ -28,8 +30,8 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
 
           <div id="features" className="section scrollspy">
             <p>ID FEATURES SECTION MARKER</p>
-            <div className="row">SP1-C</div>
-            <div className="row">SP2-C</div>
+            {/*<div className="row">SP1-C</div>
+            <div className="row">SP2-C</div>*/}
 
             <div className="container">
 
@@ -135,18 +137,18 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
                 </div>
               </div>
             </div>
-            <div className="row">SP1</div>
-            <div className="row">SP2</div>
+            {/* <div className="row">SP1</div>
+              <div className="row">SP2</div>*/}
           </div>
 
           <div id="describe" className="section scrollspy">
-            <p>ID DESCRIBE SECTION MARKER</p>
+            {/*<p>ID DESCRIBE SECTION MARKER</p>*/}
             <div className="grey lighten-5">
 
-              <div className="row"><div className="col s12"></div>SPACER 1D</div>
+              {/*<div className="row"><div className="col s12"></div>SPACER 1D</div>
               <div className="row"><div className="col s12"></div>SPACER 2D</div>
               <div className="row"><div className="col s12"></div>SPACER 3D</div>
-              <div className="row"><div className="col s12"></div>SPACER 4D</div>
+              <div className="row"><div className="col s12"></div>SPACER 4D</div>*/}
 
               <div className="container">
 
@@ -170,9 +172,9 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
                         </div>
                       </div>
                     </div>
-                    <div className="row">SP1</div>
+                    {/*<div className="row">SP1</div>
                     <div className="row">SP2</div>
-                    <div className="row">SP3</div>
+                    <div className="row">SP3</div>*/}
 
                     <div className="row">
                       <div className="col s1"><i className="Large material-icons">{home.describe.cards.card4.icon}</i></div>
@@ -216,10 +218,10 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
                   </div>
                 </div>
 
-                <div className="row"><div className="col s12"></div>SPACER 1V</div>
+               {/* <div className="row"><div className="col s12"></div>SPACER 1V</div>
                 <div className="row"><div className="col s12"></div>SPACER 2V</div>
                 <div className="row"><div className="col s12"></div>SPACER 3V</div>
-                <div className="row"><div className="col s12"></div>SPACER 4V</div>
+                <div className="row"><div className="col s12"></div>SPACER 4V</div>*/}
 
                 <div className="row">
                   <div className="col s1"></div>
@@ -233,16 +235,16 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
                   </div>
                 </div>
               </div>
-              <div className="row"><div className="col s12"></div>SPACER 1VV</div>
+              {/*<div className="row"><div className="col s12"></div>SPACER 1VV</div>
               <div className="row"><div className="col s12"></div>SPACER 2VV</div>
               <div className="row"><div className="col s12"></div>SPACER 3VV</div>
-              <div className="row"><div className="col s12"></div>SPACER 4VV</div>
+              <div className="row"><div className="col s12"></div>SPACER 4VV</div>*/}
             </div>
           </div>
         </div>
 
         <div id="description" className="section scrollspy">
-          <p>ID DESCRIPTION SECTION MARKER</p>
+          {/*<p>ID DESCRIPTION SECTION MARKER</p>*/}
 
           <div className="container">
             <div className="row">
@@ -301,7 +303,7 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
         </div>
 
         <div id="appgallery" className="section scrollspy">
-          <p>ID APPGALLERY SECTION MARKER</p>
+          {/*<p>ID APPGALLERY SECTION MARKER</p>*/}
 
           <div className="container">
             <div className="row">
@@ -361,7 +363,7 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
         </div>
       </div>
         <div id="pricing" className="section scrollspy">
-          <p>ID PRICING SECTION MARKER</p>
+          {/*<p>ID PRICING SECTION MARKER</p>*/}
           <div>
             <br></br>
             <div className="row">
@@ -434,18 +436,18 @@ export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
               </div>
             </div>
             <br/>
-            <p>ID FOOTER SECTION MARKER</p>
+            {/*<p>ID FOOTER SECTION MARKER</p>*/}
             <div className="container">
               <div className="row">
                 <div className="col s12 feature-items center-align">
                   <h5>{home.demo.demoHead}</h5>
                   <p>{home.demo.description}</p>
                 </div>
-                <div className="col s3"></div>
+                {/*<div className="col s3"></div>
                 <div className="col s3"><img src={home.demo.demoImages.src1} alt="" />SRC1</div>
                 <div className="col s0"></div>
                 <div className="col s3"><img src={home.demo.demoImages.src2} alt="" />SRC2</div>
-                <div className="col s3"></div>
+                <div className="col s3"></div>*/}
               </div>
               <br></br>
 

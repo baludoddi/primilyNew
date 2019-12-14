@@ -44,8 +44,8 @@ feature:
     icon: pie_chart
   featureIcon8:
     description: >-
-      Create and modify interactive selection routing amd responce using your
-      modile device.
+      Create and modify interactive selection routing amd response using your
+      mobile device.
     head: Mobile App for Routing
     icon: phone_android
 describe:
