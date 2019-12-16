@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./styles.scss";
+import "materialize-css/sass/materialize.scss";
 import logo from "../../img/icon-small-2x.png";
 import CustomLink from "../CustomLink";
 
