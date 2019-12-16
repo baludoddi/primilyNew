@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.scss";
+import "materialize-css/sass/materialize.scss";
 
 export const FooterTemplate = ({ data }) => {
   const { logoImage, socialLinks } = data;

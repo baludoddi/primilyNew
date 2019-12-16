@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Carousel from 'react-bootstrap/Carousel'
+import "materialize-css/sass/materialize.scss";
 
 export const CarouselComponent = ({ content, className }) => (
    

@@ -3,14 +3,14 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Helmet from "react-helmet";
 import isAfter from "date-fns/is_after";
-
+import FeaturePageTemplate from '../templates/feature-page'
 import Layout from "../components/Layout";
 //import Map from "../components/Map";
 //import HeadshotPlaceholder from "../img/headshot-placeholder.svg";
 //import CustomLink from "../components/CustomLink";
 import CarouselComponent from "../components/carousel";
 import "../styles/features.css";
-
+import "materialize-css/sass/materialize.scss";
 
 //export const HomePageTemplate = ({ home, upcomingMeetup = null }) => {
 export const HomePageTemplate = ({ home }) => {
@@ -33,113 +33,9 @@ export const HomePageTemplate = ({ home }) => {
           <div id="features" className="section scrollspy">
             {/*<p>ID FEATURES SECTION MARKER</p>
             *<div className="row">SP1-C</div>*/}
-            <div className="row"></div>
 
-            <div className="container">
-
-              <div className="row">
-                <div className="col s3">
-                  <div className="center-align feature-items">
-                    <div className="row">
-                      <div className="col s4"></div>
-                      <div className="col s3">
-                        <i className="Large material-iconss">{home.feature.featureIcon1.icon}</i>
-                      </div>
-                    </div>
-                    <h5>{home.feature.featureIcon1.head}</h5>
-                    <p>{home.feature.featureIcon1.description}</p>
-                  </div>
-                </div>
-                <div className="col s3">
-                  <div className="center-align feature-items">
-                    <div className="row">
-                      <div className="col s4"></div>
-                      <div className="col s3">
-                        <i className="Large material-iconss">{home.feature.featureIcon2.icon}</i>
-                      </div>
-                    </div>
-                    <h5>{home.feature.featureIcon2.head}</h5>
-                    <p>{home.feature.featureIcon2.description}</p>
-                  </div>
-                </div>
-                <div className="col s3">
-                  <div className="center-align feature-items">
-                    <div className="row">
-                      <div className="col s4"></div>
-                      <div className="col s3">
-                        <i className="Large material-iconss">{home.feature.featureIcon3.icon}</i>
-                      </div>
-                    </div>
-                    <h5>{home.feature.featureIcon3.head}</h5>
-                    <p>{home.feature.featureIcon3.description}</p>
-                  </div>
-                </div>
-                <div className="col s3">
-                  <div className="center-align feature-items">
-                    <div className="row">
-                      <div className="col s4"></div>
-                      <div className="col s3">
-                        <i className="Large material-iconss">{home.feature.featureIcon4.icon}</i>
-                      </div>
-                    </div>
-                    <h5>{home.feature.featureIcon4.head}</h5>
-                    <p>{home.feature.featureIcon4.description}</p>
-                  </div>
-                </div>
-              </div>
-              <div className="row"></div>
-              <div className="row">
-                <div className="col s3">
-                  <div className="center-align feature-items">
-                    <div className="row">
-                      <div className="col s4"></div>
-                      <div className="col s3">
-                        <i className="Large material-iconss">{home.feature.featureIcon5.icon}</i>
-                      </div>
-                    </div>
-                    <h5>{home.feature.featureIcon5.head}</h5>
-                    <p>{home.feature.featureIcon5.description}</p>
-                  </div>
-                </div>
-                <div className="col s3">
-                  <div className="center-align feature-items">
-                    <div className="row">
-                      <div className="col s4"></div>
-                      <div className="col s3">
-                        <i className="Large material-iconss">{home.feature.featureIcon6.icon}</i>
-                      </div>
-                    </div>
-                    <h5>{home.feature.featureIcon6.head}</h5>
-                    <p>{home.feature.featureIcon6.description}</p>
-                  </div>
-                </div>
-                <div className="col s3">
-                  <div className="center-align feature-items">
-                    <div className="row">
-                      <div className="col s4"></div>
-                      <div className="col s3">
-                        <i className="Large material-iconss">{home.feature.featureIcon7.icon}</i>
-                      </div>
-                    </div>
-                    <h5>{home.feature.featureIcon7.head}</h5>
-                    <p>{home.feature.featureIcon7.description}</p>
-                  </div>
-                </div>
-                <div className="col s3">
-                  <div className="center-align feature-items">
-                    <div className="row">
-                      <div className="col s4"></div>
-                      <div className="col s3">
-                        <i className="Large material-iconss">{home.feature.featureIcon8.icon}</i>
-                      </div>
-                    </div>
-                    <h5>{home.feature.featureIcon8.head}</h5>
-                    <p>{home.feature.featureIcon8.description}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* <div className="row">SP1</div>
+            <FeaturePageTemplate page={home.feature} />
+           {/* <div className="row">SP1</div>
               <div className="row">SP2</div>*/}
           </div>
 
