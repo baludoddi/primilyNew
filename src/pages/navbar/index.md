@@ -12,9 +12,9 @@ menuItems:
     linkURL: /#pricing
   - label: Demo
     linkType: demo
-    linkURL: /#appgallery
+    linkURL: /#demo
   - label: About Us
     linkType: aboutus
-    linkURL: /#description
+    linkURL: /#aboutus
 ---
 
