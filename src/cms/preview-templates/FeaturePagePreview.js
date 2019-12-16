@@ -1,22 +1,22 @@
-// import React from "react";
-// import PropTypes from "prop-types";
-// import { FeaturePageTemplate } from "../../templates/feature-page";
+import React from "react";
+import PropTypes from "prop-types";
+import { FeaturePageTemplate } from "../../templates/feature-page";
 
-// const FeaturePagePreview = ({ entry, widgetFor }) => (
-//   <FeaturePageTemplate
-//     page={{
-//       frontmatter: entry.getIn(["data"]).toJS(),
-//       html: entry.getIn(["data", "body"]),
-//       bodyIsMarkdown: true,
-//     }}
-//   />
-// );
+const FeaturePagePreview = ({ entry, widgetFor }) => (
+  <FeaturePageTemplate
+    page={{
+      frontmatter: entry.getIn(["data"]).toJS(),
+      html: entry.getIn(["data", "body"]),
+      bodyIsMarkdown: true,
+    }}
+  />
+);
 
-// FeaturePagePreview.propTypes = {
-//   entry: PropTypes.shape({
-//     getIn: PropTypes.func,
-//   }),
-//   widgetFor: PropTypes.func,
-// };
+FeaturePagePreview.propTypes = {
+  entry: PropTypes.shape({
+    getIn: PropTypes.func,
+  }),
+  widgetFor: PropTypes.func,
+};
 
-// export default FeaturePagePreview;
+export default FeaturePagePreview;
