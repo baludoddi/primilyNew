@@ -19,7 +19,7 @@ export const FeaturePageTemplate = props => {
             <i className="Large material-iconss">{page.featureIcon1.icon}</i>
           </div>
         </div>
-        <h5>{page.featureIcon1.head}</h5>
+        <h5 className="blue-text">{page.featureIcon1.head}</h5>
         <p>{page.featureIcon1.description}</p>
       </div>
     </div>
