@@ -9,6 +9,7 @@ import PricingPageTemplate from '../templates/pricing-page';
 import DemoPageTemplate from '../templates/demo-page';
 import Layout from "../components/Layout";
 import CarouselComponent from "../components/carousel";
+import { withPrefix } from "gatsby"
 import "../styles/features.css";
 import "materialize-css/sass/materialize.scss";
 
@@ -66,6 +67,9 @@ class HomePage extends React.Component {
         <Helmet>
           <meta name="title" content={seoTitle} />
           <meta name="description" content={seoDescription} />
+          <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src={withPrefix('js/primily.js')} type="text/javascript" />
           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
           <title>{browserTitle}</title>
         </Helmet>
