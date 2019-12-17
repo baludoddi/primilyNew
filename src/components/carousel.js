@@ -31,9 +31,9 @@ export const CarouselComponent = ({ content, className }) => (
     <Helmet>
       <html lang="en" />
       <meta name="keywords" content="montreal, javascript, programming, meetup" />
-      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      {/* <script type="text/javascript" src={withPrefix('js/jquery.js')} integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossOrigin="anonymous"></script> */}
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      {/* <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> */}
+      <script type="text/javascript" src={withPrefix('js/jquery.js')} />
+      <script type="text/javascript" src={withPrefix('js/materialize.js')} />
       <script src={withPrefix('js/primily.js')} type="text/javascript" />
       {/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
       </link> */}
