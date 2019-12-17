@@ -26,7 +26,7 @@ export const DemoPageTemplate = props => {
                     <h5>Contact Us</h5>
 
                     <form
-                        name="contact"
+                        name="contact-form"
                         method="post"
                         data-netlify="true"
                         data-netlify-honeypot="bot-field" >
