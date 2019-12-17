@@ -26,13 +26,13 @@ export const DemoPageTemplate = props => {
                     <h5>Contact Us</h5>
 
                     <form
-                        name="contact"
+                        name="contact-form"
                         method="post"
                         data-netlify="true"
                         data-netlify-honeypot="bot-field" >
                         <input name="name" placeholder="Your name" type="text" />
-                        <input email="emailaddress" placeholder="Your email address" type="email" />
-                        <textarea name="message" placeholder="Enter your message" id="" cols="30" rows="40" />
+                        <input name="email" placeholder="Your email address" type="email" />
+                        <textarea name="message" placeholder="Your message" id="" cols="30" rows="40" />
                         <button className="waves-effect waves-light btn">Send</button>
                     </form>
 
