@@ -1,7 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Carousel from 'react-bootstrap/Carousel'
+import Carousel from 'react-bootstrap/Carousel';
+import Helmet from "react-helmet";
 import "materialize-css/sass/materialize.scss";
+import { withPrefix } from "gatsby";
 
 export const CarouselComponent = ({ content, className }) => (
    
@@ -25,7 +27,17 @@ export const CarouselComponent = ({ content, className }) => (
   //          <ul></ul>}
 
   // </div>
-
+  <div>
+    <Helmet>
+      <html lang="en" />
+      <meta name="keywords" content="montreal, javascript, programming, meetup" />
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      {/* <script type="text/javascript" src={withPrefix('js/jquery.js')} integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossOrigin="anonymous"></script> */}
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src={withPrefix('js/primily.js')} type="text/javascript" />
+      {/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      </link> */}
+    </Helmet>
   <div className="carousel carousel-slider center">
   <div className="carousel-item blue white-text" href="#one!">
     <h2>First Panel</h2>
@@ -44,6 +56,7 @@ export const CarouselComponent = ({ content, className }) => (
     <p className="white-text">This is your fourth panel</p>
   </div>
 </div>
+  </div>
 );
 
 // HTMLContent.propTypes = {
