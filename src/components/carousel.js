@@ -28,16 +28,6 @@ export const CarouselComponent = ({ content, className }) => (
 
   // </div>
   <div>
-    <Helmet>
-      <html lang="en" />
-      <meta name="keywords" content="montreal, javascript, programming, meetup" />
-      {/* <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> */}
-      <script type="text/javascript" src={withPrefix('js/jquery.js')} />
-      <script type="text/javascript" src={withPrefix('js/materialize.js')} />
-      <script src={withPrefix('js/primily.js')} type="text/javascript" />
-      {/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-      </link> */}
-    </Helmet>
   <div className="carousel carousel-slider center">
   <div className="carousel-item blue white-text" href="#one!">
     <h2>First Panel</h2>

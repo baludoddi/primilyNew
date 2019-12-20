@@ -6,7 +6,7 @@ export const PricingPageTemplate = props => {
 
   return (
     <div>
-    <br></br>
+    <div className="row"><div className="col s12"><br></br></div></div>
     <div className="row">
       <div className="col s12 center-align feature-items">
         <h4 className="pricing-h">{page.pricingHead}</h4>
@@ -76,7 +76,7 @@ export const PricingPageTemplate = props => {
         <br></br>
       </div>
     </div>
-    <br/>
+    <div className="row"><div className="col s12"><br></br></div></div>
   </div>
   );
 };
