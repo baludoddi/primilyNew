@@ -16,10 +16,8 @@ feature:
     head: Call logging
     icon: event_note
   featureIcon4:
-    description: >-
-      Quick and Easy to modify Operating Hours, Holidays, Location, Services,
-      Products and Call Routing.
-    head: Easy Configuration
+    description: No equipment or phone number changes are required
+    head: Keep Your Phone Number and Carrier
     icon: settings
   featureIcon5:
     description: >-
@@ -34,22 +32,22 @@ feature:
     head: Pay-As-You-Go
     icon: attach_money
   featureIcon7:
-    description: View you call logs anytime from anywhere.
+    description: View your call logs anytime from anywhere.
     head: Real Tine Reporting
     icon: pie_chart
   featureIcon8:
     description: >-
-      Create and modify interactive selection routing amd responce using your
-      modile device.
-    head: Mobile App for Routing
+      Create, Modify and Live Review your interactive Call Menus using your
+      mobile device.
+    head: Supports Simple & Advanced Call Menus
     icon: phone_android
 describe:
   cards:
     card1:
       description: >-
-        A major chunk of the business comes through phone and if any call goes
-        unanswered, it simply means you are missing out on business.
-      head: No Lost Calls
+        All call are answered 24X7 providing Location, Business Hours, Web
+        links, Announcements and any other valuable information for callers
+      head: 24X7 Call Answering
     card2:
       description: >-
         IVR relies on pre-recorded questions and responses for interacting with
@@ -60,15 +58,14 @@ describe:
       head: How It Works
     card3:
       description: >-
-        AVAS is a cloud service based on Interactive Voice Response (IVS)
-        technology that enables interaction between a caller   and our AVAS
-        cloud via the telephone. Callers can interact with our AVAS Cloud
-        Solution by pressing numbers on their telephone keypad to get voice
-        prompts to receive various information for for your customers. Common
-        uses for our AVAS service include finding store locations, store hours,
-        promotional specials, call routing to a department or person and other
-        information to present to your customers.
-      head: What is Advanced Virtual Answering Service (AVAS)?
+        The next generation Automated Phone Answering and Information Service.
+        Fully mobile centric cloud based 24X7 solution for small, medium and
+        individual business. Callers interact with our PAS system by using their
+        telephone keypad to receive various information from the call. Common
+        uses include finding store locations, business hours, promotional
+        specials, call routing to a departments or person and any other
+        information your caller may require.
+      head: What is Primily Answering Service (PAS)?
       icon: share
     card4:
       description: >-
@@ -184,10 +181,20 @@ demo:
     When you create an account you are able to do some configuration on the
     greating and messaging, then do a live phone call to hear the experience you
     customer will have.
+callToActions:
+  firstCTA:
+    heading: '1'
+    linkType: internal
+    linkURL: '4'
+    subHeading: '2'
+  secondCTA:
+    heading: '5'
+    linkType: internal
+    linkURL: '8'
+    subHeading: '6'
 seo:
   browserTitle: Primily
+  description: Make your own IVR by Primily
   title: primily IVR
-  description: >-
-    Make your own IVR by Primily
 ---
 
