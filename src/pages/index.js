@@ -50,7 +50,7 @@ class HomePage extends React.Component {
   render() {
     const { data } = this.props;
     const {
-      data: { footerData, navbarData },
+      data: { navbarData },
     } = this.props;
     const { frontmatter: home } = data.homePageData.edges[0].node;
     const {
@@ -68,7 +68,7 @@ class HomePage extends React.Component {
     //   }
     // });
     return (
-      <Layout footerData={footerData} navbarData={navbarData}>
+      <Layout navbarData={navbarData}>
         <Helmet>
           <meta name="title" content={seoTitle} />
           <meta name="description" content={seoDescription} />
