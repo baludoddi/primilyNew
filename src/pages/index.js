@@ -7,6 +7,8 @@ import FeaturePageTemplate from '../templates/feature-page';
 import DescribePageTemplate from '../templates/describe-page';
 import PricingPageTemplate from '../templates/pricing-page';
 import DemoPageTemplate from '../templates/demo-page';
+import FAQPageTemplate from '../templates/frequntlyAskedQuestions-page';
+import HomePageComponentTemplate from '../templates/home-page';
 import Layout from "../components/Layout";
 import CarouselComponent from "../components/carousel";
 import { withPrefix } from "gatsby"
@@ -21,7 +23,7 @@ export const HomePageTemplate = ({ home }) => {
       <div className="row">
         <div className="col s12 m12 l12">
           <div id="home" className="section scrollspy">
-            <CarouselComponent content={home.appGalley.sliderImages} />
+            <HomePageComponentTemplate page={home} />
           </div>
           <div id="features" className="section scrollspy">
             <FeaturePageTemplate page={home.feature} />
@@ -29,12 +31,15 @@ export const HomePageTemplate = ({ home }) => {
           <div id="describe" className="section scrollspy">
             <DescribePageTemplate page={home} />
           </div>
-        </div>
-        <div id="pricing" className="section scrollspy">
-          <PricingPageTemplate page={home.pricing} />
-        </div>
-        <div id="demo" className="section scrollspy">
-          <DemoPageTemplate page={home.demo} />
+          <div id="pricing" className="section scrollspy">
+            <PricingPageTemplate page={home.pricing} />
+          </div>
+          <div id="demo" className="section scrollspy">
+            <DemoPageTemplate page={home.demo} />
+          </div>
+          <div id="faq" className="section scrollspy">
+          <FAQPageTemplate page={home.faq} />
+          </div>
         </div>
       </div>
     </>
@@ -68,8 +73,8 @@ class HomePage extends React.Component {
           <meta name="title" content={seoTitle} />
           <meta name="description" content={seoDescription} />
           <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-      <script src={withPrefix('js/primily.js')} type="text/javascript" />
+          <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+          <script src={withPrefix('js/primily.js')} type="text/javascript" />
           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
           <title>{browserTitle}</title>
         </Helmet>
@@ -257,6 +262,13 @@ export const pageQuery = graphql`
               demoImages {
                 src1
                 src2
+              }
+            }
+            faq {
+              faqHead
+              questionsAndAns {
+                question
+                answer
               }
             }
             seo {

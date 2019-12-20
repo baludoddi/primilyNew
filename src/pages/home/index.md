@@ -181,6 +181,19 @@ demo:
     When you create an account you are able to do some configuration on the
     greating and messaging, then do a live phone call to hear the experience you
     customer will have.
+faq:
+  faqHead: Frequently Asked Questions
+  questionsAndAns:
+    - question: What is Primily ?
+      answer: primily is an IVR
+    - question: What is Primily ?
+      answer: primily is an IVR
+    - question: What is Primily ?
+      answer: primily is an IVR
+    - question: What is Primily ?
+      answer: primily is an IVR
+    - question: What is Primily ?
+      answer: primily is an IVR
 callToActions:
   firstCTA:
     heading: '1'
