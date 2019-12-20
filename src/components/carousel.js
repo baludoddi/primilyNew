@@ -3,28 +3,9 @@ import PropTypes from "prop-types";
 import Carousel from 'react-bootstrap/Carousel';
 import Helmet from "react-helmet";
 import "materialize-css/sass/materialize.scss";
-import { withPrefix } from "gatsby";
+import {withPrefix} from "gatsby";
 
-export const CarouselComponent = ({ content, className }) => (
-   
-  //   <div className="slider">
-  //        {content ? 
-  //            <ul className="slides">
-  //            <li>
-  //              <img src={content.slideImg1} />
-  //            </li>
-  //            <li>
-  //              <img src={content.slideImg2} />
-  //            </li>
-  //            <li>
-  //              <img src={content.slideImg3} />
-  //            </li>
-  //            <li>
-  //              <img src={content.slideImg4} />
-  //            </li>
-  //          </ul>
-  //          :
-  //          <ul></ul>}
+export const CarouselComponent = ({content, className}) => (
 
   // </div>
   <div>
