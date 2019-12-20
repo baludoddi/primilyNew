@@ -402,6 +402,26 @@ collections:
                 ],
             }
           - {
+              label: "Frequently Asked Questions",
+              name: "faq",
+              widget: "object",
+              fields:
+                [
+                  { label: "FAQ Head", name: "faqHead", widget: "string" },
+                  {
+                    label: "Questions and Answers",
+                    name: "questionsAndAns",
+                    required: true,
+                    widget: "list",
+                    fields:
+                      [
+                        { label: "Question", name: "question", widget: "string" },
+                        { label: "Answer", name: "answer", widget: "string" }
+                      ]
+                  }
+                ],
+            }
+          - {
               label: "Call to Actions",
               name: "callToActions",
               required: true,
