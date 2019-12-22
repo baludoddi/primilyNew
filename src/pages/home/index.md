@@ -162,16 +162,16 @@ demo:
 faq:
   faqHead: Frequently Asked Questions
   questionsAndAns:
-    - question: What is Primily ?
-      answer: primily is an IVR
-    - question: What is Primily ?
-      answer: primily is an IVR
-    - question: What is Primily ?
-      answer: primily is an IVR
-    - question: What is Primily ?
-      answer: primily is an IVR
-    - question: What is Primily ?
-      answer: primily is an IVR
+    - answer: primily is an IVR
+      question: What is Primily ?
+    - answer: primily is an IVR
+      question: What is Primily ?
+    - answer: primily is an IVR
+      question: What is Primily ?
+    - answer: primily is an IVR
+      question: What is Primily ?
+    - answer: primily is an IVR
+      question: What is Primily ?
 callToActions:
   firstCTA:
     heading: '1'
