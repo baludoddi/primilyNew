@@ -124,100 +124,100 @@ collections:
                     widget: "object",
                     fields:
                       [
-                        { 
-                          label: "Card 1", 
-                          name: "card1", 
+                        {
+                          label: "Card 1",
+                          name: "card1",
                           widget: "object",
-                          fields: 
+                          fields:
                             [
                               { label: "Head", name: "head", widget: "string" },
-                              { label: "Description", name: "description", widget: "string" }
-                            ] 
+                              { label: "Description", name: "description", widget: "text" }
+                            ]
                         },
-                        { 
-                          label: "Card 2", 
-                          name: "card2", 
+                        {
+                          label: "Card 2",
+                          name: "card2",
                           widget: "object",
-                          fields: 
+                          fields:
                             [
                               { label: "Head", name: "head", widget: "string" },
-                              { label: "Description", name: "description", widget: "string" }
-                            ] 
+                              { label: "Description", name: "description", widget: "text" }
+                            ]
                         },
-                        { 
-                          label: "Card 3", 
-                          name: "card3", 
+                        {
+                          label: "Card 3",
+                          name: "card3",
                           widget: "object",
-                          fields: 
+                          fields:
                             [
                               { label: "Icon", name: "icon", widget: "string" },
                               { label: "Head", name: "head", widget: "string" },
-                              { label: "Description", name: "description", widget: "string" }
-                            ] 
+                              { label: "Description", name: "description", widget: "text" }
+                            ]
                         },
-                        { 
-                          label: "Card 4", 
-                          name: "card4", 
+                        {
+                          label: "Card 4",
+                          name: "card4",
                           widget: "object",
-                          fields: 
+                          fields:
                             [
                               { label: "Icon", name: "icon", widget: "string" },
                               { label: "Head", name: "head", widget: "string" },
-                              { label: "Description", name: "description", widget: "string" }
-                            ] 
+                              { label: "Description", name: "description", widget: "text" }
+                            ]
                         },
-                        { 
-                          label: "Card 5", 
-                          name: "card5", 
+                        {
+                          label: "Card 5",
+                          name: "card5",
                           widget: "object",
-                          fields: 
+                          fields:
                             [
                               { label: "Icon", name: "icon", widget: "string" },
                               { label: "Head", name: "head", widget: "string" },
-                              { label: "Description", name: "description", widget: "string" }
-                            ] 
+                              { label: "Description", name: "description", widget: "text" }
+                            ]
                         },
-                        { 
-                          label: "Card 6", 
-                          name: "card6", 
+                        {
+                          label: "Card 6",
+                          name: "card6",
                           widget: "object",
-                          fields: 
+                          fields:
                             [
                               { label: "Icon", name: "icon", widget: "string" },
                               { label: "Head", name: "head", widget: "string" },
-                              { label: "Description", name: "description", widget: "string" }
-                            ] 
+                              { label: "Description", name: "description", widget: "text" }
+                            ]
                         },
-                        { 
-                          label: "Card 7", 
-                          name: "card7", 
+                        {
+                          label: "Card 7",
+                          name: "card7",
                           widget: "object",
-                          fields: 
+                          fields:
                             [
                               { label: "Icon", name: "icon", widget: "string" },
                               { label: "Head", name: "head", widget: "string" },
-                              { label: "Description", name: "description", widget: "string" }
-                            ] 
+                              { label: "Description", name: "description", widget: "text" }
+                            ]
                         }
                       ]
                   },
-                  { 
-                    label: "Image", 
-                    name: "image", 
+                  {
+                    label: "Image",
+                    name: "image",
                     widget: "object",
-                    fields: 
+                    fields:
                       [
                         { label: "src", name: "src", widget: "image" }
-                      ] 
+                      ]
                   },
-                  { 
-                    label: "Video", 
-                    name: "video", 
+                  {
+                    label: "Video",
+                    name: "video",
                     widget: "object",
-                    fields: 
+                    fields:
                       [
                         { label: "src", name: "src", widget: "string" }
-                      ] 
+                      ]
                   }
                 ]
             }
@@ -290,7 +290,7 @@ collections:
                           ]
                       }
                     ]
-                }   
+                }
               ]
             }
           - {
@@ -336,10 +336,10 @@ collections:
                         { label: "Head 2", name: "head2", widget: "string" },
                         { label: "Description", name: "description", widget: "string" },
                         { label: "Price", name: "price", widget: "string" },
-                        { 
+                        {
                           label: "List",
-                          name: "list", 
-                          widget: "object", 
+                          name: "list",
+                          widget: "object",
                           fields:
                             [
                               { label: "Image", name: "img", widget: "image" },
@@ -361,10 +361,10 @@ collections:
                         { label: "Head", name: "head", widget: "string" },
                         { label: "Head 2", name: "head2", widget: "string" },
                         { label: "Description", name: "description", widget: "string" },
-                        { 
+                        {
                           label: "List",
-                          name: "list", 
-                          widget: "object", 
+                          name: "list",
+                          widget: "object",
                           fields:
                             [
                               { label: "Image", name: "img", widget: "image" },
