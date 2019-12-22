@@ -26,9 +26,9 @@ export const PricingPageTemplate = props => {
             <p>{page.priceBox1.description}</p>
           </div>
           <ul>
-          {page.priceBox1.featureList.map((list, index) => (
+          {/* {page.priceBox1.featureList.map((list, index) => (
             <li key={index}><div className="row"><div className="col s12"><img src={page.ticImage} alt="" /><span className="price-list">{list.list}</span></div></div></li>
-          ))}
+          ))} */}
           </ul>
           <br></br>
           <br></br>
@@ -51,9 +51,9 @@ export const PricingPageTemplate = props => {
             <p>{page.priceBox2.description}</p>
           </div>
           <ul>
-          {page.priceBox2.featureList.map((list, index) => (
+          {/* {page.priceBox2.featureList.map((list, index) => (
             <li key={index}><div className="row"><div className="col s12"><img src={page.ticImage} alt="" /><span className="price-list">{list.list}</span></div></div></li>
-          ))}
+          ))} */}
           </ul>
           <br></br>
           <br></br>

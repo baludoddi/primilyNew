@@ -82,8 +82,7 @@ describe:
   video:
     src: 'https://www.youtube.com/embed/mzW3382PST8'
 description:
-  cardHead:
-    - Description of the Mobile App
+  cardHead: Description of the Mobile App
   description: >-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt
     efficitur vestibulum. Phasellus nisl leo, congue eu malesuada lobortis,
