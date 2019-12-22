@@ -131,7 +131,7 @@ collections:
                           fields:
                             [
                               { label: "Head", name: "head", widget: "string" },
-                              { label: "Description", name: "description", widget: "markdown" }
+                              { label: "Description", name: "body", widget: "markdown" }
                             ]
                         },
                         {
