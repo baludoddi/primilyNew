@@ -16,7 +16,6 @@ import "../styles/features.css";
 import "materialize-css/sass/materialize.scss";
 
 export const HomePageTemplate = ({ home }) => {
-
   return (
     <>
       <div className="row"></div>
@@ -26,7 +25,7 @@ export const HomePageTemplate = ({ home }) => {
             <HomePageComponentTemplate page={home} />
           </div>
           <div id="features" className="section scrollspy">
-            <FeaturePageTemplate page={home.feature} />
+            <FeaturePageTemplate page={home} />
           </div>
           <div id="describe" className="section scrollspy">
             <DescribePageTemplate page={home} />
@@ -102,85 +101,16 @@ export const pageQuery = graphql`
         node {
           frontmatter {
             feature {
-              featureIcon1 {
-                icon
-                head
-                description
-              }
-              featureIcon2 {
-                icon
-                head
-                description
-              }
-              featureIcon3 {
-                icon
-                head
-                description
-              }
-              featureIcon4 {
-                icon
-                head
-                description
-              }
-              featureIcon5 {
-                icon
-                head
-                description
-              }
-              featureIcon6 {
-                icon
-                head
-                description
-              }
-              featureIcon7 {
-                icon
-                head
-                description
-              }
-              featureIcon8 {
-                icon
-                head
-                description
-              }
+              icon
+              head
+              description
             }
             describe {
               cards {
-                card1 {
-                  head
-                  description
-                }
-                card2 {
-                  head
-                  description
-                }
-                card3 {
-                  icon
-                  head
-                  description
-                }
-                card4 {
-                  icon
-                  head
-                  description
-                }
-                card5 {
-                  icon
-                  head
-                  description
-                }
-                card6 {
-                  icon
-                  head
-                  description
-                }
-                card7 {
-                  icon
-                  head
-                  description
-                }
-              }
-              image {
-                src
+                icon
+                head
+                description
+                image
               }
               video {
                 src
@@ -189,56 +119,31 @@ export const pageQuery = graphql`
             description {
               mainImage
               playstoreImage
-              card {
-                cardHead
+              cardHead
+              description
+              cards {
+                icon
+                head
                 description
-                subCards {
-                  subCard1 {
-                    icon
-                    head
-                    description
-                  }
-                  subCard2 {
-                    icon
-                    head
-                    description
-                  }
-                  subCard3 {
-                    icon
-                    head
-                    description
-                  }
-                  subCard4 {
-                    icon
-                    head
-                    description
-                  }
-                }
               }
             }
             appGalley {
-              appHead
+              appGalleryHead
               sliderImages {
-                slideImg1
-                slideImg2
-                slideImg3
-                slideImg4
+                slideImg
               }
             }
             pricing {
               pricingHead
               description1
               description2
+              ticImage
               priceBox1 {
                 head
                 head2
                 description
-                list {
-                  img
-                  list1
-                  list2
-                  list3
-                  list4
+                featureList {
+                  list
                 }
                 price
               }
@@ -246,12 +151,8 @@ export const pageQuery = graphql`
                 head
                 head2
                 description
-                list {
-                  img
-                  list1
-                  list2
-                  list3
-                  list4
+                featureList {
+                  list
                 }
                 price
               }

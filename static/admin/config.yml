@@ -19,97 +19,12 @@ collections:
           - {
               label: "Feature",
               name: "feature",
-              widget: "object",
+              widget: "list",
               fields:
                 [
-                  {
-                    label: "FeatureIcon1",
-                    name: "featureIcon1",
-                    widget: "object",
-                    fields:
-                      [
-                        { label: "Icon", name: "icon", widget: "string" },
-                        { label: "Head", name: "head", widget: "string" },
-                        { label: "Description", name: "description", widget: "string" }
-                      ]
-                  },
-                  {
-                    label: "FeatureIcon2",
-                    name: "featureIcon2",
-                    widget: "object",
-                    fields:
-                      [
-                        { label: "Icon", name: "icon", widget: "string" },
-                        { label: "Head", name: "head", widget: "string" },
-                        { label: "Description", name: "description", widget: "string" }
-                      ]
-                  },
-                  {
-                    label: "FeatureIcon3",
-                    name: "featureIcon3",
-                    widget: "object",
-                    fields:
-                      [
-                        { label: "Icon", name: "icon", widget: "string" },
-                        { label: "Head", name: "head", widget: "string" },
-                        { label: "Description", name: "description", widget: "string" }
-                      ]
-                  },
-                  {
-                    label: "FeatureIcon4",
-                    name: "featureIcon4",
-                    widget: "object",
-                    fields:
-                      [
-                        { label: "Icon", name: "icon", widget: "string" },
-                        { label: "Head", name: "head", widget: "string" },
-                        { label: "Description", name: "description", widget: "string" }
-                      ]
-                  },
-                  {
-                    label: "FeatureIcon5",
-                    name: "featureIcon5",
-                    widget: "object",
-                    fields:
-                      [
-                        { label: "Icon", name: "icon", widget: "string" },
-                        { label: "Head", name: "head", widget: "string" },
-                        { label: "Description", name: "description", widget: "string" }
-                      ]
-                  },
-                  {
-                    label: "FeatureIcon6",
-                    name: "featureIcon6",
-                    widget: "object",
-                    fields:
-                      [
-                        { label: "Icon", name: "icon", widget: "string" },
-                        { label: "Head", name: "head", widget: "string" },
-                        { label: "Description", name: "description", widget: "string" }
-                      ]
-                  },
-                  {
-                    label: "FeatureIcon7",
-                    name: "featureIcon7",
-                    widget: "object",
-                    fields:
-                      [
-                        { label: "Icon", name: "icon", widget: "string" },
-                        { label: "Head", name: "head", widget: "string" },
-                        { label: "Description", name: "description", widget: "string" }
-                      ]
-                  },
-                  {
-                    label: "FeatureIcon8",
-                    name: "featureIcon8",
-                    widget: "object",
-                    fields:
-                      [
-                        { label: "Icon", name: "icon", widget: "string" },
-                        { label: "Head", name: "head", widget: "string" },
-                        { label: "Description", name: "description", widget: "string" }
-                      ]
-                  }
+                  { label: "Icon", name: "icon", widget: "string" },
+                  { label: "Head", name: "head", widget: "string" },
+                  { label: "Description", name: "description", widget: "string" }
                 ]
             }
           - {
@@ -121,94 +36,14 @@ collections:
                   {
                     label: "Cards",
                     name: "cards",
-                    widget: "object",
+                    widget: "list",
                     fields:
                       [
-                        { 
-                          label: "Card 1", 
-                          name: "card1", 
-                          widget: "object",
-                          fields: 
-                            [
-                              { label: "Head", name: "head", widget: "string" },
-                              { label: "Description", name: "description", widget: "string" }
-                            ] 
-                        },
-                        { 
-                          label: "Card 2", 
-                          name: "card2", 
-                          widget: "object",
-                          fields: 
-                            [
-                              { label: "Head", name: "head", widget: "string" },
-                              { label: "Description", name: "description", widget: "string" }
-                            ] 
-                        },
-                        { 
-                          label: "Card 3", 
-                          name: "card3", 
-                          widget: "object",
-                          fields: 
-                            [
-                              { label: "Icon", name: "icon", widget: "string" },
-                              { label: "Head", name: "head", widget: "string" },
-                              { label: "Description", name: "description", widget: "string" }
-                            ] 
-                        },
-                        { 
-                          label: "Card 4", 
-                          name: "card4", 
-                          widget: "object",
-                          fields: 
-                            [
-                              { label: "Icon", name: "icon", widget: "string" },
-                              { label: "Head", name: "head", widget: "string" },
-                              { label: "Description", name: "description", widget: "string" }
-                            ] 
-                        },
-                        { 
-                          label: "Card 5", 
-                          name: "card5", 
-                          widget: "object",
-                          fields: 
-                            [
-                              { label: "Icon", name: "icon", widget: "string" },
-                              { label: "Head", name: "head", widget: "string" },
-                              { label: "Description", name: "description", widget: "string" }
-                            ] 
-                        },
-                        { 
-                          label: "Card 6", 
-                          name: "card6", 
-                          widget: "object",
-                          fields: 
-                            [
-                              { label: "Icon", name: "icon", widget: "string" },
-                              { label: "Head", name: "head", widget: "string" },
-                              { label: "Description", name: "description", widget: "string" }
-                            ] 
-                        },
-                        { 
-                          label: "Card 7", 
-                          name: "card7", 
-                          widget: "object",
-                          fields: 
-                            [
-                              { label: "Icon", name: "icon", widget: "string" },
-                              { label: "Head", name: "head", widget: "string" },
-                              { label: "Description", name: "description", widget: "string" }
-                            ] 
-                        }
+                        { label: "Icon", name: "icon", widget: "string" },
+                        { label: "Head", name: "head", widget: "string" },
+                        { label: "Description", name: "description", widget: "string" },
+                        { label: "Image", name: "image", widget: "image" }
                       ]
-                  },
-                  { 
-                    label: "Image", 
-                    name: "image", 
-                    widget: "object",
-                    fields: 
-                      [
-                        { label: "src", name: "src", widget: "image" }
-                      ] 
                   },
                   { 
                     label: "Video", 
@@ -229,66 +64,17 @@ collections:
               [
                 { label: "Main Image", name: "mainImage", widget: "image" },
                 { label: "Play Store Image", name: "playstoreImage", widget: "image" },
+                { label: "Card Head", name: "cardHead", widget: "string" },
+                { label: "Description", name: "description", widget: "string" },
                 {
-                  label: "Card",
-                  name: "card",
-                  widget: "object",
+                  label: "Cards",
+                  name: "cards",
+                  widget: "list",
                   fields:
                     [
-                      { label: "Card Head", name: "cardHead", widget: "string" },
-                      { label: "Description", name: "description", widget: "string" },
-                      {
-                        label: "Sub Cards",
-                        name: "subCards",
-                        widget: "object",
-                        fields:
-                          [
-                            {
-                              label: "Sub Card 1",
-                              name: "subCard1",
-                              widget: "object",
-                              fields:
-                                [
-                                  { label: "Icon", name: "icon", widget: "string" },
-                                  { label: "Head", name: "head", widget: "string" },
-                                  { label: "Description", name: "description", widget: "string" },
-                                ]
-                            },
-                            {
-                              label: "Sub Card 2",
-                              name: "subCard2",
-                              widget: "object",
-                              fields:
-                                [
-                                  { label: "Icon", name: "icon", widget: "string" },
-                                  { label: "Head", name: "head", widget: "string" },
-                                  { label: "Description", name: "description", widget: "string" },
-                                ]
-                            },
-                            {
-                              label: "Sub Card 3",
-                              name: "subCard3",
-                              widget: "object",
-                              fields:
-                                [
-                                  { label: "Icon", name: "icon", widget: "string" },
-                                  { label: "Head", name: "head", widget: "string" },
-                                  { label: "Description", name: "description", widget: "string" },
-                                ]
-                            },
-                            {
-                              label: "Sub Card 4",
-                              name: "subCard4",
-                              widget: "object",
-                              fields:
-                                [
-                                  { label: "Icon", name: "icon", widget: "string" },
-                                  { label: "Head", name: "head", widget: "string" },
-                                  { label: "Description", name: "description", widget: "string" },
-                                ]
-                            },
-                          ]
-                      }
+                      { label: "Icon", name: "icon", widget: "string" },
+                      { label: "Head", name: "head", widget: "string" },
+                      { label: "Description", name: "description", widget: "string" }
                     ]
                 }   
               ]
@@ -300,18 +86,15 @@ collections:
               widget: "object",
               fields:
                 [
-                  { label: "App Head", name: "appHead", widget: "string" },
+                  { label: "App Head", name: "appGalleryHead", widget: "string" },
                   {
                     label: "Slider Images",
                     name: "sliderImages",
                     required: true,
-                    widget: "object",
+                    widget: "list",
                     fields:
                       [
-                        { label: "slider Image 1", name: "slideImg1", widget: "image" },
-                        { label: "slider Image 2", name: "slideImg2", widget: "image" },
-                        { label: "slider Image 3", name: "slideImg3", widget: "image" },
-                        { label: "slider Image 4", name: "slideImg4", widget: "image" }
+                        { label: "slider Image", name: "slideImg", widget: "image" }
                       ]
                   }
                 ]
@@ -325,6 +108,7 @@ collections:
                   { label: "Pricing Head", name: "pricingHead", widget: "string" },
                   { label: "Description 1", name: "description1", widget: "string" },
                   { label: "Description 2", name: "description2", widget: "string" },
+                  { label: "Tic Image", name: "ticImage", widget: "image" },
                   {
                     label: "Price Box 1",
                     name: "priceBox1",
@@ -337,16 +121,12 @@ collections:
                         { label: "Description", name: "description", widget: "string" },
                         { label: "Price", name: "price", widget: "string" },
                         { 
-                          label: "List",
-                          name: "list", 
-                          widget: "object", 
+                          label: "Features List",
+                          name: "featureList", 
+                          widget: "list", 
                           fields:
                             [
-                              { label: "Image", name: "img", widget: "image" },
-                              { label: "List 1", name: "list1", widget: "string" },
-                              { label: "List 2", name: "list2", widget: "string" },
-                              { label: "List 3", name: "list3", widget: "string" },
-                              { label: "List 4", name: "list4", widget: "string" },
+                              { label: "List", name: "list", widget: "string" },
                             ]
                         }
                       ]
@@ -361,20 +141,16 @@ collections:
                         { label: "Head", name: "head", widget: "string" },
                         { label: "Head 2", name: "head2", widget: "string" },
                         { label: "Description", name: "description", widget: "string" },
+                        { label: "Price", name: "price", widget: "string" },
                         { 
-                          label: "List",
-                          name: "list", 
-                          widget: "object", 
+                          label: "Features List",
+                          name: "featureList", 
+                          widget: "list", 
                           fields:
                             [
-                              { label: "Image", name: "img", widget: "image" },
-                              { label: "List 1", name: "list1", widget: "string" },
-                              { label: "List 2", name: "list2", widget: "string" },
-                              { label: "List 3", name: "list3", widget: "string" },
-                              { label: "List 4", name: "list4", widget: "string" },
+                              { label: "List", name: "list", widget: "string" },
                             ]
-                        },
-                        { label: "Price", name: "price", widget: "string" },
+                        }
                       ]
                   }
                 ]
