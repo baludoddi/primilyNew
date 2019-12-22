@@ -19,12 +19,20 @@ collections:
           - {
               label: "Feature",
               name: "feature",
-              widget: "list",
+              widget: "object",
               fields:
                 [
-                  { label: "Icon", name: "icon", widget: "string" },
-                  { label: "Head", name: "head", widget: "string" },
-                  { label: "Description", name: "description", widget: "string" }
+                  {
+                    label: "Feature Body",
+                    name: "featureBody",
+                    widget: "list",
+                    fields:
+                      [
+                        { label: "Icon", name: "icon", widget: "string" },
+                        { label: "Head", name: "head", widget: "string" },
+                        { label: "Description", name: "description", widget: "string" }
+                      ]  
+                  }
                 ]
             }
           - {

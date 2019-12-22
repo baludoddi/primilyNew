@@ -1,84 +1,85 @@
 ---
 templateKey: home-page
 feature:
-  - description: >-
-      Easily modify Call Menu on your Operating Hours, Holidays, Location,
-      Services, Products and Call Routing.
-    head: 'Simple Call Menu '
-    icon: call
-  - description: Acknowledgement and notification using SMS and/or Email.
-    head: Real Time Notifications
-    icon: notifications
-  - description: Help adjust you routing and messaging with Real-time call logging reports.
-    head: Call logging
-    icon: event_note
-  - description: No equipment or phone number changes are required
-    head: Keep Your Phone Number and Carrier
-    icon: settings
-  - description: >-
-      Simple to create phone selection responses using Text-to-Speech
-      technology.
-    head: Text to Speech
-    icon: text_fields
-  - description: >-
-      No fixed monthly commitment. Low cost credits with SMS notification on
-      remaining credits.
-    head: Pay-As-You-Go
-    icon: attach_money
-  - description: View your call logs anytime from anywhere.
-    head: Real Tine Reporting
-    icon: pie_chart
-  - description: >-
-      Create, Modify and Live Review your interactive Call Menus using your
-      mobile device.
-    head: Supports Simple & Advanced Call Menus
-    icon: phone_android
+  featureBody:
+    - description: >-
+        Easily modify Call Menu on your Operating Hours, Holidays, Location,
+        Services, Products and Call Routing.
+      head: 'Simple Call Menu '
+      icon: call
+    - description: Acknowledgement and notification using SMS and/or Email.
+      head: Real Time Notifications
+      icon: notifications
+    - description: Help adjust you routing and messaging with Real-time call logging reports.
+      head: Call logging
+      icon: event_note
+    - description: No equipment or phone number changes are required
+      head: Keep Your Phone Number and Carrier
+      icon: settings
+    - description: >-
+        Simple to create phone selection responses using Text-to-Speech
+        technology.
+      head: Text to Speech
+      icon: text_fields
+    - description: >-
+        No fixed monthly commitment. Low cost credits with SMS notification on
+        remaining credits.
+      head: Pay-As-You-Go
+      icon: attach_money
+    - description: View your call logs anytime from anywhere.
+      head: Real Tine Reporting
+      icon: pie_chart
+    - description: >-
+        Create, Modify and Live Review your interactive Call Menus using your
+        mobile device.
+      head: Supports Simple & Advanced Call Menus
+      icon: phone_android
 describe:
   cards:
-  - description: >-
-      All call are answered 24X7 providing Location, Business Hours, Web
-      links, Announcements and any other valuable information for callers
-    head: 24X7 Call Answering
-  - description: >-
-      IVR relies on pre-recorded questions and responses for interacting with
-      callers and direct calls to appropriate human    agents. The IVR system
-      prompts caller to select an option from a set menu using keypad
-      responses and incoming telephone calls are   routed to the relevant
-      department.
-    head: How It Works
-  - image: /img/routing.png
-  - description: >-
-      The next generation Automated Phone Answering and Information Service.
-      Fully mobile centric cloud based 24X7 solution for small, medium and
-      individual business. Callers interact with our PAS system by using their
-      telephone keypad to receive various information from the call. Common
-      uses include finding store locations, business hours, promotional
-      specials, call routing to a departments or person and any other
-      information your caller may require.
-    head: What is Primily Answering Service (PAS)?
-    icon: share
-  - description: >-
-      We offer cloud hosted virtual mobile number solution that help customers
-      to connect to the right department in any       organization/business in
-      short span of time and ensures no business call is lost
-    head: Our AVAS Service
-    icon: cloud
-  - description: >-
-      Using a Hosted Virtual Phone Number in the cloud there is no hardware
-      purchase. In minutes add additional numbers as you need them and in any
-      area code you like.
-    head: Virtural Phone Number
-    icon: call
-  - description: >-
-      Start with a low cost Pay-as-you-go service and add additional services
-      and feature as you business grows.
-    head: Pay as you Go and Grow
-    icon: attach_money
-  - description: >-
-      Create a automated voice survey to get feedback on on your service,
-      products, etc.
-    head: Automated Surveys
-    icon: autorenew
+    - description: >-
+        All call are answered 24X7 providing Location, Business Hours, Web
+        links, Announcements and any other valuable information for callers
+      head: 24X7 Call Answering
+    - description: >-
+        IVR relies on pre-recorded questions and responses for interacting with
+        callers and direct calls to appropriate human    agents. The IVR system
+        prompts caller to select an option from a set menu using keypad
+        responses and incoming telephone calls are   routed to the relevant
+        department.
+      head: How It Works
+    - image: /img/routing.png
+    - description: >-
+        The next generation Automated Phone Answering and Information Service.
+        Fully mobile centric cloud based 24X7 solution for small, medium and
+        individual business. Callers interact with our PAS system by using their
+        telephone keypad to receive various information from the call. Common
+        uses include finding store locations, business hours, promotional
+        specials, call routing to a departments or person and any other
+        information your caller may require.
+      head: What is Primily Answering Service (PAS)?
+      icon: share
+    - description: >-
+        We offer cloud hosted virtual mobile number solution that help customers
+        to connect to the right department in any       organization/business in
+        short span of time and ensures no business call is lost
+      head: Our AVAS Service
+      icon: cloud
+    - description: >-
+        Using a Hosted Virtual Phone Number in the cloud there is no hardware
+        purchase. In minutes add additional numbers as you need them and in any
+        area code you like.
+      head: Virtural Phone Number
+      icon: call
+    - description: >-
+        Start with a low cost Pay-as-you-go service and add additional services
+        and feature as you business grows.
+      head: Pay as you Go and Grow
+      icon: attach_money
+    - description: >-
+        Create a automated voice survey to get feedback on on your service,
+        products, etc.
+      head: Automated Surveys
+      icon: autorenew
   video:
     src: 'https://www.youtube.com/embed/mzW3382PST8'
 description:

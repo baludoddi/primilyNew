@@ -101,9 +101,11 @@ export const pageQuery = graphql`
         node {
           frontmatter {
             feature {
-              icon
-              head
-              description
+              featureBody {
+                icon
+                head
+                description
+              }
             }
             describe {
               cards {
