@@ -22,7 +22,7 @@ export const HomePageTemplate = ({ home }) => {
       <div className="row">
         <div className="col s12 m12 l12">
           <div id="home" className="section scrollspy">
-            <HomePageComponentTemplate page={home} />
+            <HomePageComponentTemplate page={home.appGalley} />
           </div>
           <div id="features" className="section scrollspy">
             <FeaturePageTemplate page={home} />
