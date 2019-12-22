@@ -45,8 +45,9 @@ describe:
   cards:
     card1:
       description: >-
-        All call are answered 24X7 providing Location, Business Hours, Web
-        links, Announcements and any other valuable information for callers
+        All calls are answered **_24X7_** providing the caller with information
+        on location, hours, web links and/or reference web sites, announcements
+        and any other information that maybe  requested by your callers
       head: 24X7 Call Answering
     card2:
       description: >-
@@ -184,16 +185,16 @@ demo:
 faq:
   faqHead: Frequently Asked Questions
   questionsAndAns:
-    - question: What is Primily ?
-      answer: primily is an IVR
-    - question: What is Primily ?
-      answer: primily is an IVR
-    - question: What is Primily ?
-      answer: primily is an IVR
-    - question: What is Primily ?
-      answer: primily is an IVR
-    - question: What is Primily ?
-      answer: primily is an IVR
+    - answer: primily is an IVR
+      question: What is Primily ?
+    - answer: primily is an IVR
+      question: What is Primily ?
+    - answer: primily is an IVR
+      question: What is Primily ?
+    - answer: primily is an IVR
+      question: What is Primily ?
+    - answer: primily is an IVR
+      question: What is Primily ?
 callToActions:
   firstCTA:
     heading: '1'
