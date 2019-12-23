@@ -45,9 +45,9 @@ describe:
   cards:
     card1:
       description: >-
-        **All calls are answered _24X7_** providing the caller with information
-        on location, hours, web links and/or reference web sites, announcements
-        and any other information that maybe  requested by your callers
+        Calls are answered _24X7 providing the caller with information on
+        location, hours, web links and/or reference web sites, announcements and
+        any other information that maybe  requested by your callers
       head: 24X7 Call Answering
     card2:
       description: >-
