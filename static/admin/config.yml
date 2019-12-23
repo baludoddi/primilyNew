@@ -296,7 +296,6 @@ collections:
           - {
               label: "App Galley",
               name: "appGalley",
-              required: true,
               widget: "object",
               fields:
                 [
