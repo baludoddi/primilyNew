@@ -10,7 +10,7 @@ export const NavbarTemplate = ({ data }) =>
       <nav className="indigo darken-4">
         <div className="nav-wrapper container">
           <img src={logo} />
-          <a href="/#home" className="brand-logo">Primily Wayne</a>
+          <a href="/#home" className="brand-logo">Primily Wayne...</a>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             {data.menuItems.map(menuItem => (
               <li key={menuItem.linkURL}>
