@@ -98,11 +98,10 @@ collections:
                   {
                     label: "Slider Images",
                     name: "sliderImages",
-                    required: true,
                     widget: "list",
                     fields:
                       [
-                        { label: "slider Image", name: "slideImg", widget: "image" }
+                        { label: "slider Image", name: "slideImg", widget: "string" }
                       ]
                   }
                 ]
