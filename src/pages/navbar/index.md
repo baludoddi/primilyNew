@@ -16,5 +16,8 @@ menuItems:
   - label: About Us
     linkType: aboutus
     linkURL: /#aboutus
+  - label: FAQ
+    linkType: faq
+    linkURL: /#faq
 ---
 
