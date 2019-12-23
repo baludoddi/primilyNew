@@ -90,6 +90,7 @@ collections:
           - {
               label: "App Galley",
               name: "appGalley",
+              required: true,
               widget: "object",
               fields:
                 [
@@ -100,7 +101,7 @@ collections:
                     widget: "list",
                     fields:
                       [
-                        { label: "slider Image", name: "slideImg", widget: "string" }
+                        { label: "slider Image", name: "slideImg", widget: "image" }
                       ]
                   }
                 ]
