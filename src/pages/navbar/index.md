@@ -19,8 +19,5 @@ menuItems:
   - label: FAQ
     linkType: internal
     linkURL: '/#faq'
-  - label: test
-    linkType: internal
-    linkURL: '/#text'
 ---
 
