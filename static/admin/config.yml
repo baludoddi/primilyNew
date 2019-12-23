@@ -47,10 +47,10 @@ collections:
                     widget: "list",
                     fields:
                       [
-                        { label: "Icon", name: "icon", widget: "string" },
                         { label: "Head", name: "head", widget: "string" },
-                        { label: "Description", name: "description", widget: "text" },
-                        { label: "Image", name: "image", widget: "image" }
+                        { label: "Description", name: "description", widget: "string" },
+                        { label: "Image", name: "image", widget: "image" },
+                        { label: "Icon", name: "icon", widget: "string" }
                       ]
                   },
                   { 
@@ -273,22 +273,6 @@ collections:
   - name: "navbarAndFooter"
     label: "Navbar & Footer"
     files:
-      - file: "src/pages/navbar/index.md"
-        label: "Navbar"
-        name: "navbar"
-        fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "navbar" }
-          - {
-              label: "Menu Items",
-              name: "menuItems",
-              widget: "list",
-              fields:
-                [
-                  { label: "Label", name: "label", widget: "string" },
-                  { label: "Link Type", name: "linkType", widget: "select", options: ["internal", "external"] },
-                  { label: "Link URL", name: "linkURL", widget: "string", hint: "Use a relative URL (e.g. /about) if the link is an internal link." },
-                ],
-            }
       - file: "src/pages/footer/index.md"
         label: "Footer"
         name: "footer"
@@ -315,5 +299,21 @@ collections:
                   { label: "Image Description", name: "imageAlt", widget: "string" },
                   { label: "Label", name: "label", widget: "string" },
                   { label: "Link URL", name: "linkURL", widget: "string" },
+                ],
+            }
+      - file: "src/pages/navbar/index.md"
+        label: "Navbar"
+        name: "navbar"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "navbar" }
+          - {
+              label: "Menu Items",
+              name: "menuItems",
+              widget: "list",
+              fields:
+                [
+                  { label: "Label", name: "label", widget: "string" },
+                  { label: "Link Type", name: "linkType", widget: "select", options: ["internal", "external"] },
+                  { label: "Link URL", name: "linkURL", widget: "string", hint: "Use a relative URL (e.g. /about) if the link is an internal link." },
                 ],
             }
