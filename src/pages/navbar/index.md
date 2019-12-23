@@ -3,21 +3,24 @@ templateKey: navbar
 menuItems:
   - label: Features
     linkType: Features
-    linkURL: /#features
+    linkURL: '/#features'
   - label: Describe
     linkType: Describe
-    linkURL: /#describe
+    linkURL: '/#describe'
   - label: Pricing
     linkType: Pricing
-    linkURL: /#pricing
+    linkURL: '/#pricing'
   - label: Demo
     linkType: demo
-    linkURL: /#demo
+    linkURL: '/#demo'
   - label: About Us
     linkType: aboutus
-    linkURL: /#aboutus
+    linkURL: '/#aboutus'
   - label: FAQ
-    linkType: faq
-    linkURL: /#faq
+    linkType: internal
+    linkURL: '/#faq'
+  - label: test
+    linkType: internal
+    linkURL: '/#text'
 ---
 
