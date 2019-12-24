@@ -189,17 +189,6 @@ faq:
       question: What is Primily ?
     - answer: primily is an IVR
       question: What is Primily ?
-callToActions:
-  firstCTA:
-    heading: '1'
-    linkType: internal
-    linkURL: '4'
-    subHeading: '2'
-  secondCTA:
-    heading: '5'
-    linkType: internal
-    linkURL: '8'
-    subHeading: '6'
 seo:
   browserTitle: Primily
   description: Make your own IVR by Primily

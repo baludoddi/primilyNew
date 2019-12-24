@@ -35,12 +35,12 @@ export class FAQPageTemplate extends React.Component {
                     <div className="card-content">
                         <span className="card-title center-align feature-items"><h5>Frequently Asked Questions</h5></span>
                         <ul className="collapsible">
-                            {items.map((qanda, index) => (
+                            {/* {items.map((qanda, index) => (
                                 <li key={index}>
                                     <div className="collapsible-header grey-dark" onClick={(index) => this.handleClick(qanda, 'i')}><i className="material-icons"> {qanda.iconToggle ? 'add' : 'remove'}</i>{qanda.item.question}</div>
                                     <div className="collapsible-body grey-light"><span>{qanda.item.answer}</span></div>
                                 </li>
-                            ))}
+                            ))} */}
                         </ul>
                     </div>
                 </div>

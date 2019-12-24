@@ -12,13 +12,13 @@ export const NavbarTemplate = ({ data }) =>
           <img src={logo} />
           <a href="/#home" className="brand-logo">Primily Dev</a>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
-            {data.menuItems.map(menuItem => (
+            {/* {data.menuItems.map(menuItem => (
               <li key={menuItem.linkURL}>
                 <a href={menuItem.linkURL}>
                   {menuItem.label}
                 </a>
               </li>
-            ))}
+            ))} */}
           </ul>
         </div>
       </nav>

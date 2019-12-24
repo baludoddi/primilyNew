@@ -21,7 +21,7 @@ class MeetupTemplate extends Component {
           </p>
         </div>
         <div className="meetup-presenters">
-          {this.props.meetup.presenters.map(presenter => (
+          {/* {this.props.meetup.presenters.map(presenter => (
             <div className="meetup-presenter" key={presenter.name}>
               <div className="meetup-presenterImageContainer">
                 <img
@@ -48,7 +48,7 @@ class MeetupTemplate extends Component {
                 </ul>
               </div>
             </div>
-          ))}
+          ))} */}
         </div>
       </section>
     );

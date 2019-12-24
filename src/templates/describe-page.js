@@ -155,7 +155,7 @@ export const DescribePageTemplate = props => {
         <div className="row">
           <div className="col s12">
             <div className="carousel carousel-slider center">
-            {page.appGalley.sliderImages.map((slides, index) => (
+            {/* {page.appGalley.sliderImages.map((slides, index) => (
               
               <div className="carousel-item" href="#one!" key={index}><div className="row">
                   <div className="col s4"></div>
@@ -164,7 +164,7 @@ export const DescribePageTemplate = props => {
                   </div>
               </div>
               </div>
-            ))}
+            ))} */}
             </div>
           </div>
           <div className="row"><div className="col s12"><br></br></div></div>
