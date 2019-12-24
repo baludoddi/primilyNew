@@ -22,17 +22,17 @@ collections:
               widget: "object",
               fields:
                 [
-                  {
-                    label: "Feature Body",
-                    name: "featureBody",
-                    widget: "list",
-                    fields:
-                      [
-                        { label: "Icon", name: "icon", widget: "string" },
-                        { label: "Head", name: "head", widget: "string" },
-                        { label: "Description", name: "description", widget: "string" }
-                      ]  
-                  }
+                  # {
+                  #   label: "Feature Body",
+                  #   name: "featureBody",
+                  #   widget: "list",
+                  #   fields:
+                  #     [
+                  #       { label: "Icon", name: "icon", widget: "string" },
+                  #       { label: "Head", name: "head", widget: "string" },
+                  #       { label: "Description", name: "description", widget: "string" }
+                  #     ]  
+                  # }
                 ]
             }
           - {
@@ -74,17 +74,17 @@ collections:
                 { label: "Play Store Image", name: "playstoreImage", widget: "image" },
                 { label: "Card Head", name: "cardHead", widget: "string" },
                 { label: "Description", name: "description", widget: "string" },
-                {
-                  label: "Cards",
-                  name: "cards",
-                  widget: "list",
-                  fields:
-                    [
-                      { label: "Icon", name: "icon", widget: "string" },
-                      { label: "Head", name: "head", widget: "string" },
-                      { label: "Description", name: "description", widget: "string" }
-                    ]
-                }
+                # {
+                #   label: "Cards",
+                #   name: "cards",
+                #   widget: "list",
+                #   fields:
+                #     [
+                #       { label: "Icon", name: "icon", widget: "string" },
+                #       { label: "Head", name: "head", widget: "string" },
+                #       { label: "Description", name: "description", widget: "string" }
+                #     ]
+                # }
               ]
             }
           - {
@@ -127,15 +127,15 @@ collections:
                         { label: "Head 2", name: "head2", widget: "string" },
                         { label: "Description", name: "description", widget: "string" },
                         { label: "Price", name: "price", widget: "string" },
-                        { 
-                          label: "Features List",
-                          name: "featureList", 
-                          widget: "list", 
-                          fields:
-                            [
-                              { label: "List", name: "list", widget: "string" },
-                            ]
-                        }
+                        # { 
+                        #   label: "Features List",
+                        #   name: "featureList", 
+                        #   widget: "list", 
+                        #   fields:
+                        #     [
+                        #       { label: "List", name: "list", widget: "string" },
+                        #     ]
+                        # }
                       ]
                   },
                   {
@@ -149,15 +149,15 @@ collections:
                         { label: "Head 2", name: "head2", widget: "string" },
                         { label: "Description", name: "description", widget: "string" },
                         { label: "Price", name: "price", widget: "string" },
-                        { 
-                          label: "Features List",
-                          name: "featureList", 
-                          widget: "list", 
-                          fields:
-                            [
-                              { label: "List", name: "list", widget: "string" },
-                            ]
-                        }
+                        # { 
+                        #   label: "Features List",
+                        #   name: "featureList", 
+                        #   widget: "list", 
+                        #   fields:
+                        #     [
+                        #       { label: "List", name: "list", widget: "string" },
+                        #     ]
+                        # }
                       ]
                   }
                 ]
@@ -191,17 +191,17 @@ collections:
               fields:
                 [
                   { label: "FAQ Head", name: "faqHead", widget: "string" },
-                  {
-                    label: "Questions and Answers",
-                    name: "questionsAndAns",
-                    required: true,
-                    widget: "list",
-                    fields:
-                      [
-                        { label: "Question", name: "question", widget: "string" },
-                        { label: "Answer", name: "answer", widget: "string" }
-                      ]
-                  }
+                  # {
+                  #   label: "Questions and Answers",
+                  #   name: "questionsAndAns",
+                  #   required: true,
+                  #   widget: "list",
+                  #   fields:
+                  #     [
+                  #       { label: "Question", name: "question", widget: "string" },
+                  #       { label: "Answer", name: "answer", widget: "string" }
+                  #     ]
+                  # }
                 ],
             }
           - {
@@ -234,31 +234,31 @@ collections:
                   { label: "Tagline", name: "tagline", widget: "string" },
                 ],
             }
-          - {
-              label: "Social Links",
-              name: "socialLinks",
-              widget: "list",
-              fields:
-                [
-                  { label: "Image", name: "image", widget: "image" },
-                  { label: "Image Description", name: "imageAlt", widget: "string" },
-                  { label: "Label", name: "label", widget: "string" },
-                  { label: "Link URL", name: "linkURL", widget: "string" },
-                ],
-            }
-      - file: "src/pages/navbar/index.md"
-        label: "Navbar"
-        name: "navbar"
-        fields:
-          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "navbar" }
-          - {
-              label: "Menu Items",
-              name: "menuItems",
-              widget: "list",
-              fields:
-                [
-                  { label: "Label", name: "label", widget: "string" },
-                  { label: "Link Type", name: "linkType", widget: "select", options: ["internal", "external"] },
-                  { label: "Link URL", name: "linkURL", widget: "string", hint: "Use a relative URL (e.g. /about) if the link is an internal link." },
-                ],
-            }
+          # - {
+          #     label: "Social Links",
+          #     name: "socialLinks",
+          #     widget: "list",
+          #     fields:
+          #       [
+          #         { label: "Image", name: "image", widget: "image" },
+          #         { label: "Image Description", name: "imageAlt", widget: "string" },
+          #         { label: "Label", name: "label", widget: "string" },
+          #         { label: "Link URL", name: "linkURL", widget: "string" },
+          #       ],
+          #   }
+      # - file: "src/pages/navbar/index.md"
+      #   label: "Navbar"
+      #   name: "navbar"
+      #   fields:
+      #     - { label: "Template Key", name: "templateKey", widget: "hidden", default: "navbar" }
+      #     - {
+      #         label: "Menu Items",
+      #         name: "menuItems",
+      #         widget: "list",
+      #         fields:
+      #           [
+      #             { label: "Label", name: "label", widget: "string" },
+      #             { label: "Link Type", name: "linkType", widget: "select", options: ["internal", "external"] },
+      #             { label: "Link URL", name: "linkURL", widget: "string", hint: "Use a relative URL (e.g. /about) if the link is an internal link." },
+      #           ],
+      #       }
