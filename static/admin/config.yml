@@ -41,18 +41,18 @@ collections:
               widget: "object",
               fields:
                 [
-                  {
-                    label: "Cards",
-                    name: "cards",
-                    widget: "list",
-                    fields:
-                      [
-                        { label: "Head", name: "head", widget: "string" },
-                        { label: "Description", name: "description", widget: "string" },
-                        { label: "Image", name: "image", widget: "image" },
-                        { label: "Icon", name: "icon", widget: "string" }
-                      ]
-                  },
+                  # {
+                  #   label: "Cards",
+                  #   name: "cards",
+                  #   widget: "list",
+                  #   fields:
+                  #     [
+                  #       { label: "Head", name: "head", widget: "string" },
+                  #       { label: "Description", name: "description", widget: "string" },
+                  #       { label: "Image", name: "image", widget: "image" },
+                  #       { label: "Icon", name: "icon", widget: "string" }
+                  #     ]
+                  # },
                   { 
                     label: "Video", 
                     name: "video", 
@@ -95,15 +95,15 @@ collections:
               fields:
                 [
                   { label: "App Head", name: "appGalleryHead", widget: "string" },
-                  {
-                    label: "Slider Images",
-                    name: "sliderImages",
-                    widget: "list",
-                    fields:
-                      [
-                        { label: "slider Image", name: "slideImg", widget: "image" }
-                      ]
-                  }
+                  # {
+                  #   label: "Slider Images",
+                  #   name: "sliderImages",
+                  #   widget: "list",
+                  #   fields:
+                  #     [
+                  #       { label: "slider Image", name: "slideImg", widget: "image" }
+                  #     ]
+                  # }
                 ]
             }
           - {
