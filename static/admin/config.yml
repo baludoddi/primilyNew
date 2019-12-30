@@ -22,17 +22,17 @@ collections:
               widget: "object",
               fields:
                 [
-                  # {
-                  #   label: "Feature Body",
-                  #   name: "featureBody",
-                  #   widget: "list",
-                  #   fields:
-                  #     [
-                  #       { label: "Icon", name: "icon", widget: "string" },
-                  #       { label: "Head", name: "head", widget: "string" },
-                  #       { label: "Description", name: "description", widget: "string" }
-                  #     ]  
-                  # }
+                  {
+                    label: "Feature Body",
+                    name: "featureBody",
+                    widget: "list",
+                    fields:
+                      [
+                        { label: "Icon", name: "icon", widget: "string" },
+                        { label: "Head", name: "head", widget: "string" },
+                        { label: "Description", name: "description", widget: "string" }
+                      ]  
+                  }
                 ]
             }
           - {
@@ -74,17 +74,23 @@ collections:
                 { label: "Play Store Image", name: "playstoreImage", widget: "image" },
                 { label: "Card Head", name: "cardHead", widget: "string" },
                 { label: "Description", name: "description", widget: "string" },
-                # {
-                #   label: "Cards",
-                #   name: "cards",
-                #   widget: "list",
-                #   fields:
-                #     [
-                #       { label: "Icon", name: "icon", widget: "string" },
-                #       { label: "Head", name: "head", widget: "string" },
-                #       { label: "Description", name: "description", widget: "string" }
-                #     ]
-                # }
+                {
+                  label: "Cards",
+                  name: "cards",
+                  widget: "object",
+                  field: 
+                    { 
+                      label: "Description List", 
+                      name: "descriptionlist", 
+                      widget: "list", 
+                      fields: 
+                        [
+                          { label: "Description", required: true, name: "description", widget: "text" },
+                          { label: "Head", required: true, name: "head", widget: "string" },
+                          { label: "Icon", required: true, name: "icon", widget: "string" }
+                        ]
+                    }
+                }
               ]
             }
           - {
@@ -126,7 +132,7 @@ collections:
                         { label: "Head", name: "head", widget: "string" },
                         { label: "Head 2", name: "head2", widget: "string" },
                         { label: "Description", name: "description", widget: "string" },
-                        { label: "Price", name: "price", widget: "string" },
+                        { label: "Price", name: "price", widget: "number" },
                         # { 
                         #   label: "Features List",
                         #   name: "featureList", 
@@ -191,17 +197,17 @@ collections:
               fields:
                 [
                   { label: "FAQ Head", name: "faqHead", widget: "string" },
-                  # {
-                  #   label: "Questions and Answers",
-                  #   name: "questionsAndAns",
-                  #   required: true,
-                  #   widget: "list",
-                  #   fields:
-                  #     [
-                  #       { label: "Question", name: "question", widget: "string" },
-                  #       { label: "Answer", name: "answer", widget: "string" }
-                  #     ]
-                  # }
+                  {
+                    label: "Questions and Answers",
+                    name: "questionsAndAns",
+                    required: true,
+                    widget: "list",
+                    fields:
+                      [
+                        { label: "Question", name: "question", widget: "string" },
+                        { label: "Answer", name: "answer", widget: "string" }
+                      ]
+                  }
                 ],
             }
           - {

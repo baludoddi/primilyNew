@@ -124,9 +124,11 @@ export const pageQuery = graphql`
               cardHead
               description
               cards {
-                icon
-                head
-                description
+                descriptionlist {
+                  icon
+                  head
+                  description
+                }
               }
             }
             appGalley {

@@ -37,7 +37,7 @@ export const DescribePageTemplate = props => {
               {/* <div className="row"><div className="col s12"><br></br></div></div> */}
 
               
-              {/* {page.describe.cards.map((card, index) => (
+              {page.describe.cards.map((card, index) => (
                 <div className="col s4" key={index}>
                   <div children="row"> 
                 <div className="col s1"><i className="Large material-icons">{card.icon}</i></div>
@@ -50,7 +50,7 @@ export const DescribePageTemplate = props => {
                 {card.image ? <div className="col s12"><img src={card.image} className="responsive-img"/></div> : <div></div>}
                 </div>
                 </div>
-              ))} */}
+              ))}
               
 
             {/* </div> */}
@@ -128,7 +128,7 @@ export const DescribePageTemplate = props => {
               <p>{page.description.description}</p>
               <div className="row"></div>
               <div className="row"></div>
-              {page.description.cards.map((card, index) => (
+              {page.description.cards.descriptionlist.map((card, index) => (
               <div className="row" key={index}>
                 <div className="col s1"><i className="Large material-icons">{card.icon}</i></div>
                 <div className="col s11">
@@ -155,7 +155,7 @@ export const DescribePageTemplate = props => {
         <div className="row">
           <div className="col s12">
             <div className="carousel carousel-slider center">
-            {/* {page.appGalley.sliderImages.map((slides, index) => (
+            {page.appGalley.sliderImages.map((slides, index) => (
               
               <div className="carousel-item" href="#one!" key={index}><div className="row">
                   <div className="col s4"></div>
@@ -164,7 +164,7 @@ export const DescribePageTemplate = props => {
                   </div>
               </div>
               </div>
-            ))} */}
+            ))}
             </div>
           </div>
           <div className="row"><div className="col s12"><br></br></div></div>
