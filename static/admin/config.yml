@@ -41,18 +41,18 @@ collections:
               widget: "object",
               fields:
                 [
-                  # {
-                  #   label: "Cards",
-                  #   name: "cards",
-                  #   widget: "list",
-                  #   fields:
-                  #     [
-                  #       { label: "Head", name: "head", widget: "string" },
-                  #       { label: "Description", name: "description", widget: "string" },
-                  #       { label: "Image", name: "image", widget: "image" },
-                  #       { label: "Icon", name: "icon", widget: "string" }
-                  #     ]
-                  # },
+                  {
+                    label: "Cards",
+                    name: "cards",
+                    widget: "list",
+                    fields:
+                      [
+                        { label: "Head", name: "head", widget: "string" },
+                        { label: "Description", name: "description", widget: "string" },
+                        { label: "Image", name: "image", widget: "image" },
+                        { label: "Icon", name: "icon", widget: "string" }
+                      ]
+                  },
                   { 
                     label: "Video", 
                     name: "video", 
@@ -252,19 +252,19 @@ collections:
           #         { label: "Link URL", name: "linkURL", widget: "string" },
           #       ],
           #   }
-      # - file: "src/pages/navbar/index.md"
-      #   label: "Navbar"
-      #   name: "navbar"
-      #   fields:
-      #     - { label: "Template Key", name: "templateKey", widget: "hidden", default: "navbar" }
-      #     - {
-      #         label: "Menu Items",
-      #         name: "menuItems",
-      #         widget: "list",
-      #         fields:
-      #           [
-      #             { label: "Label", name: "label", widget: "string" },
-      #             { label: "Link Type", name: "linkType", widget: "select", options: ["internal", "external"] },
-      #             { label: "Link URL", name: "linkURL", widget: "string", hint: "Use a relative URL (e.g. /about) if the link is an internal link." },
-      #           ],
-      #       }
+      - file: "src/pages/navbar/index.md"
+        label: "Navbar"
+        name: "navbar"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "navbar" }
+          - {
+              label: "Menu Items",
+              name: "menuItems",
+              widget: "list",
+              fields:
+                [
+                  { label: "Label", name: "label", widget: "string" },
+                  { label: "Link Type", name: "linkType", widget: "select", options: ["internal", "external"] },
+                  { label: "Link URL", name: "linkURL", widget: "string", hint: "Use a relative URL (e.g. /about) if the link is an internal link." },
+                ],
+            }
