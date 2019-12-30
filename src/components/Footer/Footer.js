@@ -21,7 +21,7 @@ export const FooterTemplate = ({ data }) => {
           </div>
           {socialLinks.length > 0 && (
             <ul className="footer-socialMenu">
-              {socialLinks.map(socialLink => (
+              {/* {socialLinks.map(socialLink => (
                 <li key={socialLink.linkURL} className="footer-socialMenuItem">
                   <a
                     className="footer-socialLink"
@@ -37,7 +37,7 @@ export const FooterTemplate = ({ data }) => {
                     {socialLink.label}
                   </a>
                 </li>
-              ))}
+              ))} */}
             </ul>
           )}
         </div>

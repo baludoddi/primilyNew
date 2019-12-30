@@ -21,7 +21,7 @@ export const DemoPageTemplate = props => {
                     <div className="col s3"></div>
                 </div>
                 <br></br>
-                <div className="row">
+                {/* <div className="row">
                     <hr />
                     <h5>Contact Us</h5>
                     <form
@@ -34,7 +34,7 @@ export const DemoPageTemplate = props => {
                         <textarea name="message" placeholder="Your message" id="" cols="30" rows="40" />
                         <button className="waves-effect waves-light btn">Send</button>
                     </form>
-                </div>
+                </div> */}
             </div>
         </div>
     );

@@ -25,14 +25,14 @@ export const PastMeetupsPageTemplate = ({
         ) : (
           <HTMLContent className="pastMeetups-description" content={content} />
         )}
-        {meetups &&
+        {/* {meetups &&
           meetups.map((meetup, index) => (
             <MeetupTemplate
               key={index}
               className="pastMeetups-meetup"
               meetup={meetup.node.frontmatter}
             />
-          ))}
+          ))} */}
       </div>
     </article>
   );

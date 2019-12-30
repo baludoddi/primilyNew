@@ -26,13 +26,9 @@ export const PricingPageTemplate = props => {
             <p>{page.priceBox1.description}</p>
           </div>
           <ul>
-            <li><img src={page.priceBox1.list.img} alt="" /><span className="price-list">{page.priceBox1.list.list1}</span></li>
-            <br></br>
-            <li><img src={page.priceBox1.list.img} alt="" /><span className="price-list">{page.priceBox1.list.list2}</span></li>
-            <br></br>
-            <li><img src={page.priceBox1.list.img} alt="" /><span className="price-list">{page.priceBox1.list.list3}</span></li>
-            <br></br>
-            <li><img src={page.priceBox1.list.img} alt="" /><span className="price-list">{page.priceBox1.list.list4}</span></li>
+          {page.priceBox1.featureList.map((list, index) => (
+            <li key={index}><div className="row"><div className="col s12"><img src={page.ticImage} alt="" /><span className="price-list">{list.list}</span></div></div></li>
+          ))}
           </ul>
           <br></br>
           <br></br>
@@ -55,13 +51,9 @@ export const PricingPageTemplate = props => {
             <p>{page.priceBox2.description}</p>
           </div>
           <ul>
-            <li><img src={page.priceBox2.list.img} alt="" /><span className="price-list">{page.priceBox2.list.list4}</span></li>
-            <br></br>
-            <li><img src={page.priceBox2.list.img} alt="" /><span className="price-list">{page.priceBox2.list.list4}</span></li>
-            <br></br>
-            <li><img src={page.priceBox2.list.img} alt="" /><span className="price-list">{page.priceBox2.list.list4}</span></li>
-            <br></br>
-            <li><img src={page.priceBox2.list.img} alt="" /><span className="price-list">{page.priceBox2.list.list4}</span></li>
+          {page.priceBox2.featureList.map((list, index) => (
+            <li key={index}><div className="row"><div className="col s12"><img src={page.ticImage} alt="" /><span className="price-list">{list.list}</span></div></div></li>
+          ))}
           </ul>
           <br></br>
           <br></br>
