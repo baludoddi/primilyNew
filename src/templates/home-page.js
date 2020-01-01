@@ -12,7 +12,7 @@ export class HomePageComponentTemplate extends React.Component {
   render() {
     const { page } = this.props;
   return (
-    <div>
+    <div className="container">
      <CarouselComponent content={page.sliderImages} />
      <div className="row"><div className="col s12"><br></br></div></div>
      <div className="row"><div className="col s12"><br></br></div></div>

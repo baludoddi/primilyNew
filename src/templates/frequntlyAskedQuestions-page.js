@@ -7,7 +7,7 @@ export class FAQPageTemplate extends React.Component {
         super(props);
         let count = 0;
         this.state = {iconToggle: true, items: []};
-        for(let i of this.props.page.questionsAndAns) {
+        for(let i of this.props.faq.faq.questionsAndAns) {
             count++;
             this.state.items.push({i: count, iconToggle: true, item: i});
         }
@@ -26,7 +26,6 @@ export class FAQPageTemplate extends React.Component {
       }
 
       render() {
-        const { page }  = this.props;
         const { iconToggle, items } = this.state;
         // console.log(items)
         return (

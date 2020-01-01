@@ -1,18 +1,17 @@
 import React from "react";
 import "materialize-css/sass/materialize.scss";
 
-export const PricingPageTemplate = props => {
-  const { page } = props;
-
+export const PricingPageTemplate = ({pricing}) => {
+  // console.log(pricing)
   return (
     <div>
     <div className="row"><div className="col s12"><br></br></div></div>
     <div className="row">
       <div className="col s12 center-align feature-items">
-        <h4 className="pricing-h">{page.pricingHead}</h4>
-        <p>{page.description1}
+        <h4 className="pricing-h">{pricing.pricingHead}</h4>
+        <p>{pricing.description1}
           <br></br>
-          {page.description2}</p>
+          {pricing.description2}</p>
       </div>
       <div className="col s12"></div>
 
@@ -20,21 +19,21 @@ export const PricingPageTemplate = props => {
       <div className="col s4 price-border">
         <div className="single_pricing wow fadeIn price" data-wow-duration="1.5s">
           <div className="top_text">
-            <h5 className="pricing-head">{page.priceBox1.head}</h5>
+            <h5 className="pricing-head">{pricing.priceBox1.head}</h5>
             <br></br>
-            <h6 className="pricing-sub-head">{page.priceBox1.head2}</h6>
-            <p>{page.priceBox1.description}</p>
+            <h6 className="pricing-sub-head">{pricing.priceBox1.head2}</h6>
+            <p>{pricing.priceBox1.description}</p>
           </div>
           <ul>
-          {page.priceBox1.featureList.map((list, index) => (
-            <li key={index}><div className="row"><div className="col s12"><img src={page.ticImage} alt="" /><span className="price-list">{list.list}</span></div></div></li>
+          {pricing.priceBox1.featureList.map((list, index) => (
+            <li key={index}><div className="row"><div className="col s12"><img src={pricing.ticImage} alt="" /><span className="price-list">{list.list}</span></div></div></li>
           ))}
           </ul>
           <br></br>
           <br></br>
           <div className="table_info">
             <div className="info_head_text">
-              <h2>${page.priceBox1.price}</h2>
+              <h2>${pricing.priceBox1.price}</h2>
             </div>
             <a href="" className="waves-effect waves-light btn">sign up</a> <a href="" className="price-padding">Free Live Trial</a>
           </div>
@@ -45,14 +44,14 @@ export const PricingPageTemplate = props => {
       <div className="col s4 price-border-red">
         <div className="single_pricing economy_table wow fadeIn price" data-wow-duration="1.6s">
           <div className="top_text">
-            <h5 className="pricing-head">{page.priceBox2.head}</h5>
+            <h5 className="pricing-head">{pricing.priceBox2.head}</h5>
             <br></br>
-            <h6 className="pricing-sub-head"> {page.priceBox2.head2}</h6>
-            <p>{page.priceBox2.description}</p>
+            <h6 className="pricing-sub-head"> {pricing.priceBox2.head2}</h6>
+            <p>{pricing.priceBox2.description}</p>
           </div>
           <ul>
-          {page.priceBox2.featureList.map((list, index) => (
-            <li key={index}><div className="row"><div className="col s12"><img src={page.ticImage} alt="" /><span className="price-list">{list.list}</span></div></div></li>
+          {pricing.priceBox2.featureList.map((list, index) => (
+            <li key={index}><div className="row"><div className="col s12"><img src={pricing.ticImage} alt="" /><span className="price-list">{list.list}</span></div></div></li>
           ))}
           </ul>
           <br></br>
@@ -60,7 +59,7 @@ export const PricingPageTemplate = props => {
           <br></br>
           <div className="table_info">
             <div className="info_head_text">
-              <h2>${page.priceBox2.price}</h2>
+              <h2>${pricing.priceBox2.price}</h2>
             </div>
             <a href="" className="waves-effect waves-light btn">sign up</a> <a href="" className="price-padding">No monthly commitment.</a>
           </div>
