@@ -15,29 +15,29 @@ import { withPrefix } from "gatsby"
 import "../styles/features.css";
 import "materialize-css/sass/materialize.scss";
 
-export const HomePageTemplate = ({ home }) => {
+export const HomePageTemplate = ({ home, feature, describe, pricing, demo, faq }) => {
   return (
     <>
       <div className="row"></div>
       <div className="row">
         <div className="col s12 m12 l12">
           <div id="home" className="section scrollspy">
-            <HomePageComponentTemplate page={home.appGalley} />
+            <HomePageComponentTemplate page={home.home} />
           </div>
           <div id="features" className="section scrollspy">
-            <FeaturePageTemplate page={home} />
+            <FeaturePageTemplate feature={feature.feature} />
           </div>
           <div id="describe" className="section scrollspy">
-            <DescribePageTemplate page={home} />
+            <DescribePageTemplate describe={describe} />
           </div>
           <div id="pricing" className="section scrollspy">
-            <PricingPageTemplate page={home.pricing} />
+            <PricingPageTemplate pricing={pricing.pricing} />
           </div>
           <div id="demo" className="section scrollspy">
-            <DemoPageTemplate page={home.demo} />
+            <DemoPageTemplate demo={demo.demo} />
           </div>
           <div id="faq" className="section scrollspy">
-          <FAQPageTemplate page={home.faq} />
+            <FAQPageTemplate faq={faq} />
           </div>
         </div>
       </div>
@@ -52,6 +52,11 @@ class HomePage extends React.Component {
       data: { navbarData },
     } = this.props;
     const { frontmatter: home } = data.homePageData.edges[0].node;
+    const { frontmatter: feature } = data.featureData.edges[0].node;
+    const { frontmatter: describe } = data.describeData.edges[0].node;
+    const { frontmatter: pricing } = data.pricingData.edges[0].node;
+    const { frontmatter: demo } = data.demoData.edges[0].node;
+    const { frontmatter: faq } = data.faqData.edges[0].node;
     const {
       seo: { title: seoTitle, description: seoDescription, browserTitle },
     } = home;
@@ -77,7 +82,7 @@ class HomePage extends React.Component {
           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
           <title>{browserTitle}</title>
         </Helmet>
-        <HomePageTemplate home={home} />
+        <HomePageTemplate home={home} feature={feature} describe={describe} pricing={pricing} demo={demo} faq={faq} />
       </Layout>
     );
   }
@@ -100,6 +105,25 @@ export const pageQuery = graphql`
       edges {
         node {
           frontmatter {
+            home {
+              sliderImages {
+                imagesrc
+                imagealt
+              }
+            }
+            seo {
+              browserTitle
+              title
+              description
+            }
+          }
+        }
+      }
+    }
+    featureData: allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "feature-page" } } }) {
+      edges {
+        node {
+          frontmatter {
             feature {
               featureBody {
                 icon
@@ -107,6 +131,14 @@ export const pageQuery = graphql`
                 description
               }
             }
+          }
+        }
+      }
+    }
+    describeData: allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "describe-page" } } }) {
+      edges {
+        node {
+          frontmatter {
             describe {
               cards {
                 icon
@@ -137,6 +169,14 @@ export const pageQuery = graphql`
                 slideImg
               }
             }
+          }
+        }
+      }
+    }
+    pricingData: allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "pricing-page" } } }) {
+      edges {
+        node {
+          frontmatter {
             pricing {
               pricingHead
               description1
@@ -161,6 +201,14 @@ export const pageQuery = graphql`
                 price
               }
             }
+          }
+        }
+      }
+    }
+    demoData: allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "demo-page" } } }) {
+      edges {
+        node {
+          frontmatter {
             demo {
               demoHead
               description
@@ -169,17 +217,20 @@ export const pageQuery = graphql`
                 src2
               }
             }
+          }
+        }
+      }
+    }
+    faqData: allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "frequntlyAskedQuestions-page" } } }) {
+      edges {
+        node {
+          frontmatter {
             faq {
               faqHead
               questionsAndAns {
                 question
                 answer
               }
-            }
-            seo {
-              browserTitle
-              title
-              description
             }
           }
         }

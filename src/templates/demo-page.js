@@ -1,9 +1,8 @@
 import React from "react";
 import "materialize-css/sass/materialize.scss";
 
-export const DemoPageTemplate = props => {
-    const { page } = props;
-
+export const DemoPageTemplate = ({demo}) => {
+    
     return (
         <div>
             <div className="row"><div className="col s12"><br></br></div></div>
@@ -11,13 +10,13 @@ export const DemoPageTemplate = props => {
             <div className="container">
                 <div className="row">
                     <div className="col s12 feature-items center-align">
-                        <h5>{page.demoHead}</h5>
-                        <p>{page.description}</p>
+                        <h5>{demo.demoHead}</h5>
+                        <p>{demo.description}</p>
                     </div>
                     <div className="col s3"></div>
-                    <div className="col s3"><img src={page.demoImages.src1} alt="" /></div>
+                    <div className="col s3"><img src={demo.demoImages.src1} alt="" /></div>
                     <div className="col s0"></div>
-                    <div className="col s3"><img src={page.demoImages.src2} alt="" /></div>
+                    <div className="col s3"><img src={demo.demoImages.src2} alt="" /></div>
                     <div className="col s3"></div>
                 </div>
                 <br></br>

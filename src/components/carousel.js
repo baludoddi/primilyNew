@@ -10,11 +10,12 @@ export const CarouselComponent = ({content, className}) => (
   // </div>
   <div>
   <div className="carousel carousel-slider center">
-  <div className="carousel-item blue white-text" href="#one!">
-    <h2>First Panel</h2>
-    <p className="white-text">This is your first panel</p>
+  {content.map((image, index) => (
+  <div className="carousel-item blue white-text" href="#one!" key={index}>
+    <img src={image.imagesrc} className="responsive-img" alt={image.imagealt}/>
   </div>
-  <div className="carousel-item amber white-text" href="#two!">
+  ))}
+  {/* <div className="carousel-item amber white-text" href="#two!">
     <h2>Second Panel</h2>
     <p className="white-text">This is your second panel</p>
   </div>
@@ -25,7 +26,7 @@ export const CarouselComponent = ({content, className}) => (
   <div className="carousel-item red white-text" href="#four!">
     <h2>Fourth Panel</h2>
     <p className="white-text">This is your fourth panel</p>
-  </div>
+  </div> */}
 </div>
   </div>
 );

@@ -240,18 +240,18 @@ collections:
                   { label: "Tagline", name: "tagline", widget: "string" },
                 ],
             }
-          # - {
-          #     label: "Social Links",
-          #     name: "socialLinks",
-          #     widget: "list",
-          #     fields:
-          #       [
-          #         { label: "Image", name: "image", widget: "image" },
-          #         { label: "Image Description", name: "imageAlt", widget: "string" },
-          #         { label: "Label", name: "label", widget: "string" },
-          #         { label: "Link URL", name: "linkURL", widget: "string" },
-          #       ],
-          #   }
+          - {
+              label: "Social Links",
+              name: "socialLinks",
+              widget: "list",
+              fields:
+                [
+                  { label: "Image", name: "image", widget: "image" },
+                  { label: "Image Description", name: "imageAlt", widget: "string" },
+                  { label: "Label", name: "label", widget: "string" },
+                  { label: "Link URL", name: "linkURL", widget: "string" },
+                ],
+            }
       - file: "src/pages/navbar/index.md"
         label: "Navbar"
         name: "navbar"
