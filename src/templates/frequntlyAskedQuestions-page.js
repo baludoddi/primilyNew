@@ -11,7 +11,6 @@ export class FAQPageTemplate extends React.Component {
             count++;
             this.state.items.push({i: count, iconToggle: true, item: i});
         }
-        // this.setState({items)
     }
 
     handleClick = (e, index) => {

@@ -3,10 +3,11 @@ import "./styles.scss";
 import "materialize-css/sass/materialize.scss";
 
 export const FooterTemplate = ({ data }) => {
+
   const { logoImage, socialLinks } = data;
-  console.log(logoImage, socialLinks)
+
   return (
-    <footer className="page-footer">
+    <footer className="page-footer indigo darken-4">
     <div className="container">
       <div className="row">
         <div className="col l6 s12">
