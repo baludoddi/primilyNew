@@ -15,7 +15,7 @@ import { withPrefix } from "gatsby"
 import "../styles/features.css";
 import "materialize-css/sass/materialize.scss";
 
-export const HomePageTemplate = ({ home, feature, describe, pricing, demo, faq }) => {
+export const HomePageTemplate = ({ home, feature, describe, pricing, demo }) => {
   return (
     <>
       <div className="row"></div>
@@ -36,9 +36,9 @@ export const HomePageTemplate = ({ home, feature, describe, pricing, demo, faq }
           <div id="demo" className="section scrollspy">
             <DemoPageTemplate demo={demo.demo} />
           </div>
-          <div id="faq" className="section scrollspy">
+          {/* <div id="faq" className="section scrollspy">
             <FAQPageTemplate faq={faq} />
-          </div>
+          </div> */}
         </div>
       </div>
     </>
@@ -56,7 +56,6 @@ class HomePage extends React.Component {
     const { frontmatter: describe } = data.describeData.edges[0].node;
     const { frontmatter: pricing } = data.pricingData.edges[0].node;
     const { frontmatter: demo } = data.demoData.edges[0].node;
-    const { frontmatter: faq } = data.faqData.edges[0].node;
     const {
       seo: { title: seoTitle, description: seoDescription, browserTitle },
     } = home;
@@ -76,13 +75,9 @@ class HomePage extends React.Component {
         <Helmet>
           <meta name="title" content={seoTitle} />
           <meta name="description" content={seoDescription} />
-          <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-          <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-          <script src={withPrefix('js/primily.js')} type="text/javascript" />
-          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
           <title>{browserTitle}</title>
         </Helmet>
-        <HomePageTemplate home={home} feature={feature} describe={describe} pricing={pricing} demo={demo} faq={faq} />
+        <HomePageTemplate home={home} feature={feature} describe={describe} pricing={pricing} demo={demo} />
       </Layout>
     );
   }
@@ -215,21 +210,6 @@ export const pageQuery = graphql`
               demoImages {
                 src1
                 src2
-              }
-            }
-          }
-        }
-      }
-    }
-    faqData: allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "frequntlyAskedQuestions-page" } } }) {
-      edges {
-        node {
-          frontmatter {
-            faq {
-              faqHead
-              questionsAndAns {
-                question
-                answer
               }
             }
           }

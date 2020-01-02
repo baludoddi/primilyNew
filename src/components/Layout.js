@@ -1,12 +1,18 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
-
+import { withPrefix } from "gatsby"
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
 const TemplateWrapper = ({ footerData = null, navbarData = null, children }) => (
   <div>
+    <Helmet>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src={withPrefix('js/primily.js')} type="text/javascript" />
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
+    </Helmet>
     <Navbar data={navbarData} />
     <main>{children}</main>
     <Footer data={footerData} />

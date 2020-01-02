@@ -221,6 +221,143 @@ collections:
                   { label: "Description", name: "description", widget: "string" },
                 ],
             }
+      - file: "src/pages/about/index.md"
+        label: "About"
+        name: "about"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "About Description", name: "aboutDescription", widget: "text" }
+          - {
+              label: "About Gallery",
+              name: "aboutGallery",
+              widget: "object",
+              fields:
+                [
+                  { label: "Image", name: "image", widget: "image" },
+                  { label: "Image Description", name: "imageAlt", widget: "string" },
+                ],
+            }
+          - {
+              label: "SEO & Meta",
+              name: "seo",
+              widget: "object",
+              fields:
+                [
+                  { label: "Browser Tab Title", name: "browserTitle", widget: "string"},
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Description", name: "description", widget: "string" },
+                ],
+            }
+      - file: "src/pages/contact/index.md"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Contact Description", name: "contactDescription", widget: "text" }
+          - {
+              label: "Contact Gallery",
+              name: "contactGallery",
+              widget: "object",
+              fields:
+                [
+                  { label: "Image", name: "image", widget: "image" },
+                  { label: "Image Description", name: "imageAlt", widget: "string" },
+                ],
+            }
+          - {
+              label: "SEO & Meta",
+              name: "seo",
+              widget: "object",
+              fields:
+                [
+                  { label: "Browser Tab Title", name: "browserTitle", widget: "string"},
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Description", name: "description", widget: "string" },
+                ],
+            }
+      - file: "src/pages/details/index.md"
+        label: "Details"
+        name: "details"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "details-page" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Details Description", name: "detailsDescription", widget: "text" }
+          - {
+              label: "Details Gallery",
+              name: "detailsGallery",
+              widget: "object",
+              fields:
+                [
+                  { label: "Image", name: "image", widget: "image" },
+                  { label: "Image Description", name: "imageAlt", widget: "string" },
+                ],
+            }
+          - {
+              label: "SEO & Meta",
+              name: "seo",
+              widget: "object",
+              fields:
+                [
+                  { label: "Browser Tab Title", name: "browserTitle", widget: "string"},
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Description", name: "description", widget: "string" },
+                ],
+            }
+      - file: "src/pages/faq/index.md"
+        label: "Frequently asked questions"
+        name: "faq"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "faq-page" }
+          - { 
+              label: "Frequently asked questions", 
+              name: "faq", 
+              widget: "object", 
+              fields: 
+                [
+                  { label: "Title", name: "faqHead", widget: "string" },
+                  {
+                    label: "Question and Answers",
+                    name: "questionsAndAns",
+                    widget: "list",
+                    fields:
+                      [
+                        { label: "Question", name: "question", widget: "string" },
+                        { label: "Answer", name: "answer", widget: "text" }
+                      ]
+                  }
+                ]
+            }
+          - {
+              label: "SEO & Meta",
+              name: "seo",
+              widget: "object",
+              fields:
+                [
+                  { label: "Browser Tab Title", name: "browserTitle", widget: "string"},
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Description", name: "description", widget: "string" },
+                ],
+            }
+      - file: "src/pages/policy/index.md"
+        label: "Policy"
+        name: "policy"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "faq-page" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Policy Description", name: "policyDescription", widget: "text" }
+          - {
+              label: "SEO & Meta",
+              name: "seo",
+              widget: "object",
+              fields:
+                [
+                  { label: "Browser Tab Title", name: "browserTitle", widget: "string"},
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Description", name: "description", widget: "string" },
+                ],
+            }
   - name: "navbarAndFooter"
     label: "Navbar & Footer"
     files:
