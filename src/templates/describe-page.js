@@ -12,31 +12,7 @@ export const DescribePageTemplate = ({describe}) => {
         <div className="container">
 
           <div className="row">
-            {/* <div className="col s4">
-              <div className="feature-items">
-                <h5 className="center-align">{page.describe.cards.card1.head}</h5>
-                <p>{page.describe.cards.card1.description}</p>
-                <div className="row"><div className="col s12"><br></br></div></div>
-                <img className="responsive-img" src={page.describe.image.src} />
-                <div className="row"><div className="col s12"><br></br></div></div>
-                <h5 className="center-align">{page.describe.cards.card2.head}</h5>
-                <p>{page.describe.cards.card2.description}</p>
-              </div>
-            </div> */}
-            {/* <div className="col s4"> */}
-              {/* <div className="row">
-                <div className="col s1"><i className="Large material-icons">{page.describe.cards.card3.icon}</i></div>
-                <div className="col s11">
-                  <div className="feature-items">
-                    <h5 className="center-align">{page.describe.cards.card3.head}</h5>
-                    <p>{page.describe.cards.card3.description}</p>
-                  </div>
-                </div>
-              </div> */}
-              {/* <div className="row"><div className="col s12"><br></br></div></div> */}
-
-              
-              {/* {describe.describe.cards.map((card, index) => (
+              {describe.describe.cards.map((card, index) => (
                 <div className="col s4" key={index}>
                   <div children="row"> 
                 <div className="col s1"><i className="Large material-icons">{card.icon}</i></div>
@@ -49,48 +25,11 @@ export const DescribePageTemplate = ({describe}) => {
                 {card.image ? <div className="col s12"><img src={card.image} className="responsive-img"/></div> : <div></div>}
                 </div>
                 </div>
-              ))} */}
+              ))}
               
-
-            {/* </div> */}
-            {/* <div className="col s4">
-              <div className="row">
-                <div className="col s1"><i className="Large material-icons">{page.describe.cards.card5.icon}</i></div>
-                <div className="col s11">
-                  <div className="feature-items">
-                    <h5 className="center-align">{page.describe.cards.card5.head}</h5>
-                    <p>{page.describe.cards.card5.description}</p>
-                  </div>
-                </div>
-              </div>
-              <div className="row"><div className="col s12"><br></br></div></div>
-              <div className="row">
-                <div className="col s1"><i className="Large material-icons">{page.describe.cards.card6.icon}</i></div>
-                <div className="col s11">
-                  <div className="feature-items">
-                    <h5 className="center-align">{page.describe.cards.card6.head}</h5>
-                    <p>{page.describe.cards.card6.description}</p>
-                  </div>
-                </div>
-              </div>
-              <div className="row"><div className="col s12"><br></br></div></div>
-              <div className="row">
-                <div className="col s1"><i className="Large material-icons">{page.describe.cards.card7.icon}</i></div>
-                <div className="col s11">
-                  <div className="feature-items">
-                    <h5 className="center-align">{page.describe.cards.card7.head}</h5>
-                    <p>{page.describe.cards.card7.description}</p>
-                  </div>
-                </div>
-              </div>
-            </div> */}
           </div>
           <div className="row"><div className="col s12"><br></br></div></div>
           <div className="row"><div className="col s12"><br></br></div></div>
-          {/* <div className="row"><div className="col s12"></div>SPACER 1V</div>
-  <div className="row"><div className="col s12"></div>SPACER 2V</div>
-  <div className="row"><div className="col s12"></div>SPACER 3V</div>
-  <div className="row"><div className="col s12"></div>SPACER 4V</div>*/}
 
           <div className="row">
             <div className="col s1"></div>
