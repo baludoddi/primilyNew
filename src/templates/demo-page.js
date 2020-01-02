@@ -2,13 +2,13 @@ import React from "react";
 import "materialize-css/sass/materialize.scss";
 
 export const DemoPageTemplate = ({demo}) => {
-    
+    console.log(demo)
     return (
         <div>
             <div className="row"><div className="col s12"><br></br></div></div>
             <div className="row"><div className="col s12"><br></br></div></div>
             <div className="container">
-                <div className="row">
+                {/* <div className="row">
                     <div className="col s12 feature-items center-align">
                         <h5>{demo.demoHead}</h5>
                         <p>{demo.description}</p>
@@ -18,7 +18,7 @@ export const DemoPageTemplate = ({demo}) => {
                     <div className="col s0"></div>
                     <div className="col s3"><img src={demo.demoImages.src2} alt="" /></div>
                     <div className="col s3"></div>
-                </div>
+                </div> */}
                 <br></br>
                 {/* <div className="row">
                     <hr />

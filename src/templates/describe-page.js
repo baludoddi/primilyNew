@@ -36,7 +36,7 @@ export const DescribePageTemplate = ({describe}) => {
               {/* <div className="row"><div className="col s12"><br></br></div></div> */}
 
               
-              {describe.describe.cards.map((card, index) => (
+              {/* {describe.describe.cards.map((card, index) => (
                 <div className="col s4" key={index}>
                   <div children="row"> 
                 <div className="col s1"><i className="Large material-icons">{card.icon}</i></div>
@@ -49,7 +49,7 @@ export const DescribePageTemplate = ({describe}) => {
                 {card.image ? <div className="col s12"><img src={card.image} className="responsive-img"/></div> : <div></div>}
                 </div>
                 </div>
-              ))}
+              ))} */}
               
 
             {/* </div> */}
