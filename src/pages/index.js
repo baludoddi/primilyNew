@@ -3,42 +3,35 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Helmet from "react-helmet";
 import isAfter from "date-fns/is_after";
-import FeaturePageTemplate from '../templates/feature-page';
-import DescribePageTemplate from '../site-templates/describe-page';
-import PricingPageTemplate from '../site-templates/pricing-page';
-import DemoPageTemplate from '../site-templates/demo-page';
-// import FAQPageTemplate from '../templates/frequntlyAskedQuestions-page';
-import HomePageComponentTemplate from '../site-templates/home-page';
+import Feature from '../templates/feature-page';
+import Describe from '../templates/describe-page';
+import Pricing from '../templates/pricing-page';
+import Demo from '../templates/demo-page';
+import BlogRoll from '../templates/blog-page';
+import Home from '../templates/home-page';
 import Layout from "../components/Layout";
-import CarouselComponent from "../components/carousel";
-import { withPrefix } from "gatsby"
-import "../styles/features.css";
-import "materialize-css/sass/materialize.scss";
 
-export const HomePageTemplate = ({ home, describe, pricing, demo }) => {
+export const HomePageTemplate = ({ home }) => {
   return (
     <>
       <div className="row"></div>
       <div className="row">
         <div className="col s12 m12 l12">
           <div id="home" className="section scrollspy">
-            <HomePageComponentTemplate page={home.home} />
+            <Home />
           </div>
           <div id="features" className="section scrollspy">
-            {/* <FeaturePageTemplate feature={feature.feature} /> */}
+            <Feature />
           </div>
           <div id="describe" className="section scrollspy">
-            <DescribePageTemplate describe={describe} />
+            <Describe />
           </div>
           <div id="pricing" className="section scrollspy">
-            <PricingPageTemplate pricing={pricing.pricing} />
+            <Pricing />
           </div>
           <div id="demo" className="section scrollspy">
-            <DemoPageTemplate demo={demo.demo} />
+            <Demo />
           </div>
-          {/* <div id="faq" className="section scrollspy">
-            <FAQPageTemplate faq={faq} />
-          </div> */}
         </div>
       </div>
     </>
@@ -59,7 +52,7 @@ class HomePage extends React.Component {
     const {
       seo: { title: seoTitle, description: seoDescription, browserTitle },
     } = home;
-    console.log(data.homePageData.edges[0].node)
+    // console.log(data.homePageData.edges[0].node)
     // let upcomingMeetup = null;
     // Find the next meetup that is closest to today
     // data.allMarkdownRemark.edges.every(item => {
@@ -78,7 +71,7 @@ class HomePage extends React.Component {
           <meta name="description" content={seoDescription} />
           <title>{browserTitle}</title>
         </Helmet>
-        <HomePageTemplate home={home} describe={describe} pricing={pricing} demo={demo} />
+        <HomePageTemplate />
       </Layout>
     );
   }

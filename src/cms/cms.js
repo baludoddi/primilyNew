@@ -8,6 +8,7 @@ import FAQPagePreview from "./preview-templates/FAQPagePreview";
 import PolicyPagePreview from "./preview-templates/PolicyPagePreview";
 import FooterPreview from "./preview-templates/FooterPreview";
 import NavbarPreview from "./preview-templates/NavbarPreview";
+import FeaturePagePreview from "./preview-templates/FeaturePagePreview";
 
 CMS.registerPreviewTemplate("home", HomePagePreview);
 CMS.registerPreviewTemplate("about", AboutPagePreview);
@@ -17,3 +18,4 @@ CMS.registerPreviewTemplate("faq", FAQPagePreview);
 CMS.registerPreviewTemplate("policy", PolicyPagePreview);
 CMS.registerPreviewTemplate("footer", FooterPreview);
 CMS.registerPreviewTemplate("navbar", NavbarPreview);
+CMS.registerPreviewTemplate("feature", FeaturePagePreview);

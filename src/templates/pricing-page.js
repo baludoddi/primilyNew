@@ -1,11 +1,14 @@
 import React from "react";
-import "materialize-css/sass/materialize.scss";
+import PropTypes from 'prop-types'
+import { Link, graphql, StaticQuery } from 'gatsby'
 
-export const PricingPageTemplate = ({pricing}) => {
-  // console.log(pricing)
-  return (
+class Pricing extends React.Component {
+    render() {
+      const { data } = this.props
+      const { pricing: pricing } = data.allMarkdownRemark.edges[0].node.frontmatter
+      return (
     <div>
-    {/* <div className="row"><div className="col s12"><br></br></div></div>
+    <div className="row"><div className="col s12"><br></br></div></div>
     <div className="row">
       <div className="col s12 center-align feature-items">
         <h4 className="pricing-h">{pricing.pricingHead}</h4>
@@ -67,10 +70,60 @@ export const PricingPageTemplate = ({pricing}) => {
         <br></br>
       </div>
     </div>
-    <div className="row"><div className="col s12"><br></br></div></div> */}
+    <div className="row"><div className="col s12"><br></br></div></div>
   </div>
-  );
-};
-
-export default PricingPageTemplate;
-
+    )
+  }
+  }
+  
+  Pricing.propTypes = {
+      data: PropTypes.shape({
+        allMarkdownRemark: PropTypes.shape({
+          edges: PropTypes.array,
+        }),
+      }),
+    }
+  
+  export default () => (
+      <StaticQuery
+        query={graphql`
+          query PricingQuery {
+            allMarkdownRemark(
+              filter: { frontmatter: { templateKey: { eq: "pricing-page" } } }
+            ) {
+              edges {
+                node {
+                  frontmatter {
+                    pricing {
+                      pricingHead
+                      description1
+                      description2
+                      ticImage
+                      priceBox1 {
+                        head
+                        head2
+                        description
+                        featureList {
+                          list
+                        }
+                        price
+                      }
+                      priceBox2 {
+                        head
+                        head2
+                        description
+                        featureList {
+                          list
+                        }
+                        price
+                      }
+                    }        
+                  }
+                }
+              }
+            }
+          }
+        `}
+        render={(data, count) => <Pricing data={data} count={count} />}
+      />
+    )

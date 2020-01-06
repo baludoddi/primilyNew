@@ -1,18 +1,21 @@
 import React from "react";
-import "materialize-css/sass/materialize.scss";
+import PropTypes from 'prop-types'
+import { Link, graphql, StaticQuery } from 'gatsby'
 
-export const DescribePageTemplate = ({describe}) => {
-  // console.log(describe)
-  return (
+class Describe extends React.Component {
+    render() {
+      const { data } = this.props
+      const { describe: describe } = data.allMarkdownRemark.edges[0].node.frontmatter
+      return (
     <div>
-      {/* <div className="grey lighten-4">
+      <div className="grey lighten-4">
         <div className="row"><div className="col s12"><br></br></div></div>
         <div className="row"><div className="col s12"><br></br></div></div>
 
         <div className="container">
 
           <div className="row">
-              {describe.describe.cards.map((card, index) => (
+              {describe.cards.map((card, index) => (
                 <div className="col s4" key={index}>
                   <div children="row"> 
                 <div className="col s1"><i className="Large material-icons">{card.icon}</i></div>
@@ -36,7 +39,7 @@ export const DescribePageTemplate = ({describe}) => {
             <div className="col s10">
 
               <div className="video-container">
-                <iframe width="853" height="480" src={describe.describe.video.src} frameBorder="0" allowFullScreen></iframe>
+                <iframe width="853" height="480" src={describe.video.src} frameBorder="0" allowFullScreen></iframe>
               </div>
             </div>
             <div className="col s1">
@@ -54,14 +57,14 @@ export const DescribePageTemplate = ({describe}) => {
       <div className="row"><div className="col s12"><br></br></div></div>
         <div className="row">
           <div className="col s4 center-align">
-            <img src={describe.description.mainImage} className="responsive-img" alt="" />
+            {/* <img src={describe.description.mainImage} className="responsive-img" alt="" /> */}
             <div className="row"><div className="col s12"></div></div>
-            <img src={describe.description.playstoreImage} className="responsive-img" height="67"
-              width="232" />
+            {/* <img src={describe.description.playstoreImage} className="responsive-img" height="67"
+              width="232" /> */}
           </div>
           <div className="col s2"></div>
           <div className="col s6">
-            <div className="feature-items">
+            {/* <div className="feature-items">
               <h4 className="description-font">{describe.description.cardHead}</h4>
               <p>{describe.description.description}</p>
               <div className="row"></div>
@@ -77,7 +80,7 @@ export const DescribePageTemplate = ({describe}) => {
                 </div>
               </div>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="row"><div className="col s12"><br></br></div></div>
@@ -88,12 +91,12 @@ export const DescribePageTemplate = ({describe}) => {
   <div className="container-fluid grey lighten-4">
       <div className="container">
         <div className="row">
-          <div className="col s12"><h3 className="center-align grey-text h-style">{describe.appGalley.appGalleryHead}</h3></div>
+          {/* <div className="col s12"><h3 className="center-align grey-text h-style">{describe.appGalley.appGalleryHead}</h3></div> */}
         </div>
         <div className="row">
           <div className="col s12">
             <div className="carousel carousel-slider center">
-            {describe.appGalley.sliderImages.map((slides, index) => (
+            {/* {describe.appGalley.sliderImages.map((slides, index) => (
               
               <div className="carousel-item" href="#one!" key={index}><div className="row">
                   <div className="col s4"></div>
@@ -102,7 +105,7 @@ export const DescribePageTemplate = ({describe}) => {
                   </div>
               </div>
               </div>
-            ))}
+            ))} */}
             </div>
           </div>
           <div className="row"><div className="col s12"><br></br></div></div>
@@ -110,10 +113,69 @@ export const DescribePageTemplate = ({describe}) => {
         </div>
       </div>
       </div>
-      <div className="row"><div className="col s12"><br></br></div></div> */}
+      <div className="row"><div className="col s12"><br></br></div></div>
     </div>
-  );
-};
-
-export default DescribePageTemplate;
+    )
+  }
+  }
+  
+  Describe.propTypes = {
+      data: PropTypes.shape({
+        allMarkdownRemark: PropTypes.shape({
+          edges: PropTypes.array,
+        }),
+      }),
+    }
+  
+  export default () => (
+      <StaticQuery
+        query={graphql`
+          query DescribeQuery {
+            allMarkdownRemark(
+              filter: { frontmatter: { templateKey: { eq: "describe-page" } } }
+            ) {
+              edges {
+                node {
+                  frontmatter {
+                    describe {
+                      cards {
+                        icon
+                        head
+                        description
+                        image
+                      }
+                      video {
+                        src
+                      }
+                    }
+                    description {
+                      mainImage
+                      playstoreImage
+                      cardHead
+                      description
+                      cards {
+                        descriptionlist {
+                          icon
+                          head
+                          description
+                        }
+                      }
+                    }
+                    appGalley {
+                      appGalleryHead
+                      sliderImages {
+                        slideImg
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        `}
+        render={(data, count) => <Describe data={data} count={count} />}
+      />
+    )
+  
+  
 

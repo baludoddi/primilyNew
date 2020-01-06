@@ -1,11 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { FeaturePageTemplate } from "../../templates/feature-page";
+import { Feature } from "../../templates/feature-page";
 
 const FeaturePagePreview = ({ entry }) => {
-  const feature = entry.getIn(["data"]).toJS();
-  return <FeaturePageTemplate feature={feature} />;
+  const data = entry.getIn(["data"]).toJS();
+  // var node = {node : feature}
+  // var edges = [];
+  // edges[0] = node;
+  // var data =  {
+  //   allMarkdownRemark : edges
+  // }
+  // console.log(feature)
+  return <Feature data={data} />;
 };
 
 FeaturePagePreview.propTypes = {
