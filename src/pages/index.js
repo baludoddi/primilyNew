@@ -4,18 +4,18 @@ import { graphql } from "gatsby";
 import Helmet from "react-helmet";
 import isAfter from "date-fns/is_after";
 import FeaturePageTemplate from '../templates/feature-page';
-import DescribePageTemplate from '../templates/describe-page';
-import PricingPageTemplate from '../templates/pricing-page';
-import DemoPageTemplate from '../templates/demo-page';
-import FAQPageTemplate from '../templates/frequntlyAskedQuestions-page';
-import HomePageComponentTemplate from '../templates/home-page';
+import DescribePageTemplate from '../site-templates/describe-page';
+import PricingPageTemplate from '../site-templates/pricing-page';
+import DemoPageTemplate from '../site-templates/demo-page';
+// import FAQPageTemplate from '../templates/frequntlyAskedQuestions-page';
+import HomePageComponentTemplate from '../site-templates/home-page';
 import Layout from "../components/Layout";
 import CarouselComponent from "../components/carousel";
 import { withPrefix } from "gatsby"
 import "../styles/features.css";
 import "materialize-css/sass/materialize.scss";
 
-export const HomePageTemplate = ({ home, feature, describe, pricing, demo }) => {
+export const HomePageTemplate = ({ home, describe, pricing, demo }) => {
   return (
     <>
       <div className="row"></div>
@@ -25,7 +25,7 @@ export const HomePageTemplate = ({ home, feature, describe, pricing, demo }) => 
             <HomePageComponentTemplate page={home.home} />
           </div>
           <div id="features" className="section scrollspy">
-            <FeaturePageTemplate feature={feature.feature} />
+            {/* <FeaturePageTemplate feature={feature.feature} /> */}
           </div>
           <div id="describe" className="section scrollspy">
             <DescribePageTemplate describe={describe} />
@@ -52,13 +52,14 @@ class HomePage extends React.Component {
       data: { navbarData },
     } = this.props;
     const { frontmatter: home } = data.homePageData.edges[0].node;
-    const { frontmatter: feature } = data.featureData.edges[0].node;
+    // const { frontmatter: feature } = data.featureData.edges[0].node;
     const { frontmatter: describe } = data.describeData.edges[0].node;
     const { frontmatter: pricing } = data.pricingData.edges[0].node;
     const { frontmatter: demo } = data.demoData.edges[0].node;
     const {
       seo: { title: seoTitle, description: seoDescription, browserTitle },
     } = home;
+    console.log(data.homePageData.edges[0].node)
     // let upcomingMeetup = null;
     // Find the next meetup that is closest to today
     // data.allMarkdownRemark.edges.every(item => {
@@ -77,7 +78,7 @@ class HomePage extends React.Component {
           <meta name="description" content={seoDescription} />
           <title>{browserTitle}</title>
         </Helmet>
-        <HomePageTemplate home={home} feature={feature} describe={describe} pricing={pricing} demo={demo} />
+        <HomePageTemplate home={home} describe={describe} pricing={pricing} demo={demo} />
       </Layout>
     );
   }
@@ -110,21 +111,6 @@ export const pageQuery = graphql`
               browserTitle
               title
               description
-            }
-          }
-        }
-      }
-    }
-    featureData: allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "feature-page" } } }) {
-      edges {
-        node {
-          frontmatter {
-            feature {
-              featureBody {
-                icon
-                head
-                description
-              }
             }
           }
         }

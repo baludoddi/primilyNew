@@ -5,7 +5,7 @@ export const PricingPageTemplate = ({pricing}) => {
   // console.log(pricing)
   return (
     <div>
-    {/* <div className="row"><div className="col s12"><br></br></div></div>
+    <div className="row"><div className="col s12"><br></br></div></div>
     <div className="row">
       <div className="col s12 center-align feature-items">
         <h4 className="pricing-h">{pricing.pricingHead}</h4>
@@ -67,7 +67,7 @@ export const PricingPageTemplate = ({pricing}) => {
         <br></br>
       </div>
     </div>
-    <div className="row"><div className="col s12"><br></br></div></div> */}
+    <div className="row"><div className="col s12"><br></br></div></div>
   </div>
   );
 };
