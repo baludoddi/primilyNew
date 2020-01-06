@@ -17,190 +17,22 @@ collections:
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "home-page" }
           - {
-              label: "Feature",
-              name: "feature",
-              widget: "list",
-              fields:
-                [
-                  { label: "Icon", name: "icon", widget: "string" },
-                  { label: "Head", name: "head", widget: "string" },
-                  { label: "Description", name: "description", widget: "string" }
-                ]
-            }
-          - {
-              label: "Describe",
-              name: "describe",
+              label: "Home",
+              name: "home",
               widget: "object",
               fields:
                 [
                   {
-                    label: "Cards",
-                    name: "cards",
+                    label: "Slider Images",
+                    name: "sliderImages",
                     widget: "list",
                     fields:
                       [
-                        { label: "Head", name: "head", widget: "string" },
-                        { label: "Description", name: "description", widget: "string" },
-                        { label: "Image", name: "image", widget: "image" },
-                        { label: "Icon", name: "icon", widget: "string" }
-                      ]
-                  },
-                  { 
-                    label: "Video", 
-                    name: "video", 
-                    widget: "object",
-                    fields:
-                      [
-                        { label: "src", name: "src", widget: "string" }
+                        { label: "Image src", name: "imagesrc", widget: "image" },
+                        { label: "Image alt", name: "imagealt", widget: "string" },
                       ]
                   }
                 ]
-            }
-          - {
-            label: "Description",
-            name: "description",
-            widget: "object",
-            fields:
-              [
-                { label: "Main Image", name: "mainImage", widget: "image" },
-                { label: "Play Store Image", name: "playstoreImage", widget: "image" },
-                { label: "Card Head", name: "cardHead", widget: "string" },
-                { label: "Description", name: "description", widget: "string" },
-                {
-                  label: "Cards",
-                  name: "cards",
-                  widget: "object",
-                  field: 
-                    { 
-                      label: "Description List", 
-                      name: "descriptionlist", 
-                      widget: "list", 
-                      fields: 
-                        [
-                          { label: "Description", required: true, name: "description", widget: "text" },
-                          { label: "Head", required: true, name: "head", widget: "string" },
-                          { label: "Icon", required: true, name: "icon", widget: "string" }
-                        ]
-                    }
-                }
-              ]
-            }
-          - {
-              label: "App Galley",
-              name: "appGalley",
-              required: true,
-              widget: "object",
-              fields:
-                [
-                  { label: "App Head", name: "appGalleryHead", widget: "string" },
-                  # {
-                  #   label: "Slider Images",
-                  #   name: "sliderImages",
-                  #   widget: "list",
-                  #   fields:
-                  #     [
-                  #       { label: "slider Image", name: "slideImg", widget: "image" }
-                  #     ]
-                  # }
-                ]
-            }
-          - {
-              label: "Pricing",
-              name: "pricing",
-              widget: "object",
-              fields:
-                [
-                  { label: "Pricing Head", name: "pricingHead", widget: "string" },
-                  { label: "Description 1", name: "description1", widget: "string" },
-                  { label: "Description 2", name: "description2", widget: "string" },
-                  { label: "Tic Image", name: "ticImage", widget: "image" },
-                  {
-                    label: "Price Box 1",
-                    name: "priceBox1",
-                    required: true,
-                    widget: "object",
-                    fields:
-                      [
-                        { label: "Head", name: "head", widget: "string" },
-                        { label: "Head 2", name: "head2", widget: "string" },
-                        { label: "Description", name: "description", widget: "string" },
-                        { label: "Price", name: "price", widget: "number" },
-                        # { 
-                        #   label: "Features List",
-                        #   name: "featureList", 
-                        #   widget: "list", 
-                        #   fields:
-                        #     [
-                        #       { label: "List", name: "list", widget: "string" },
-                        #     ]
-                        # }
-                      ]
-                  },
-                  {
-                    label: "Price Box 2",
-                    name: "priceBox2",
-                    required: true,
-                    widget: "object",
-                    fields:
-                      [
-                        { label: "Head", name: "head", widget: "string" },
-                        { label: "Head 2", name: "head2", widget: "string" },
-                        { label: "Description", name: "description", widget: "string" },
-                        { label: "Price", name: "price", widget: "string" },
-                        # { 
-                        #   label: "Features List",
-                        #   name: "featureList", 
-                        #   widget: "list", 
-                        #   fields:
-                        #     [
-                        #       { label: "List", name: "list", widget: "string" },
-                        #     ]
-                        # }
-                      ]
-                  }
-                ]
-            }
-          - {
-              label: "Demo",
-              name: "demo",
-              required: true,
-              widget: "object",
-              fields:
-                [
-                  { label: "Demo Head", name: "demoHead", widget: "string" },
-                  { label: "Description", name: "description", widget: "string" },
-                  {
-                    label: "Demo Images",
-                    name: "demoImages",
-                    required: true,
-                    widget: "object",
-                    fields:
-                      [
-                        { label: "Sourse 1", name: "src1", widget: "image" },
-                        { label: "Sourse 2", name: "src2", widget: "image" }
-                      ]
-                  }
-                ],
-            }
-          - {
-              label: "Frequently Asked Questions",
-              name: "faq",
-              widget: "object",
-              fields:
-                [
-                  { label: "FAQ Head", name: "faqHead", widget: "string" },
-                  {
-                    label: "Questions and Answers",
-                    name: "questionsAndAns",
-                    required: true,
-                    widget: "list",
-                    fields:
-                      [
-                        { label: "Question", name: "question", widget: "string" },
-                        { label: "Answer", name: "answer", widget: "string" }
-                      ]
-                  }
-                ],
             }
           - {
               label: "SEO & Meta",

@@ -2,10 +2,11 @@ import React from "react";
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 
-class Describe extends React.Component {
+export class Describe extends React.Component {
     render() {
-      const { data } = this.props
-      const { describe: describe } = data.allMarkdownRemark.edges[0].node.frontmatter
+
+      const { describe: describe } = this.props.data
+
       return (
     <div>
       <div className="grey lighten-4">
@@ -120,11 +121,7 @@ class Describe extends React.Component {
   }
   
   Describe.propTypes = {
-      data: PropTypes.shape({
-        allMarkdownRemark: PropTypes.shape({
-          edges: PropTypes.array,
-        }),
-      }),
+      data: PropTypes.object
     }
   
   export default () => (
@@ -173,7 +170,7 @@ class Describe extends React.Component {
             }
           }
         `}
-        render={(data, count) => <Describe data={data} count={count} />}
+        render={(data, count) => <Describe data={data.allMarkdownRemark.edges[0].node.frontmatter} count={count} />}
       />
     )
   

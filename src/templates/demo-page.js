@@ -2,10 +2,11 @@ import React from "react";
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 
-class Demo extends React.Component {
+export class Demo extends React.Component {
     render() {
-      const { data } = this.props
-      const { demo: demo } = data.allMarkdownRemark.edges[0].node.frontmatter
+
+      const { demo } = this.props.data
+
       return (
         <div>
             <div className="row"><div className="col s12"><br></br></div></div>
@@ -23,7 +24,7 @@ class Demo extends React.Component {
                     <div className="col s3"></div>
                 </div>
                 <br></br>
-                <div className="row">
+                {/* <div className="row">
                     <hr />
                     <h5>Contact Us</h5>
                     <form
@@ -36,7 +37,7 @@ class Demo extends React.Component {
                         <textarea name="message" placeholder="Your message" id="" cols="30" rows="40" />
                         <button className="waves-effect waves-light btn">Send</button>
                     </form>
-                </div>
+                </div> */}
             </div>
         </div>
     )
@@ -44,11 +45,7 @@ class Demo extends React.Component {
 }
 
 Demo.propTypes = {
-    data: PropTypes.shape({
-      allMarkdownRemark: PropTypes.shape({
-        edges: PropTypes.array,
-      }),
-    }),
+  data: PropTypes.object
   }
 
 export default () => (
@@ -75,7 +72,7 @@ export default () => (
           }
         }
       `}
-      render={(data, count) => <Demo data={data} count={count} />}
+      render={(data, count) => <Demo data={data.allMarkdownRemark.edges[0].node.frontmatter} count={count} />}
     />
   )
 
