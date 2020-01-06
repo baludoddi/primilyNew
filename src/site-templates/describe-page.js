@@ -5,7 +5,7 @@ export const DescribePageTemplate = ({describe}) => {
   // console.log(describe)
   return (
     <div>
-      {/* <div className="grey lighten-4">
+      <div className="grey lighten-4">
         <div className="row"><div className="col s12"><br></br></div></div>
         <div className="row"><div className="col s12"><br></br></div></div>
 
@@ -110,7 +110,7 @@ export const DescribePageTemplate = ({describe}) => {
         </div>
       </div>
       </div>
-      <div className="row"><div className="col s12"><br></br></div></div> */}
+      <div className="row"><div className="col s12"><br></br></div></div>
     </div>
   );
 };

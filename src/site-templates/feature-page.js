@@ -13,7 +13,7 @@ export const FeaturePageTemplate = ({feature}) => {
       <div className="col s1"></div>
         <div className="col s10">
         <div className="row">
-          {/* {feature.map((feature, index) => (
+          {feature.featureBody.map((feature, index) => (
             <div className="col s3" key={index}>
               <div className="center-align feature-items">
                 <div className="row">
@@ -26,7 +26,7 @@ export const FeaturePageTemplate = ({feature}) => {
                 <p>{feature.description}</p>
               </div>
             </div>
-          ))} */}
+          ))}
         </div>
         </div>
         <div className="col s1"></div>

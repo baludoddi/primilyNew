@@ -13,9 +13,9 @@ export class HomePageComponentTemplate extends React.Component {
     const { page } = this.props;
   return (
     <div className="container">
-     {/* <CarouselComponent content={page.sliderImages} />
+     <CarouselComponent content={page.sliderImages} />
      <div className="row"><div className="col s12"><br></br></div></div>
-     <div className="row"><div className="col s12"><br></br></div></div> */}
+     <div className="row"><div className="col s12"><br></br></div></div>
     </div>
   );
   }

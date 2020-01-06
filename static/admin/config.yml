@@ -221,6 +221,30 @@ collections:
                   { label: "Description", name: "description", widget: "string" },
                 ],
             }
+      - file: "src/pages/feature/index.md"
+        label: "Feature"
+        name: "feature"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "feature-page" }
+          - {
+              label: "Feature",
+              name: "feature",
+              widget: "object",
+              fields:
+                [
+                  {
+                    label: "Feature Body",
+                    name: "featureBody",
+                    widget: "list",
+                    fields:
+                      [
+                        { label: "Icon", name: "icon", widget: "string" },
+                        { label: "Head", name: "head", widget: "string" },
+                        { label: "Description", name: "description", widget: "string" }
+                      ]  
+                  }
+                ]
+            }
       - file: "src/pages/describe/index.md"
         label: "Describe"
         name: "describe"
@@ -302,6 +326,94 @@ collections:
                       ]
                   }
                 ]
+            }
+      - file: "src/pages/pricing/index.md"
+        label: "Pricing"
+        name: "pricing"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "pricing-page" }
+          - {
+              label: "Pricing",
+              name: "pricing",
+              widget: "object",
+              fields:
+                [
+                  { label: "Pricing Head", name: "pricingHead", widget: "string" },
+                  { label: "Description 1", name: "description1", widget: "string" },
+                  { label: "Description 2", name: "description2", widget: "string" },
+                  { label: "Tic Image", name: "ticImage", widget: "image" },
+                  {
+                    label: "Price Box 1",
+                    name: "priceBox1",
+                    required: true,
+                    widget: "object",
+                    fields:
+                      [
+                        { label: "Head", name: "head", widget: "string" },
+                        { label: "Head 2", name: "head2", widget: "string" },
+                        { label: "Description", name: "description", widget: "string" },
+                        { label: "Price", name: "price", widget: "number" },
+                        { 
+                          label: "Features List",
+                          name: "featureList", 
+                          widget: "list", 
+                          fields:
+                            [
+                              { label: "List", name: "list", widget: "string" },
+                            ]
+                        }
+                      ]
+                  },
+                  {
+                    label: "Price Box 2",
+                    name: "priceBox2",
+                    required: true,
+                    widget: "object",
+                    fields:
+                      [
+                        { label: "Head", name: "head", widget: "string" },
+                        { label: "Head 2", name: "head2", widget: "string" },
+                        { label: "Description", name: "description", widget: "string" },
+                        { label: "Price", name: "price", widget: "string" },
+                        { 
+                          label: "Features List",
+                          name: "featureList", 
+                          widget: "list", 
+                          fields:
+                            [
+                              { label: "List", name: "list", widget: "string" },
+                            ]
+                        }
+                      ]
+                  }
+                ]
+            }
+      - file: "src/pages/demo/index.md"
+        label: "Demo"
+        name: "demo"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "demo-page" }
+          - {
+              label: "Demo",
+              name: "demo",
+              required: true,
+              widget: "object",
+              fields:
+                [
+                  { label: "Demo Head", name: "demoHead", widget: "string" },
+                  { label: "Description", name: "description", widget: "string" },
+                  {
+                    label: "Demo Images",
+                    name: "demoImages",
+                    required: true,
+                    widget: "object",
+                    fields:
+                      [
+                        { label: "Sourse 1", name: "src1", widget: "image" },
+                        { label: "Sourse 2", name: "src2", widget: "image" }
+                      ]
+                  }
+                ],
             }
       - file: "src/pages/about/index.md"
         label: "About"
