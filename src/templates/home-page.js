@@ -3,14 +3,21 @@ import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import CarouselComponent from '../components/carousel'
 
-class Home extends React.Component {
+export class Home extends React.Component {
   render() {
-    const { data } = this.props
-    const { home: home } = data.allMarkdownRemark.edges[0].node.frontmatter
-    // console.log(posts)
+    
+    const { home } = this.props.data
+
     return (
     <div className="container">
      <CarouselComponent content={home.sliderImages} />
+     <div className="carousel carousel-slider center">
+  {home.sliderImages.map((image, index) => (
+  <div className="carousel-item blue white-text" href="#one!" key={index}>
+    <img src={image.imagesrc} className="responsive-img" alt={image.imagealt}/>
+  </div>
+  ))}
+  </div>
      <div className="row"><div className="col s12"><br></br></div></div>
      <div className="row"><div className="col s12"><br></br></div></div>
     </div>
@@ -19,11 +26,7 @@ class Home extends React.Component {
   }
   
   Home.propTypes = {
-      data: PropTypes.shape({
-        allMarkdownRemark: PropTypes.shape({
-          edges: PropTypes.array,
-        }),
-      }),
+    data: PropTypes.object
     }
   
   export default () => (
@@ -48,7 +51,7 @@ class Home extends React.Component {
             }
           }
         `}
-        render={(data, count) => <Home data={data} count={count} />}
+        render={(data, count) => <Home data={data.allMarkdownRemark.edges[0].node.frontmatter} count={count} />}
       />
     )
   

@@ -2,10 +2,11 @@ import React from "react";
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 
-class Pricing extends React.Component {
+export class Pricing extends React.Component {
     render() {
-      const { data } = this.props
-      const { pricing: pricing } = data.allMarkdownRemark.edges[0].node.frontmatter
+
+      const { pricing } = this.props.data
+
       return (
     <div>
     <div className="row"><div className="col s12"><br></br></div></div>
@@ -77,11 +78,7 @@ class Pricing extends React.Component {
   }
   
   Pricing.propTypes = {
-      data: PropTypes.shape({
-        allMarkdownRemark: PropTypes.shape({
-          edges: PropTypes.array,
-        }),
-      }),
+    data: PropTypes.object
     }
   
   export default () => (
@@ -124,6 +121,6 @@ class Pricing extends React.Component {
             }
           }
         `}
-        render={(data, count) => <Pricing data={data} count={count} />}
+        render={(data, count) => <Pricing data={data.allMarkdownRemark.edges[0].node.frontmatter} count={count} />}
       />
     )

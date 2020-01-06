@@ -4,9 +4,9 @@ import { Link, graphql, StaticQuery } from 'gatsby'
 
 export class Feature extends React.Component {
     render() {
-      const { data } = this.props
-      const { feature: feature } = data.allMarkdownRemark.edges[0].node.frontmatter
-      // console.log(feature)
+
+      const { feature } = this.props.data
+
       return (
     <div>
       <div className="row"><div className="col s12"><br></br></div></div>
@@ -42,11 +42,7 @@ export class Feature extends React.Component {
 }
 
 Feature.propTypes = {
-    data: PropTypes.shape({
-      allMarkdownRemark: PropTypes.shape({
-        edges: PropTypes.array,
-      }),
-    }),
+    data: PropTypes.object
   }
 
 export default () => (
@@ -72,7 +68,7 @@ export default () => (
           }
         }
       `}
-      render={(data, count) => <Feature data={data} count={count} />}
+      render={(data, count) => <Feature data={data.allMarkdownRemark.edges[0].node.frontmatter} count={count} />}
     />
   )
 
