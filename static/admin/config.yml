@@ -19,20 +19,12 @@ collections:
           - {
               label: "Feature",
               name: "feature",
-              widget: "object",
+              widget: "list",
               fields:
                 [
-                  {
-                    label: "Feature Body",
-                    name: "featureBody",
-                    widget: "list",
-                    fields:
-                      [
-                        { label: "Icon", name: "icon", widget: "string" },
-                        { label: "Head", name: "head", widget: "string" },
-                        { label: "Description", name: "description", widget: "string" }
-                      ]  
-                  }
+                  { label: "Icon", name: "icon", widget: "string" },
+                  { label: "Head", name: "head", widget: "string" },
+                  { label: "Description", name: "description", widget: "string" }
                 ]
             }
           - {
@@ -229,7 +221,7 @@ collections:
           - {
               label: "Feature",
               name: "feature",
-              widget: "object",
+              widget: "list",
               fields:
                 [
                   {

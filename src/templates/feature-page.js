@@ -1,11 +1,13 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { graphql } from "gatsby";
-import "materialize-css/sass/materialize.scss";
+import PropTypes from 'prop-types'
+import { Link, graphql, StaticQuery } from 'gatsby'
 
-export const FeaturePageTemplate = ({feature}) => {
-  
-  return (
+export class Feature extends React.Component {
+    render() {
+      const { data } = this.props
+      const { feature: feature } = data.allMarkdownRemark.edges[0].node.frontmatter
+      // console.log(feature)
+      return (
     <div>
       <div className="row"><div className="col s12"><br></br></div></div>
       <div className="row"><div className="col s12"><br></br></div></div>
@@ -13,7 +15,7 @@ export const FeaturePageTemplate = ({feature}) => {
       <div className="col s1"></div>
         <div className="col s10">
         <div className="row">
-          {/* {feature.map((feature, index) => (
+          {feature.featureBody.map((feature, index) => (
             <div className="col s3" key={index}>
               <div className="center-align feature-items">
                 <div className="row">
@@ -26,7 +28,7 @@ export const FeaturePageTemplate = ({feature}) => {
                 <p>{feature.description}</p>
               </div>
             </div>
-          ))} */}
+          ))}
         </div>
         </div>
         <div className="col s1"></div>
@@ -35,51 +37,42 @@ export const FeaturePageTemplate = ({feature}) => {
       <div className="row"><div className="col s12"><br></br></div></div>
       <div className="row"><div className="col s12"><br></br></div></div>
     </div>
-  );
-};
+)
+}
+}
 
-export default FeaturePageTemplate;
+Feature.propTypes = {
+    data: PropTypes.shape({
+      allMarkdownRemark: PropTypes.shape({
+        edges: PropTypes.array,
+      }),
+    }),
+  }
 
-// class FeaturePage extends React.Component {
-//   render() {
-//     const { data } = this.props;
-//     console.log(this.props)
-//     const { frontmatter: feature } = data.FeaturePageData.edges[0].node;
-
-//     return (
-//       <FeaturePageTemplate feature={feature} />
-//     );
-//   }
-// }
-
-// FeaturePage.propTypes = {
-//   data: PropTypes.shape({
-//     allMarkdownRemark: PropTypes.shape({
-//       edges: PropTypes.array,
-//     }),
-//   }),
-// };
-
-// export default FeaturePage;
-
-// export const featurePageQuery = graphql`
-//   query FeaturePageQuery {
-//     featurePageData: allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "feature-page" } } }) {
-//       edges {
-//         node {
-//           frontmatter {
-//             feature {
-//               featureBody {
-//                 icon
-//                 head
-//                 description
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// `;
-
+export default () => (
+    <StaticQuery
+      query={graphql`
+        query FeatureQuery {
+          allMarkdownRemark(
+            filter: { frontmatter: { templateKey: { eq: "feature-page" } } }
+          ) {
+            edges {
+              node {
+                frontmatter {
+                  feature {
+                    featureBody {
+                      description
+                      head
+                      icon
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      `}
+      render={(data, count) => <Feature data={data} count={count} />}
+    />
+  )
 
