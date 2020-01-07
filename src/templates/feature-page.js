@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
+import '../styles/feature-page.scss';
 
 export class Feature extends React.Component {
     render() {
@@ -8,16 +9,16 @@ export class Feature extends React.Component {
       const { feature } = this.props.data
 
       return (
-    <div>
+    <div className="feature">
       <div className="row"><div className="col s12"><br></br></div></div>
       <div className="row"><div className="col s12"><br></br></div></div>
-      <div className="row">
-      <div className="col s1"></div>
-        <div className="col s10">
+      <div className="container">
+      {/* <div className="col s1"></div> */}
+        {/* <div className="col s12"> */}
         <div className="row">
           {feature.featureBody.map((feature, index) => (
-            <div className="col s3" key={index}>
-              <div className="center-align feature-items">
+            <div className="col s12 m6 l3" key={index}>
+              <div className="center-align feature-items feature-card">
                 <div className="row">
                   <div className="col s4"></div>
                   <div className="col s3">
@@ -30,8 +31,8 @@ export class Feature extends React.Component {
             </div>
           ))}
         </div>
-        </div>
-        <div className="col s1"></div>
+        {/* </div> */}
+        {/* <div className="col s1"></div> */}
       </div>
       <div className="row"><div className="col s12"><br></br></div></div>
       <div className="row"><div className="col s12"><br></br></div></div>
