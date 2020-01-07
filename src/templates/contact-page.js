@@ -8,28 +8,77 @@ import Layout from "../components/Layout";
 import HTMLContent from "../components/Content";
 import "../styles/about-page.scss";
 
-export const ContactPageTemplate = props => {
-  const { page } = props;
+export class ContactPageTemplate extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {name: '', email: '', message: ''};
 
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(e) {
+    this.setState({ [e.target.id]: e.target.value })
+  }
+
+  formValidate() {
+    const { name, email, message } = this.state;
+    return name !== '' && email !== '' && message !== ''
+  }
+
+  handleSubmit(event) {
+    alert('A name was submitted: ' + this.state.name);
+    event.preventDefault();
+  }
+  render() {
+    const { title } = this.props.page.frontmatter;
+    // console.log(this.props)
   return (
+    <div>
+      <div className="row"><div className="col s12"></div></div>
+      <div className="row"><div className="col s12"></div></div>
     <div className="container">
+      <div className="card">
+        <div className="row">
+          <div className="col s12">
+            <h4>{title}</h4>
+          </div>
+        </div>
       <div className="row">
-        <div className="col s12">
-          <h3 className="grey-dark">{page.frontmatter.title}</h3>
-        </div>
-        <div className="col s6">
-          <p className="grey-light">{page.frontmatter.contactDescription}</p>
-        </div>
-        <div className="col s1">
-        
-        </div>
-        <div className="col s5">
-          <img className="responsive-img" src={page.frontmatter.contactGallery.image} alt={page.frontmatter.contactGallery.imageAlt} />
-        </div>
+        <form className="col s12" onSubmit={this.handleSubmit}>
+          <div className="row">
+            <div className="input-field col s12">
+              <input id="name" value={this.state.name} onChange={this.handleChange} type="text" className="validate" />
+              <label htmlFor="name">Name</label>
+            </div>
+          </div>
+          <div className="row">
+            <div className="input-field col s12">
+              <input id="email" value={this.state.email} onChange={this.handleChange} type="email" className="validate" />
+              <label htmlFor="email">Email</label>
+            </div>
+          </div>
+          <div className="row">
+            <div className="input-field col s12">
+              <textarea id="message" value={this.state.message} onChange={this.handleChange} className="materialize-textarea"></textarea>
+              <label htmlFor="message">Message</label>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col s12">
+              <button className="waves-effect waves-light btn" type="submit" disabled={!this.formValidate()}>submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
       </div>
     </div>
-  );
-};
+    <div className="row"><div className="col s12"></div></div>
+    <div className="row"><div className="col s12"></div></div>
+    </div>
+    )
+  }
+}
 
 const ContactPage = ({ data }) => {
   const { markdownRemark: page, footerData, navbarData } = data;
