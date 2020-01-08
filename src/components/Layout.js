@@ -8,6 +8,7 @@ import "../styles/features.css";
 import "materialize-css/sass/materialize.scss";
 
 const TemplateWrapper = ({ footerData = null, navbarData = null, children }) => (
+
   <div>
     <Helmet>
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -24,6 +25,7 @@ const TemplateWrapper = ({ footerData = null, navbarData = null, children }) => 
     <main>{children}</main>
     <Footer data={footerData} />
   </div>
+
 );
 
 export const query = graphql`
