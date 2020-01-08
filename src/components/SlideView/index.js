@@ -19,7 +19,10 @@ const settings = {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 10000,
+    autoplaySpeed: 5000
 };
 
 export default class SlideView extends React.Component {
