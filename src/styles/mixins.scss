@@ -1,7 +1,8 @@
 @import "./variables.scss";
 
 $breakpoints: (
-  "small": 767px,
+  "extrasmall": 270px,
+  "small": 600px,
   "medium": 992px,
   "large": 1200px,
 ) !default;

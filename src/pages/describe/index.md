@@ -6,8 +6,8 @@ describe:
       description: >-
         All call are answered 24X7 providing Location, Business Hours, Web
         links, Announcements and any other valuable information for callers
-      image: /img/routing.png
-      icon: share
+      image: 
+      icon: 
     - head: How It Works
       description: >-
         IVR relies on pre-recorded questions and responses for interacting with
@@ -16,27 +16,19 @@ describe:
         responses and incoming telephone calls are   routed to the relevant
         department.
       image:
-      icon: share
-    - head: How It Works
-      description: >-
-        IVR relies on pre-recorded questions and responses for interacting with
-        callers and direct calls to appropriate human    agents. The IVR system
-        prompts caller to select an option from a set menu using keypad
-        responses and incoming telephone calls are   routed to the relevant
-        department.
-      image:
-      icon: share
+      icon: 
     - head: What is Primily Answering Service (PAS)?
       description: >-
         The next generation Automated Phone Answering and Information Service.
         Fully mobile centric cloud based 24X7 solution for small, medium and
         individual business. Callers interact with our PAS system by using their
-        telephone keypad to receive various information from the call. Common
-        uses include finding store locations, business hours, promotional
-        specials, call routing to a departments or person and any other
-        information your caller may require.
+        telephone keypad to receive various information from the call.
       image:
-      icon: share
+      icon: 
+    - head:
+      description:
+      image: /img/routing.png
+      icon: 
     - head: Our AVAS Service
       description: >-
         We offer cloud hosted virtual mobile number solution that help customers

@@ -1,9 +1,10 @@
 ---
 templateKey: footer
 logoImage:
-  image: /img/js-wakanda.png
-  imageAlt: JavaScript Wakanda
-  tagline: Your friendly local Wakanda meetup
+  image: /img/logo.jpg
+  imageAlt: Logo
+Headding: Primily
+tagline: Make Your Own IVR
 socialLinks:
   - image: /img/meetup.svg
     imageAlt: Join us on meetup.com
