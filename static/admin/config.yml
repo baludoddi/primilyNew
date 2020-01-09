@@ -53,7 +53,7 @@ collections:
           - {
               label: "Feature",
               name: "feature",
-              widget: "list",
+              widget: "object",
               fields:
                 [
                   {
@@ -62,9 +62,9 @@ collections:
                     widget: "list",
                     fields:
                       [
-                        { label: "Icon", name: "icon", widget: "string" },
                         { label: "Head", name: "head", widget: "string" },
-                        { label: "Description", name: "description", widget: "string" }
+                        { label: "Description", name: "description", widget: "markdown" },
+                        { label: "Icon", name: "icon", widget: "string" }
                       ]  
                   }
                 ]
@@ -88,21 +88,31 @@ collections:
                       [
                         { label: "Head", name: "head", widget: "string" },
                         { label: "Description", name: "description", widget: "string" },
-                        { label: "Image", name: "image", widget: "image" },
-                        { label: "Icon", name: "icon", widget: "string" }
-                      ]
-                  },
-                  { 
-                    label: "Video", 
-                    name: "video", 
-                    widget: "object",
-                    fields:
-                      [
-                        { label: "src", name: "src", widget: "string" }
+                        { label: "Image", name: "image", required: false, widget: "image" },
+                        { label: "Icon", name: "icon", required: false, widget: "string" }
                       ]
                   }
                 ]
             }
+      - file: "src/pages/video/index.md"
+        label: "Video"
+        name: "video"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "video-page" }
+          - { 
+              label: "Video", 
+              name: "video", 
+              widget: "object",
+              fields:
+                [
+                  { label: "src", name: "src", widget: "string" }
+                ]
+            }
+      - file: "src/pages/description/index.md"
+        label: "Description"
+        name: "description"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "description-page" }
           - {
               label: "Description",
               name: "description",
@@ -132,6 +142,11 @@ collections:
                   }
                 ]
             }
+      - file: "src/pages/appgallery/index.md"
+        label: "App Gallery"
+        name: "appgallery"
+        fields:
+          - { label: "Template Key", name: "templateKey", widget: "hidden", default: "appgallery-page" }
           - {
               label: "App Galley",
               name: "appGalley",
@@ -364,7 +379,16 @@ collections:
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "faq-page" }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Policy Description", name: "policyDescription", widget: "text" }
+          - {
+              label: "Policy",
+              name: "policy",
+              widget: "list",
+              fields:
+                [
+                  { label: "Headding", name: "policyHead", widget: "string" },
+                  { label: "Description", name: "policyDescription", widget: "text" }
+                ]
+            }
           - {
               label: "SEO & Meta",
               name: "seo",

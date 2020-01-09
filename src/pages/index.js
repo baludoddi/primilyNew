@@ -5,6 +5,9 @@ import Helmet from "react-helmet";
 import isAfter from "date-fns/is_after";
 import Feature from '../templates/feature-page';
 import Describe from '../templates/describe-page';
+import Video from '../templates/video-page';
+import Description from '../templates/description-page';
+import Appgallery from '../templates/appgallery-page';
 import Pricing from '../templates/pricing-page';
 import Demo from '../templates/demo-page';
 import BlogRoll from '../templates/blog-page';
@@ -26,6 +29,15 @@ export const HomePageTemplate = ({ home }) => {
           <div id="describe" className="section scrollspy">
             <Describe />
           </div>
+          <div id="video" className="section scrollspy">
+            <Video />
+          </div>
+          <div id="description" className="section scrollspy">
+            <Description />
+          </div>
+          <div id="appgallery" className="section scrollspy">
+            <Appgallery />
+          </div>
           <div id="pricing" className="section scrollspy">
             <Pricing />
           </div>
@@ -46,9 +58,9 @@ class HomePage extends React.Component {
     } = this.props;
     const { frontmatter: home } = data.homePageData.edges[0].node;
     // const { frontmatter: feature } = data.featureData.edges[0].node;
-    const { frontmatter: describe } = data.describeData.edges[0].node;
-    const { frontmatter: pricing } = data.pricingData.edges[0].node;
-    const { frontmatter: demo } = data.demoData.edges[0].node;
+    // const { frontmatter: describe } = data.describeData.edges[0].node;
+    // const { frontmatter: pricing } = data.pricingData.edges[0].node;
+    // const { frontmatter: demo } = data.demoData.edges[0].node;
     const {
       seo: { title: seoTitle, description: seoDescription, browserTitle },
     } = home;
@@ -104,44 +116,6 @@ export const pageQuery = graphql`
               browserTitle
               title
               description
-            }
-          }
-        }
-      }
-    }
-    describeData: allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "describe-page" } } }) {
-      edges {
-        node {
-          frontmatter {
-            describe {
-              cards {
-                icon
-                head
-                description
-                image
-              }
-              video {
-                src
-              }
-            }
-            description {
-              mainImage
-              playstoreImage
-              cardHead
-              description
-              cards {
-                descriptionlist {
-                  icon
-                  head
-                  description
-                }
-              }
-            }
-            appGalley {
-              appGalleryHead
-              sliderImages {
-                slideImg
-              }
             }
           }
         }

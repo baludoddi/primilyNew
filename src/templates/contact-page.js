@@ -27,8 +27,8 @@ export class ContactPageTemplate extends React.Component {
   }
 
   handleSubmit(event) {
-    alert('A name was submitted: ' + this.state.name);
     event.preventDefault();
+    
   }
   render() {
     const { title } = this.props.page.frontmatter;

@@ -12,6 +12,9 @@ import FeaturePagePreview from "./preview-templates/FeaturePagePreview";
 import DescribePagePreview from "./preview-templates/DescribePagePreview";
 import PricingPagePreview from "./preview-templates/PricingPagePreview";
 import DemoPagePreview from "./preview-templates/PricingPagePreview";
+import VideoPagePreview from "./preview-templates/VideoPagePreview";
+import DescriptionPagePreview from "./preview-templates/DescriptionPagePreview";
+import AppgalleryPagePreview from "./preview-templates/AppgalleryPagePreview";
 
 CMS.registerPreviewTemplate("home", HomePagePreview);
 CMS.registerPreviewTemplate("about", AboutPagePreview);
@@ -25,3 +28,6 @@ CMS.registerPreviewTemplate("feature", FeaturePagePreview);
 CMS.registerPreviewTemplate("describe", DescribePagePreview);
 CMS.registerPreviewTemplate("pricing", PricingPagePreview);
 CMS.registerPreviewTemplate("demo", DemoPagePreview);
+CMS.registerPreviewTemplate("video", VideoPagePreview);
+CMS.registerPreviewTemplate("description", DescriptionPagePreview);
+CMS.registerPreviewTemplate("appgallery", AppgalleryPagePreview);
