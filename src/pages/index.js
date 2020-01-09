@@ -5,6 +5,9 @@ import Helmet from "react-helmet";
 import isAfter from "date-fns/is_after";
 import Feature from '../templates/feature-page';
 import Describe from '../templates/describe-page';
+import Video from '../templates/video-page';
+import Description from '../templates/description-page';
+import Appgallery from '../templates/appgallery-page';
 import Pricing from '../templates/pricing-page';
 import Demo from '../templates/demo-page';
 import BlogRoll from '../templates/blog-page';
@@ -25,6 +28,15 @@ export const HomePageTemplate = ({ home }) => {
           </div>
           <div id="describe" className="section scrollspy">
             <Describe />
+          </div>
+          <div id="video" className="section scrollspy">
+            <Video />
+          </div>
+          <div id="description" className="section scrollspy">
+            <Description />
+          </div>
+          <div id="appgallery" className="section scrollspy">
+            <Appgallery />
           </div>
           <div id="pricing" className="section scrollspy">
             <Pricing />

@@ -21,8 +21,19 @@ export const PolicyPageTemplate = props => {
         <div className="col s12">
         
         </div>
-        <div className="col s12">
-          <p className="grey-light">{page.frontmatter.policyDescription}</p>
+        <div className="row">
+          <div className="col s12">
+            {page.frontmatter.policy.map((qanda, index) => (
+              <div className="row" key={index}>
+                <div className="col s12">
+                  <h5>{qanda.policyHead}</h5>
+                </div>
+                <div className="col s12">
+                  <p>{qanda.policyDescription}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
@@ -61,7 +72,10 @@ export const policyPageQuery = graphql`
       html
       frontmatter {
         title
-        policyDescription
+        policy {
+          policyHead
+          policyDescription
+        }
         seo {
           browserTitle
           title
