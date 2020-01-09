@@ -6,7 +6,7 @@ describe:
         All call are answered 24X7 providing Location, Business Hours, Web
         links, Announcements and any other valuable information for callers
       head: 24X7 Call Answering
-      icon: icon
+      icon: ''
       image: /img/icon.png
     - description: >-
         IVR relies on pre-recorded questions and responses for interacting with
@@ -55,8 +55,6 @@ describe:
       head: Automated Surveys
       icon: autorenew
       image: /img/email.svg
-  video:
-    src: 'https://www.youtube.com/embed/mzW3382PST8'
 description:
   cardHead: Description of the Mobile App
   cards:
