@@ -42,6 +42,9 @@ export class ContactPageTemplate extends React.Component {
         <div className="row">
           <div className="col s12">
             <h4>{title}</h4>
+            <p> At Primily we love to help each user. Our dedicated customer service is located at Silicon Valley in California, U.S.A.  </p>
+            <br/>
+            <p>If you have any question or issues, please fill the form below and we will respond to you. </p>
           </div>
         </div>
       <div className="row">

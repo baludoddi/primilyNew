@@ -22,7 +22,7 @@ export class Feature extends React.Component {
                 <div className="row">
                   <div className="col s4"></div>
                   <div className="col s3">
-                    <i className="Large material-iconss">{feature.icon}</i>
+                    <i className="Large material-icons">{feature.icon}</i>
                   </div>
                 </div>
                 <h5 className="">{feature.head}</h5>

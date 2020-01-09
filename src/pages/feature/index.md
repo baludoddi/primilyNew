@@ -3,14 +3,17 @@ templateKey: feature-page
 feature:
   featureBody:
     - description: >-
-        Easily modify Call Menu on your Operating Hours, Holidays, Location,
-        Services, Products and Call Routing.
-      head: 'Simple Call Menu '
+        Quick Setup and Advance Call Menus. Quick Setup to give basic
+        information on operating Hours, location,
+         voicemail and Advanced to transfer call to different departments, multi-level menus and Call Routing.
+      head: Simple & Advanced Call Menus
       icon: call
     - description: Acknowledgement and notification using SMS and/or Email.
       head: Real Time Notifications
       icon: notifications
-    - description: Help adjust you routing and messaging with Real-time call logging reports.
+    - description: >-
+        Help adjust you routing and messaging with Real-time call logging
+        reports.
       head: Call logging
       icon: event_note
     - description: No equipment or phone number changes are required
