@@ -6,7 +6,7 @@ feature:
         Quick Setup and Advance Call Menus. Quick Setup to give basic
         information on operating Hours, location,
          voicemail and Advanced to transfer call to different departments, multi-level menus and Call Routing.
-      head: Simple & Advanced Call Menus
+      head: Simple and Advanced Call Menus
       icon: call
     - description: Acknowledgement and notification using SMS and/or Email.
       head: Real Time Notifications
