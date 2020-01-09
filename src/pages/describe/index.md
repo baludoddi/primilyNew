@@ -9,11 +9,14 @@ describe:
       icon: ''
       image: ''
     - body: >-
-        IVR relies on pre-recorded questions and responses for interacting with
-        callers and direct calls to appropriate human    agents. The IVR system
-        prompts caller to select an option from a set menu using keypad
-        responses and incoming telephone calls are   routed to the relevant
-        department.
+        Primily's Call Assistant relies on a _Call Menu_ for users to select the
+        information, leave voicemail or to forward their call to appropriate
+        department or extension to speak to a person. 
+
+
+        The Primily IVR system prompts caller to select an option from the Call
+        Menu using keypad responses and incoming telephone calls given the
+        selected information or routed to the relevant department.
       head: How It Works
       icon: ''
       image: ''
