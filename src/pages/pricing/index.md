@@ -8,12 +8,12 @@ pricing:
       Create an no cost account and try various routing configurations modified
       for your business.
     featureList:
-      - list: Store Hours
+      - list: Call Greeting
+      - list: Business Hours
       - list: Location
-      - list: Greeting
-      - list: Free trial phone number
-    head: Free Real-Time Trial
-    head2: No cost account creation
+      - list: Demo phone number
+    head: Easy to Demo using actual phone call
+    head2: Modify Call Menu and Voice
     price: 0
   priceBox2:
     description: No monthly commitment or payments. Purchase credits as you need them.
