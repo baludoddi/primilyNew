@@ -7,7 +7,7 @@ describe:
         links, Announcements and any other valuable information for callers
       head: 24X7 Call Answering
       icon: icon
-      image: /img/icon.png
+      image: ''
     - body: >-
         IVR relies on pre-recorded questions and responses for interacting with
         callers and direct calls to appropriate human    agents. The IVR system
