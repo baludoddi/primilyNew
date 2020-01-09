@@ -6,7 +6,7 @@ import '../styles/describe-page.scss';
 export class Describe extends React.Component {
     render() {
 
-      const { describe: describe, description: description, appGalley: appGalley } = this.props.data
+      const { describe: describe } = this.props.data
       // console.log(this.props.data)
       return (
     <div className="describe">
@@ -26,7 +26,7 @@ export class Describe extends React.Component {
                       <div className="col s10 m11 l10 feature-items"><h5 className="center-align">{card.head}</h5></div>
                       <div className="col s12 m12 l12">
                         <div className="feature-items">
-                          <p>{card.description}</p>
+                          <p>{card.body}</p>
                         </div>
                       </div>
                       {card.image ? <div className="col s12"><img src={card.image} className="responsive-img"/></div> : <div></div>}
@@ -64,7 +64,7 @@ export class Describe extends React.Component {
                       cards {
                         icon
                         head
-                        description
+                        body
                         image
                       }
                     }
