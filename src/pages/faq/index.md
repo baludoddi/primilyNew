@@ -16,18 +16,18 @@ faq:
         messaging, voicemail, and notifications.
       question: What is Primily ?
     - answer: >-
-        ALWAYS KNOW A CALL WILL BE ANSWERED... Is your phone ringing while
-        you're with a customer? No problem for the Primity Call Assistant! Don't
-        lose potential customers by switching right into voicemail. Your calls
-        will be answered 24/7 by Primity, instantly providing a greeting and a
+        ALWAYS KNOW A CALL WILL BE ANSWERED... If you are busy with with a
+        customer, no problem for the Primily Call Assistant! Don't lose
+        potential customers by switching right into voicemail. Your calls will
+        be answered 24/7 by Primily, instantly providing a greeting and a
         selection of information for the caller. All this is easily created by
         you from your mobile phone. They can instantly hear your business hours,
         location, and see customer reviews. Don't miss another business
         opportunity again by not being there to answer your phone and provide
         callers information when you are unable to answer.
-      question: How will the phone be answered
+      question: When will Primily answer your calls?
     - answer: primily is an IVR
-      question: What is Primily ?
+      question: Forward or Port your current phone number?
     - answer: primily is an IVR
       question: What is Primily ?
     - answer: primily is an IVR
