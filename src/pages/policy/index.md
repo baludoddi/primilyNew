@@ -2,9 +2,9 @@
 templateKey: policy-page
 title: Privacy & Terms of USe
 policyDescription: >-
-  iPlum, Inc. (“iPlum” or the “Company”) is committed to protecting the privacy
-  of your information. This Privacy Statement describes iPlum’s Web site privacy
-  practices.
+  Primily, Inc. (“Primily” or the “Company”) is committed to protecting the
+  privacy of your information. This Privacy Statement describes Primily's Web
+  site privacy practices.
 seo:
   browserTitle: Policy | Primily
   description: >-
