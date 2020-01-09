@@ -16,7 +16,7 @@ describe:
         department.
       head: How It Works
       icon: icon
-      image: /img/icon.png
+      image: ''
     - description: >-
         The next generation Automated Phone Answering and Information Service.
         Fully mobile centric cloud based 24X7 solution for small, medium and
@@ -24,10 +24,10 @@ describe:
         telephone keypad to receive various information from the call.
       head: What is Primily Answering Service (PAS)?
       icon: icon
-      image: /img/icon.png
+      image: ''
     - description: Overview description
       head: Overview
-      icon: icon
+      icon: ''
       image: /img/routing.png
     - description: >-
         We offer cloud hosted virtual mobile number solution that help customers
@@ -35,19 +35,19 @@ describe:
         short span of time and ensures no business call is lost
       head: Our AVAS Service
       icon: cloud
-      image: /img/icon.png
+      image: ''
     - description: >-
         Using a Hosted Virtual Phone Number in the cloud there is no hardware
         purchase. In minutes add additional numbers as you need them and in any
         area code you like.
       head: Virtural Phone Number
       icon: call
-      image: /img/land-line-phone.png
+      image: ''
     - description: >-
         Start with a low cost Pay-as-you-go service and add additional services
         and feature as you business grows.
       head: Pay as you Go and Grow
-      icon: attach_money
+      icon: ''
       image: /img/call-overview-6.png
     - description: >-
         Create a automated voice survey to get feedback on on your service,
