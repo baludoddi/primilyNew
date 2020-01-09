@@ -20,9 +20,9 @@ export class Describe extends React.Component {
               {describe.cards.map((card, index) => (
                 <div className="col s6 l4" key={index}>
                   <div className="describe-card">
-                    <div children="row"> 
+                    <div children="row">
                       {card.icon ? <div className="col s2 m1 l2"><i className="Large material-icons">{card.icon}</i></div> : null}
-                      
+
                       <div className="col s10 m11 l10 feature-items"><h5 className="center-align">{card.head}</h5></div>
                       <div className="col s12 m12 l12">
                         <div className="feature-items">
@@ -45,11 +45,11 @@ export class Describe extends React.Component {
     )
   }
   }
-  
+
   Describe.propTypes = {
       data: PropTypes.object
     }
-  
+
   export default () => (
       <StaticQuery
         query={graphql`
@@ -64,7 +64,7 @@ export class Describe extends React.Component {
                       cards {
                         icon
                         head
-                        description
+                        body
                         image
                       }
                     }
@@ -77,6 +77,6 @@ export class Describe extends React.Component {
         render={(data, count) => <Describe data={data.allMarkdownRemark.edges[0].node.frontmatter} count={count} />}
       />
     )
-  
-  
+
+
 

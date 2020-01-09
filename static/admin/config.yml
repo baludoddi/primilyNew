@@ -62,9 +62,9 @@ collections:
                     widget: "list",
                     fields:
                       [
+                        { label: "Icon", name: "icon", widget: "string" },
                         { label: "Head", name: "head", widget: "string" },
-                        { label: "Description", name: "body", widget: "markdown" },
-                        { label: "Icon", name: "icon", widget: "string" }
+                        { label: "Description", name: "description", widget: "text" }
                       ]
                   }
                 ]
@@ -87,7 +87,7 @@ collections:
                     fields:
                       [
                         { label: "Head", name: "head", widget: "string" },
-                        { label: "Description", name: "body", widget: "markdown" },
+                        { label: "Description", name: "description", widget: "text" },
                         { label: "Image", name: "image", required: false, widget: "image" },
                         { label: "Icon", name: "icon", required: false, widget: "string" }
                       ]
@@ -357,7 +357,7 @@ collections:
                     fields:
                       [
                         { label: "Question", name: "question", widget: "string" },
-                        { label: "Answer", name: "body", widget: "markdown" }
+                        { label: "Answer", name: "answer", widget: "text" }
                       ]
                   }
                 ]
