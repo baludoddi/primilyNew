@@ -63,9 +63,9 @@ collections:
                     fields:
                       [
                         { label: "Head", name: "head", widget: "string" },
-                        { label: "Description", name: "description", widget: "markdown" },
+                        { label: "Description", name: "body", widget: "markdown" },
                         { label: "Icon", name: "icon", widget: "string" }
-                      ]  
+                      ]
                   }
                 ]
             }
@@ -87,7 +87,7 @@ collections:
                     fields:
                       [
                         { label: "Head", name: "head", widget: "string" },
-                        { label: "Description", name: "description", widget: "string" },
+                        { label: "Description", name: "body", widget: "markdown" },
                         { label: "Image", name: "image", required: false, widget: "image" },
                         { label: "Icon", name: "icon", required: false, widget: "string" }
                       ]
@@ -99,9 +99,9 @@ collections:
         name: "video"
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "video-page" }
-          - { 
-              label: "Video", 
-              name: "video", 
+          - {
+              label: "Video",
+              name: "video",
               widget: "object",
               fields:
                 [
@@ -127,12 +127,12 @@ collections:
                     label: "Cards",
                     name: "cards",
                     widget: "object",
-                    field: 
-                      { 
-                        label: "Description List", 
-                        name: "descriptionlist", 
-                        widget: "list", 
-                        fields: 
+                    field:
+                      {
+                        label: "Description List",
+                        name: "descriptionlist",
+                        widget: "list",
+                        fields:
                           [
                             { label: "Description", required: true, name: "description", widget: "text" },
                             { label: "Head", required: true, name: "head", widget: "string" },
@@ -192,10 +192,10 @@ collections:
                         { label: "Head 2", name: "head2", widget: "string" },
                         { label: "Description", name: "description", widget: "string" },
                         { label: "Price", name: "price", widget: "number" },
-                        { 
+                        {
                           label: "Features List",
-                          name: "featureList", 
-                          widget: "list", 
+                          name: "featureList",
+                          widget: "list",
                           fields:
                             [
                               { label: "List", name: "list", widget: "string" },
@@ -214,10 +214,10 @@ collections:
                         { label: "Head 2", name: "head2", widget: "string" },
                         { label: "Description", name: "description", widget: "string" },
                         { label: "Price", name: "price", widget: "string" },
-                        { 
+                        {
                           label: "Features List",
-                          name: "featureList", 
-                          widget: "list", 
+                          name: "featureList",
+                          widget: "list",
                           fields:
                             [
                               { label: "List", name: "list", widget: "string" },
@@ -343,11 +343,11 @@ collections:
         name: "faq"
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "faq-page" }
-          - { 
-              label: "Frequently asked questions", 
-              name: "faq", 
-              widget: "object", 
-              fields: 
+          - {
+              label: "Frequently asked questions",
+              name: "faq",
+              widget: "object",
+              fields:
                 [
                   { label: "Title", name: "faqHead", widget: "string" },
                   {
@@ -357,7 +357,7 @@ collections:
                     fields:
                       [
                         { label: "Question", name: "question", widget: "string" },
-                        { label: "Answer", name: "answer", widget: "text" }
+                        { label: "Answer", name: "body", widget: "markdown" }
                       ]
                   }
                 ]

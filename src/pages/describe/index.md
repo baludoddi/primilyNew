@@ -49,11 +49,5 @@ describe:
       head: Pay as you Go and Grow
       icon: attach_money
       image: /img/call-overview-6.png
-    - description: >-
-        Create a automated voice survey to get feedback on on your service,
-        products, etc.
-      head: Automated Surveys
-      icon: autorenew
-      image: /img/email.svg
 ---
 
