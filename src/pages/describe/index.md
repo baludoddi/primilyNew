@@ -2,13 +2,13 @@
 templateKey: describe-page
 describe:
   cards:
-    - description: >-
-        _**All calls are answered 24X7**_ providing Location, Business Hours,
+    - body: >-
+        **_All calls are answered 24X7_** providing Location, Business Hours,
         Web links, Announcements and any other valuable information for callers
       head: 24X7 Call Answering
       icon: ''
       image: ''
-    - description: >-
+    - body: >-
         IVR relies on pre-recorded questions and responses for interacting with
         callers and direct calls to appropriate human    agents. The IVR system
         prompts caller to select an option from a set menu using keypad
@@ -17,7 +17,7 @@ describe:
       head: How It Works
       icon: icon
       image: ''
-    - description: >-
+    - body: >-
         The next generation Automated Phone Answering and Information Service.
         Fully mobile centric cloud based 24X7 solution for small, medium and
         individual business. Callers interact with our PAS system by using their
@@ -25,25 +25,25 @@ describe:
       head: What is Primily Answering Service (PAS)?
       icon: icon
       image: ''
-    - description: Overview description
+    - body: TBD - Overview description
       head: Overview
       icon: ''
       image: /img/routing.png
-    - description: >-
+    - body: >-
         We offer cloud hosted virtual mobile number solution that help customers
-        to connect to the right department in any       organization/business in
-        short span of time and ensures no business call is lost
+        to connect to the right department in any organization/business in short
+        span of time and ensures no business call is lost
       head: Our AVAS Service
       icon: cloud
       image: ''
-    - description: >-
+    - body: >-
         Using a Hosted Virtual Phone Number in the cloud there is no hardware
         purchase. In minutes add additional numbers as you need them and in any
         area code you like.
       head: Virtural Phone Number
       icon: call
       image: ''
-    - description: >-
+    - body: >-
         Start with a low cost Pay-as-you-go service and add additional services
         and feature as you business grows.
       head: Pay as you Go and Grow
