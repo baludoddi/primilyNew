@@ -3,8 +3,8 @@ templateKey: describe-page
 describe:
   cards:
     - description: >-
-        **_All calls are answered 24X7_** providing Location, Business Hours,
-        Web links, Announcements and any other valuable information for callers
+        All calls are answered 24X7 providing Location, Business Hours, Web
+        links, Announcements and any other valuable information for callers
       head: 24X7 Call Answering
       icon: ''
       image: ''
@@ -32,7 +32,7 @@ describe:
     - description: >-
         We offer cloud hosted virtual mobile number solution that help customers
         to connect to the right department in any organization/business in short
-        span of time and ensures no business call is lost
+        span of time and ensures no business call is lost.
       head: Our AVAS Service
       icon: cloud
       image: ''
@@ -48,6 +48,6 @@ describe:
         and feature as you business grows.
       head: Pay as you Go and Grow
       icon: ''
-      image: /img/call-overview-6.png
+      image: ''
 ---
 
