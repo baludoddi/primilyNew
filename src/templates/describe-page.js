@@ -64,7 +64,7 @@ export class Describe extends React.Component {
                       cards {
                         icon
                         head
-                        body
+                        description
                         image
                       }
                     }

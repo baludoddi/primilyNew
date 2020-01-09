@@ -62,9 +62,9 @@ collections:
                     widget: "list",
                     fields:
                       [
-                        { label: "Icon", name: "icon", widget: "string" },
                         { label: "Head", name: "head", widget: "string" },
-                        { label: "Description", name: "description", widget: "text" }
+                        { label: "Description", name: "description", widget: "text" },
+                        { label: "Icon", name: "icon", widget: "string" }
                       ]
                   }
                 ]
@@ -88,8 +88,8 @@ collections:
                       [
                         { label: "Head", name: "head", widget: "string" },
                         { label: "Description", name: "description", widget: "text" },
-                        { label: "Image", name: "image", required: false, widget: "image" },
-                        { label: "Icon", name: "icon", required: false, widget: "string" }
+                        { label: "Image", name: "image", widget: "image" },
+                        { label: "Icon", name: "icon", widget: "string" }
                       ]
                   }
                 ]
