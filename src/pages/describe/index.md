@@ -3,8 +3,8 @@ templateKey: describe-page
 describe:
   cards:
     - description: >-
-        All call are answered 24X7 providing Location, Business Hours, Web
-        links, Announcements and any other valuable information for callers
+        _**All calls are answered 24X7**_ providing Location, Business Hours,
+        Web links, Announcements and any other valuable information for callers
       head: 24X7 Call Answering
       icon: ''
       image: ''
