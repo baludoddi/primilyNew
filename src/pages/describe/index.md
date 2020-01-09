@@ -88,7 +88,7 @@ description:
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt
     efficitur vestibulum. Phasellus nisl leo, congue eu malesuada lobortis,
     fringilla et nulla.
-  mainImage: /img/iphone-w1.png
+  mainImage: /img/sample_of_delete.png
   playstoreImage: /img/d1.png
 appGalley:
   appGalleryHead: Our Mobile Application Gallery
