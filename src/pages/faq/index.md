@@ -26,10 +26,36 @@ faq:
         opportunity again by not being there to answer your phone and provide
         callers information when you are unable to answer.
       question: When will Primily answer your calls?
-    - answer: primily is an IVR
+    - answer: >-
+        Forwarding is a very quick way to get running the the Primity
+        Auto-Assistant. All calls will be automatically forwarded to the Primity
+        number.
+
+
+        Porting you number is a longer process but provided additional call
+        routing features. Rather tan having all call forwarded to your Primity
+        number you can setup rules to have some number go through to your
+        existing number and all other call be forwarded. 
       question: Forward or Port your current phone number?
-    - answer: primily is an IVR
-      question: What is Primily ?
+    - answer: >-
+        You can port a U.S. or Canada, Local or Toll-Free number into Primily.
+        It can be a Landline, VoIP or Mobile number.
+
+        (1) Setup a free Primily login-id. 
+
+        (2) Verify with your carrier the number you want to port is eligible to
+        be transferred.
+
+        (3)  Ensure your porting number is unlocked at existing provider.
+
+        (4)  Buy a Primily subscription with a temporary number of the same type
+        as the number you are porting. E.g. Porting a Toll Free number requires
+        an Primily Toll Free Number plan; For U.S. number porting buy Primily
+        USA local number plan; Canada number porting buy Canada local number
+        plan.
+
+        (5) Fill out the onlne form for porting your number.
+      question: How to portover your number to Primily
     - answer: primily is an IVR
       question: What is Primily ?
 seo:
