@@ -1,36 +1,29 @@
 ---
 templateKey: description-page
 description:
-  cardHead: 'Description of the Mobile App'
-  description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt
-    efficitur vestibulum. Phasellus nisl leo, congue eu malesuada lobortis,
-    fringilla et nulla.
+  cardHead: Your Mobile Phone Does It All
   cards:
     descriptionlist:
-      - description: >-
-          We offer cloud hosted virtual mobile number solution that help
-          customers to connect to the right department in any
-          organization/business in short span of time and ensures no business
-          call is lost
-        head: Our AVAS Service
+      - description: Your mobile phone can have 2 or more phone numbers
+        head: One Phone 2 Numbers
         icon: security
-      - description: >-
-          Using a Hosted Virtual Phone Number in the cloud there is no hardware
-          purchase. In minutes add additional numbers as you need them and in
-          any area code you like.
-        head: Virtural Phone Number
+      - description: Know if it is business or personal before answering
+        head: Personal & Business Calls
         icon: reply_all
-      - description: >-
-          Start with a low cost Pay-as-you-go service and add additional
-          services and feature as you business grows.
-        head: Pay as you Go and Grow
+      - description: Auto generated Call Menu for most of your needs
+        head: 'Setup in Minutes '
         icon: insert_drive_file
-      - description: >-
-          Create a automated voice survey to get feedback on on your service,
-          products, etc.
-        head: Automated Surveys
+      - description: 'Separate call, text and email notifications'
+        head: Notification & Call Logging
         icon: monetization_on
+      - description: No missed call when you are away from our office
+        head: Be Mobile as You Like
+        icon: mobile
+  description: >-
+    Mobile Centeric...Your mobile phone does everything. Call Menu changes, call
+    reporting, notifications, subscription & billing.. A separate computer is
+    not required.
   mainImage: /img/iphone-w1.png
   playstoreImage: /img/d1.png
 ---
+
