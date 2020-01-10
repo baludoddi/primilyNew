@@ -2,12 +2,15 @@
 templateKey: feature-page
 feature:
   featureBody:
-    - description: No equipment or phone number changes are required.
-      head: Keep Your Phone Number and Carrier
-      icon: settings
+    - description: Auto generate Quick menu and easy to setup Advanced menu
+      head: Simple & Advanced Call Menus
+      icon: phonelink_setup
     - description: Your mobile phone now has a Business and a Personal number
       head: One Phone 2 Numbers
       icon: pie_chart
+    - description: No equipment or phone number changes are required.
+      head: Keep Your Phone Number and Carrier
+      icon: call-end
     - description: Acknowledgement and notification using SMS and/or Email.
       head: Real Time Notifications
       icon: notifications
@@ -20,8 +23,10 @@ feature:
     - description: No fixed monthly commitment.
       head: Low Cost Cancel Anytime
       icon: attach_money
-    - description: Auto generate Quick menu and easy to setup Advanced menu
-      head: Simple & Advanced Call Menus
+    - description: >-
+        No special insulation or equipment needed. Your mobile phone does it
+        all. 
+      head: No Special Equipment Needed
       icon: phone_android
 ---
 
