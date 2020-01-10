@@ -24,6 +24,6 @@ description:
     reporting, notifications, subscription & billing.. A separate computer is
     not required.
   mainImage: /img/screen-home.png
-  playstoreImage: /img/screen-home.png
+  playstoreImage: /img/stores.png
 ---
 
