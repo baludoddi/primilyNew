@@ -12,17 +12,19 @@ describe:
       image: ''
     - body: >-
         Built using the next generation Internet Virtual Phone (IVR) technology,
-        the Primily Automated Call Assistant Automated is a fully mobile centric
-        cloud based 24X7 solution for small, medium and individual business
-        users. Callers interact with the Call Assistant using their telephone
-        keypad to receive various information from the phone call.
+        The Primily Automated Call Assistant is a fully mobile centric cloud
+        based solution. Enabling small, medium and individual business users a
+        24X7 low cost call answering solution. Callers interact with the Call
+        Assistant using their telephone keypad to receive various information
+        from the phone call.
       head: What is Primily Call Assistant?
       icon: record_voice_over
       image: ''
     - body: >-
-        Primily's Call Assistant relies on a Call Menu for users to select the
-        information, leave voicemail or transfer their call to appropriate
-        department or extension to speak to a person. Your mobile phone is all
+        Primily's Call Assistant's Call Menu gives callers a selection of
+        information on hours, location, web links, services, products and
+        specials along with leaving voicemail or transferring their call to
+        appropriate department to speak to a person. Your mobile phone is all
         you need to setup and modify your Call Menu.
       head: The Call Menu
       icon: dialpad
