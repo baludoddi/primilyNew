@@ -8,7 +8,7 @@ describe:
         in speech and by text messages to easily get driving directions, web
         access and other information.
       head: 24X7 Automated Call Assistant Answering
-      icon: ''
+      icon: phone_in_talk
       image: ''
     - body: >-
         Built using the next generation Internet Virtual Phone (IVR) technology,
@@ -17,7 +17,7 @@ describe:
         users. Callers interact with the Call Assistant using their telephone
         keypad to receive various information from the phone call.
       head: What is Primily Call Assistant?
-      icon: ''
+      icon: record_voice_over
       image: ''
     - body: >-
         Primily's Call Assistant relies on a Call Menu for users to select the
@@ -25,7 +25,7 @@ describe:
         department or extension to speak to a person. Your mobile phone is all
         you need to setup and modify your Call Menu.
       head: The Call Menu
-      icon: ''
+      icon: dialpad
       image: ''
     - body: >-
         For users where their business is mostly mobile your mobile phone
@@ -46,11 +46,11 @@ describe:
         minutes providing you a phone service that will help you and your
         customers. No calls are lost and every call gets information they need.
       head: No Special Equipment Needed
-      icon: ''
+      icon: desktop_access_disabled
       image: ''
     - body: Start with a low cost Subscription that can be canceled any time.
       head: Low Cost Cancel Anytime
-      icon: ''
+      icon: attach_money
       image: ''
 ---
 
