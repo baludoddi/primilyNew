@@ -3,9 +3,11 @@ templateKey: describe-page
 describe:
   cards:
     - body: >-
-        **All calls are answered 24X7** providing Location, Business Hours, Web
-        links, Announcements and any other valuable information for callers
-      head: 24X7 Call Answering
+        All calls are answered 24X7 providing them with your Location, Business
+        Hours, Web links, Announcements and any other valuable information both
+        in speech and by text messages to easily get driving directions, web
+        access and other information.
+      head: 24X7 Automated Call Assistant Answering
       icon: ''
       image: ''
     - body: >-
