@@ -10,7 +10,7 @@ feature:
       icon: pie_chart
     - description: No equipment or phone number changes are required.
       head: Keep Your Phone Number and Carrier
-      icon: call-end
+      icon: call_end
     - description: Acknowledgement and notification using SMS and/or Email.
       head: Real Time Notifications
       icon: notifications
@@ -27,6 +27,6 @@ feature:
         No special insulation or equipment needed. Your mobile phone does it
         all. 
       head: No Special Equipment Needed
-      icon: phone_android
+      icon: desktop_access_disabled
 ---
 
