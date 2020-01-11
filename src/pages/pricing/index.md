@@ -1,31 +1,32 @@
 ---
 templateKey: pricing-page
 pricing:
-  description1: No Contracts or other monthly fees.
+  description1: Low Cost Monthly Fee - No Contracts - Cancel Any Time
   description2: Notice when subscription limit is being reached so it can be increaqsed
   priceBox1:
     description: >-
-      Create an no cost account and try various routing configurations modified
-      for your business.
+      Create an no cost account and demo our Call Menus. Then modify with your
+      data do a live phone demo of what your callers will get.
     featureList:
       - list: Call Greeting
       - list: Business Hours
-      - list: Location
-      - list: Demo phone number
-    head: Easy to Demo using actual phone call
+      - list: Location with text for driving directions
+      - list: Your web site link text to caller
+      - list: Text-To-Speech Voices
+    head: Demo using actual phone call
     head2: Modify Call Menu and Voice
     price: 0
   priceBox2:
-    description: No monthly commitment or payments. Purchase credits as you need them.
+    description: All Quick Setup and Advanced features
     featureList:
-      - list: Phone Number(s)
-      - list: Fully customizable starter templates
-      - list: Summary and Detailed Call Log Reports
-      - list: Select you US area code
-    head: Base Credits
-    head2: Credits
-    price: 20
-  pricingHead: Primity pricing is simple
+      - list: Select any area code & a number
+      - list: Basic and Custom Call Menus
+      - list: Call Reports
+      - list: 'Notification for calls, text messages, voicemail.'
+    head: Low Monthly Subscription
+    head2: One Phone Number
+    price: '15'
+  pricingHead: Simple Pricing
   ticImage: /img/tic.png
 ---
 
