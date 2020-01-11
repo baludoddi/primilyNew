@@ -1,8 +1,8 @@
 ---
 templateKey: pricing-page
 pricing:
-  description1: Low Cost Monthly Fee - No Contracts - Cancel Any Time
-  description2: Notice when subscription limit is being reached so it can be increaqsed
+  description1: Low Monthly Subscription - No Contracts - Cancel Any Time
+  description2: All features at one low price.
   priceBox1:
     description: >-
       Create an no cost account and demo our Call Menus. Then modify with your
