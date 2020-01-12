@@ -3,28 +3,32 @@ templateKey: feature-page
 feature:
   featureBody:
     - description: >-
-        Quick Auto Attendant Call Menu is generated from your account
-        information. And easy to setup Advanced Multi-Level Call Menus
-      head: 'Auto Attendant Included '
+        Automated Auto Attendant to answer you calls 24X7. Supports single and
+        multi-level Call Menus.
+      head: Automated Auto Attendant
       icon: phonelink_setup
-    - description: Simple to create Call Menus using Text-to-Speech technology.
-      head: Text to Speech
-      icon: text_fields
     - description: Your mobile phone now has a Business and a Personal number
       head: One Phone 2 Numbers
       icon: pie_chart
+    - description: >-
+        Call Menus are easily created using Text-to-Speech technology and your
+        mobile phone.
+      head: Text to Speech
+      icon: text_fields
     - description: >-
         See your callers' phone numbers before answering the call. Know if it is
         a business or a personal caller.
       head: Incoming Calls
       icon: person
-    - description: Place outgoing calls and text messages with your business caller id.
-      head: 'Outgoing Calls & Text Messages '
+    - description: >-
+        Place and receive outgoing calls and text messages with your business
+        caller id. One phone with 2 numbers.
+      head: 'Outgoing / Incoming Calls & Text Messages '
       icon: perm-phone-msg
     - description: >-
-        Like incoming & outgoing calls and text messages receive voicemail as
+        Like incoming and outgoing calls, receive and send text messages as
         business or personal.
-      head: Voicemail
+      head: Text Messages
       icon: voicemail
     - description: >-
         Your call greeting automatically lets callers know if your business if
@@ -38,7 +42,7 @@ feature:
       head: No Special Equipment Needed
       icon: desktop_access_disabled
     - description: >-
-        Different wring tone setting for phone number, text messages and
+        Different ring tone settings for phone number, text messages and
         voicemail. Text and/or email notifications when receiving text messages
         and voicemail.
       head: Seperate Ring Tone & Notifications
