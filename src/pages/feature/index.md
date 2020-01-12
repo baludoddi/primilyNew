@@ -21,9 +21,9 @@ feature:
       head: Incoming Calls
       icon: local_phone arrow_forward person
     - description: >-
-        Place and receive outgoing calls and text messages with your business
-        caller id. One phone with 2 numbers.
-      head: 'Outgoing / Incoming Calls & Text Messages '
+        Place and receive outgoing and incoming calls with your business caller
+        id. One phone with 2 numbers. Keep business and personals call separate.
+      head: Outgoing and Incoming Calls
       icon: local_phone compare_arrows person
     - description: >-
         Like incoming and outgoing calls, receive and send text messages as
