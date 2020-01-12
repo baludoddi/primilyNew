@@ -39,7 +39,7 @@ export class Pricing extends React.Component {
             <div className="info_head_text">
               <h2>${pricing.priceBox1.price}</h2>
             </div>
-            <a href="" className="waves-effect waves-light btn">sign up</a> <a href="" className="price-padding">Free Live Trial</a>
+            <a href="" className="waves-effect waves-light btn">sign up</a> <a href="" className="price-padding">Live Demo</a>
           </div>
         </div>
         <br></br>
@@ -65,7 +65,7 @@ export class Pricing extends React.Component {
             <div className="info_head_text">
               <h2>${pricing.priceBox2.price}</h2>
             </div>
-            <a href="" className="waves-effect waves-light btn">sign up</a> <a href="" className="price-padding">No monthly commitment.</a>
+            <a href="" className="waves-effect waves-light btn">sign up</a> <a href="" className="price-padding">Cancel online at anytime</a>
           </div>
         </div>
         <br></br>
@@ -76,11 +76,11 @@ export class Pricing extends React.Component {
     )
   }
   }
-  
+
   Pricing.propTypes = {
     data: PropTypes.object
     }
-  
+
   export default () => (
       <StaticQuery
         query={graphql`
