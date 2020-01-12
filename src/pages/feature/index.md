@@ -2,31 +2,58 @@
 templateKey: feature-page
 feature:
   featureBody:
-    - description: Auto generate Quick menu and easy to setup Advanced menu
-      head: Simple & Advanced Call Menus
+    - description: >-
+        Automated Auto Attendant to answer you calls 24X7. Supports single and
+        multi-level Call Menus.
+      head: Automated Auto Attendant
       icon: phonelink_setup
     - description: Your mobile phone now has a Business and a Personal number
       head: One Phone 2 Numbers
       icon: pie_chart
+    - description: >-
+        Call Menus are easily created using Text-to-Speech technology and your
+        mobile phone.
+      head: Text to Speech
+      icon: text_fields
+    - description: >-
+        See your callers' phone numbers before answering the call. Know if it is
+        a business or a personal caller.
+      head: Incoming Calls
+      icon: person
+    - description: >-
+        Place and receive outgoing calls and text messages with your business
+        caller id. One phone with 2 numbers.
+      head: 'Outgoing / Incoming Calls & Text Messages '
+      icon: perm-phone-msg
+    - description: >-
+        Like incoming and outgoing calls, receive and send text messages as
+        business or personal.
+      head: Text Messages
+      icon: voicemail
+    - description: >-
+        Your call greeting automatically lets callers know if your business if
+        closed from your schedule.
+      head: Daily Open & Closed Schedule
+      icon: schedule
     - description: No equipment or phone number changes are required.
       head: Keep Your Phone Number and Carrier
       icon: call_end
-    - description: Acknowledgement and notification using SMS and/or Email.
-      head: Real Time Notifications
+    - description: Your existing mobile phone or land line is all you need.
+      head: No Special Equipment Needed
+      icon: desktop_access_disabled
+    - description: >-
+        Different ring tone settings for phone number, text messages and
+        voicemail. Text and/or email notifications when receiving text messages
+        and voicemail.
+      head: Seperate Ring Tone & Notifications
       icon: notifications
     - description: Simple to read Real-time call logging reports.
       head: Call logging
       icon: event_note
-    - description: Simple to create Call Menu using Text-to-Speech technology.
-      head: Text to Speech
-      icon: text_fields
-    - description: No fixed monthly commitment.
-      head: Low Cost Cancel Anytime
-      icon: attach_money
     - description: >-
-        No special insulation or equipment needed. Your mobile phone does it
-        all. 
-      head: No Special Equipment Needed
-      icon: desktop_access_disabled
+        No fixed monthly commitment. Cancel anytime using the Primity mobile
+        app.
+      head: Low Cost Subscription - Cancel Anytime
+      icon: attach_money
 ---
 
