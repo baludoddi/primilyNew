@@ -6,7 +6,7 @@ feature:
         Automated Auto Attendant to answer you calls 24X7. Supports single and
         multi-level Call Menus.
       head: Automated Auto Attendant
-      icon: phonelink_setup
+      icon: record_voice_over
     - description: Your mobile phone now has a Business and a Personal number
       head: One Phone 2 Numbers
       icon: pie_chart
@@ -14,22 +14,22 @@ feature:
         Call Menus are easily created using Text-to-Speech technology and your
         mobile phone.
       head: Text to Speech
-      icon: text_fields
+      icon: text_rotation_none record_voice_over
     - description: >-
         See your callers' phone numbers before answering the call. Know if it is
         a business or a personal caller.
       head: Incoming Calls
-      icon: person
+      icon: local_phone arrow_forward person
     - description: >-
         Place and receive outgoing calls and text messages with your business
         caller id. One phone with 2 numbers.
       head: 'Outgoing / Incoming Calls & Text Messages '
-      icon: perm-phone-msg
+      icon: local_phone compare_arrows person
     - description: >-
         Like incoming and outgoing calls, receive and send text messages as
         business or personal.
       head: Text Messages
-      icon: voicemail
+      icon: textsms
     - description: >-
         Your call greeting automatically lets callers know if your business if
         closed from your schedule.

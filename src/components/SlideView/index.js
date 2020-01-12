@@ -4,11 +4,21 @@ import Slider from 'react-slick';
 import "../../styles/slideview.css";
 
 const Wrapper = styled.div`
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
 `;
 
 const Page = styled.div`
-    width: 100%;
+    align:center;
+`;
+
+const Text = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
 `;
 
 const settings = {
@@ -28,6 +38,7 @@ export const SlideView = ({content, className}) => (
             {content.map((image, index) => (
                 <Page key={index}>
                     <img src={image.imagesrc}  alt={image.imagealt}/>
+                    <Text>Text to add to slideText to add to slideText to add to slideText to add to slide</Text>
                 </Page>
             ))}
             {/*<Page><img src="/img/call-overview-sm.png"/></Page>
