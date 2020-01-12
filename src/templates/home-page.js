@@ -17,7 +17,7 @@ export class Home extends React.Component {
 
             <div className="container">
 
-                <SlideView/>
+                <SlideView content={home.sliderImages} />
 
                 {/*<CarouselComponent content={home.sliderImages}/>
                 <div className="carousel carousel-slider center">
