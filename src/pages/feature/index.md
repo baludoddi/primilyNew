@@ -38,9 +38,10 @@ feature:
       head: No Special Equipment Needed
       icon: desktop_access_disabled
     - description: >-
-        Acknowledgement and notifications when receiving text messages and
-        voicemail.
-      head: Real Time Notifications
+        Different wring tone setting for phone number, text messages and
+        voicemail. Text and/or email notifications when receiving text messages
+        and voicemail.
+      head: Seperate Ring Tone & Notifications
       icon: notifications
     - description: Simple to read Real-time call logging reports.
       head: Call logging
