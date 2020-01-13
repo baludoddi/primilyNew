@@ -1,7 +1,7 @@
 ---
 templateKey: details-page
 title: Porting Your Number
-body: >-
+detailsDescription: >-
   Porting your number can be a tedious experience. To help you out, we put
   together a guide for everything you'll need to successfully port your number
   from the major carriers to Primity.

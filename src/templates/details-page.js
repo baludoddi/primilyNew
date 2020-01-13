@@ -24,7 +24,7 @@ export const DetailsPageTemplate = props => {
         </div>
 
         <div className="col s12">
-          <p className="grey-light">{page.frontmatter.body}</p>
+          <p className="grey-light">{page.frontmatter.detailsDescription}</p>
         </div>
         <div className="col s2">
         </div>
@@ -37,7 +37,7 @@ const DetailsPage = ({ data }) => {
   const { markdownRemark: page, footerData, navbarData } = data;
   const {
     frontmatter: {
-      seo: { title: seoTitle, body: seoDescription, browserTitle },
+      seo: { title: seoTitle, description: seoDescription, browserTitle },
     },
   } = page;
 
@@ -48,7 +48,7 @@ const DetailsPage = ({ data }) => {
         <meta name="description" content={seoDescription} />
         <title>{browserTitle}</title>
       </Helmet>
-      <DetailsPageTemplate page={{ ...page, bodyIsMarkdown: true }} />
+      <DetailsPageTemplate page={{ ...page, bodyIsMarkdown: false }} />
     </Layout>
   );
 };
@@ -65,7 +65,7 @@ export const detailsPageQuery = graphql`
       html
       frontmatter {
         title
-        body
+        detailsDescription
         detailsGallery {
           image
           imageAlt
