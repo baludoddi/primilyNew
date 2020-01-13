@@ -1,62 +1,75 @@
 import React from "react";
 import PropTypes from 'prop-types'
-import { Link, graphql, StaticQuery } from 'gatsby'
+
+//import { Link, graphql, StaticQuery } from 'gatsby'
+import {graphql, StaticQuery} from 'gatsby'
 import '../styles/describe-page.scss';
 
 export class Description extends React.Component {
     render() {
 
-      const { description: description } = this.props.data
-      // console.log(this.props.data)
-      return (
-    <div className="describe">
+        const {description: description} = this.props.data
+        // console.log(this.props.data)
+        return (
+            <div className="describe">
 
-      <div className="container">
-      <div className="row"><div className="col s12"><br></br></div></div>
-      <div className="row"><div className="col s12"><br></br></div></div>
-        <div className="row">
-          <div className="col s4 center-align">
-            <img src={description.mainImage} className="responsive-img" alt="" />
-            <div className="row"><div className="col s12"></div></div>
-            <img src={description.playstoreImage} className="responsive-img" height="67"
-              width="232" />
-          </div>
-          <div className="col s2"></div>
-          <div className="col s6">
-            <div className="feature-items">
-              <h4 className="description-font">{description.cardHead}</h4>
-              <p>{description.description}</p>
-              <div className="row"></div>
-              <div className="row"></div>
-              {description.cards.descriptionlist.map((card, index) => (
-              <div className="row" key={index}>
-                <div className="col s1"><i className="Large material-icons">{card.icon}</i></div>
-                <div className="col s11">
-                  <div className="feature-items">
-                    <h5>{card.head}</h5>
-                    <p>{card.description}</p>
-                  </div>
+                <div className="container">
+                    <div className="row">
+                        <div className="col s12"><br></br></div>
+                    </div>
+                    <div className="row">
+                        <div className="col s12"><br></br></div>
+                    </div>
+                    <div className="row">
+                        <div className="col s4 center-align">
+                            <img src={description.mainImage} className="responsive-img" alt=""/>
+                            <div className="row">
+                                <div className="col s12"></div>
+                            </div>
+                            <img src={description.playstoreImage} className="responsive-img" height="67"
+                                 width="232" alt=""/>
+                        </div>
+                        <div className="col s2"></div>
+                        <div className="col s6">
+                            <div className="feature-items">
+                                <h4 className="description-font">{description.cardHead}</h4>
+                                <p>{description.description}</p>
+                                <div className="row"></div>
+                                <div className="row"></div>
+                                {description.cards.descriptionlist.map((card, index) => (
+                                    <div className="row" key={index}>
+                                        <div className="col s1"><i className="Large material-icons">{card.icon}</i>
+                                        </div>
+                                        <div className="col s11">
+                                            <div className="feature-items">
+                                                <h5>{card.head}</h5>
+                                                <p>{card.description}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col s12"><br></br></div>
+                    </div>
+                    <div className="row">
+                        <div className="col s12"><br></br></div>
+                    </div>
                 </div>
-              </div>
-              ))}
-            </div>
-          </div>
-        </div>
-        <div className="row"><div className="col s12"><br></br></div></div>
-        <div className="row"><div className="col s12"><br></br></div></div>
-      </div>
 
-    </div>
-    )
-  }
-  }
-  
-  Description.propTypes = {
-      data: PropTypes.object
+            </div>
+        )
     }
-  
-  export default () => (
-      <StaticQuery
+}
+
+Description.propTypes = {
+    data: PropTypes.object
+}
+
+export default () => (
+    <StaticQuery
         query={graphql`
           query descriptionQuery {
             allMarkdownRemark(
@@ -84,9 +97,9 @@ export class Description extends React.Component {
             }
           }
         `}
-        render={(data, count) => <Description data={data.allMarkdownRemark.edges[0].node.frontmatter} count={count} />}
-      />
-    )
-  
-  
+        render={(data, count) => <Description data={data.allMarkdownRemark.edges[0].node.frontmatter} count={count}/>}
+    />
+)
+
+
 

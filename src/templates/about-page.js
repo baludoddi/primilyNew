@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
-import ReactMarkdown from "react-markdown";
+//import ReactMarkdown from "react-markdown";
 import Helmet from "react-helmet";
 
 import Layout from "../components/Layout";
-import HTMLContent from "../components/Content";
+//import HTMLContent from "../components/Content";
 import "../styles/about-page.scss";
 
 export const AboutPageTemplate = props => {
@@ -20,7 +20,7 @@ export const AboutPageTemplate = props => {
           <p className="grey-light">{page.frontmatter.aboutDescription}</p>
         </div>
         <div className="col s1">
-        
+
         </div>
         <div className="col s5">
           <img className="responsive-img" src={page.frontmatter.aboutGallery.image} alt={page.frontmatter.aboutGallery.imageAlt} />

@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from 'prop-types'
-import { Link, graphql, StaticQuery } from 'gatsby'
+
+//import { Link, graphql, StaticQuery } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
 import '../styles/describe-page.scss';
 
 export class Video extends React.Component {
@@ -26,17 +28,17 @@ export class Video extends React.Component {
             <div className="col s1">
             </div>
           </div>
-        
+
     </div>
     </div>
     )
   }
   }
-  
+
   Video.propTypes = {
       data: PropTypes.object
     }
-  
+
   export default () => (
       <StaticQuery
         query={graphql`
@@ -59,6 +61,6 @@ export class Video extends React.Component {
         render={(data, count) => <Video data={data.allMarkdownRemark.edges[0].node.frontmatter} count={count} />}
       />
     )
-  
-  
+
+
 

@@ -2,10 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 //import {Link, graphql, StaticQuery} from 'gatsby'
-
 import { graphql, StaticQuery } from 'gatsby'
 
-import CarouselComponent from '../components/carousel'
+//import CarouselComponent from '../components/carousel'
 import SlideView from "../components/SlideView";
 
 export class Home extends React.Component {

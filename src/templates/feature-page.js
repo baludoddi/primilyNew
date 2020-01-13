@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from 'prop-types'
-import { Link, graphql, StaticQuery } from 'gatsby'
+
+//import { Link, graphql, StaticQuery } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
 import '../styles/feature-page.scss';
 
 export class Feature extends React.Component {

@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
-import ReactMarkdown from "react-markdown";
+//import ReactMarkdown from "react-markdown";
 import Helmet from "react-helmet";
 
 import Layout from "../components/Layout";
-import HTMLContent from "../components/Content";
+//import HTMLContent from "../components/Content";
 import "../styles/about-page.scss";
 
 export const PolicyPageTemplate = props => {
@@ -17,9 +17,9 @@ export const PolicyPageTemplate = props => {
         <div className="col s12">
           <h3 className="grey-dark">{page.frontmatter.title}</h3>
         </div>
-        
+
         <div className="col s12">
-        
+
         </div>
         <div className="row">
           <div className="col s12">

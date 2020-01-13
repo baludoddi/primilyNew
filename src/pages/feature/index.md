@@ -7,7 +7,8 @@ feature:
         multi-level Call Menus.
       head: Automated Auto Attendant
       icon: record_voice_over
-    - description: Your mobile phone now has a Business and a Personal number
+    - description: >-
+        Your mobile phone now has a Business and a Personal number
       head: One Phone 2 Numbers
       icon: pie_chart
     - description: >-

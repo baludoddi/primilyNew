@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from 'prop-types'
-import { Link, graphql, StaticQuery } from 'gatsby'
+
+//import { graphql, StaticQuery } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
 import '../styles/describe-page.scss';
 
 export class Appgallery extends React.Component {
@@ -21,11 +23,11 @@ export class Appgallery extends React.Component {
           <div className="col s12">
             <div className="carousel carousel-slider center">
             {appGalley.sliderImages.map((slides, index) => (
-              
+
               <div className="carousel-item" href="#one!" key={index}><div className="row">
                   <div className="col s4"></div>
                   <div className="col s4">
-                    <img src={slides.slideImg} />
+                    <img src={slides.slideImg} alt="" />
                   </div>
               </div>
               </div>
@@ -42,11 +44,11 @@ export class Appgallery extends React.Component {
     )
   }
   }
-  
+
   Appgallery.propTypes = {
       data: PropTypes.object
     }
-  
+
   export default () => (
       <StaticQuery
         query={graphql`
@@ -72,6 +74,6 @@ export class Appgallery extends React.Component {
         render={(data, count) => <Appgallery data={data.allMarkdownRemark.edges[0].node.frontmatter} count={count} />}
       />
     )
-  
-  
+
+
 

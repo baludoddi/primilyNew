@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
-import ReactMarkdown from "react-markdown";
+//import ReactMarkdown from "react-markdown";
 import Helmet from "react-helmet";
 
 import Layout from "../components/Layout";
-import HTMLContent from "../components/Content";
+//import HTMLContent from "../components/Content";
 import "../styles/about-page.scss";
 
 export class FAQPageTemplate extends React.Component {
@@ -25,7 +25,7 @@ export class FAQPageTemplate extends React.Component {
       items.filter( item => {
           if(item.iconToggle === false) {
               item.iconToggle = true;
-          } 
+          }
       })
       items[items.indexOf(e)].iconToggle = !e.iconToggle
       this.setState({items})

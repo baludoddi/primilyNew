@@ -316,7 +316,7 @@ collections:
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "details-page" }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Details Description", name: "detailsDescription", widget: "text" }
+          - { label: "Details Description", name: "body", widget: "markdown" }
           - {
               label: "Details Gallery",
               name: "detailsGallery",
