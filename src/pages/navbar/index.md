@@ -13,20 +13,20 @@ menuItems:
   - label: Demo
     linkType: demo
     linkURL: /#demo
-  - label: About Us
-    linkType: aboutus
-    linkURL: /about
   - label: Contact Us
     linkType: contactus
     linkURL: /contact
-  - label: Policy
-    linkType: policy
-    linkURL: /policy
   - label: Details
     linkType: details
     linkURL: /details
   - label: FAQ
     linkType: faq
     linkURL: /faq
+  - label: Policy
+    linkType: policy
+    linkURL: /policy
+  - label: About Us
+    linkType: aboutus
+    linkURL: /about
 ---
 

@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
-//import ReactMarkdown from "react-markdown";
+import ReactMarkdown from "react-markdown";
 import Helmet from "react-helmet";
 
 import Layout from "../components/Layout";
-//import HTMLContent from "../components/Content";
+import HTMLContent from "../components/Content";
 import "../styles/about-page.scss";
 
 export const DetailsPageTemplate = props => {
@@ -24,7 +24,7 @@ export const DetailsPageTemplate = props => {
         </div>
 
         <div className="col s12">
-          <p className="grey-light">{page.frontmatter.detailsDescription}</p>
+          <p className="grey-light">{page.frontmatter.body}</p>
         </div>
         <div className="col s2">
         </div>
@@ -37,7 +37,7 @@ const DetailsPage = ({ data }) => {
   const { markdownRemark: page, footerData, navbarData } = data;
   const {
     frontmatter: {
-      seo: { title: seoTitle, description: seoDescription, browserTitle },
+      seo: { title: seoTitle, body: seoDescription, browserTitle },
     },
   } = page;
 
@@ -48,7 +48,7 @@ const DetailsPage = ({ data }) => {
         <meta name="description" content={seoDescription} />
         <title>{browserTitle}</title>
       </Helmet>
-      <DetailsPageTemplate page={{ ...page, bodyIsMarkdown: false }} />
+      <DetailsPageTemplate page={{ ...page, bodyIsMarkdown: true }} />
     </Layout>
   );
 };
@@ -65,7 +65,7 @@ export const detailsPageQuery = graphql`
       html
       frontmatter {
         title
-        detailsDescription
+        body
         detailsGallery {
           image
           imageAlt

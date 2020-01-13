@@ -135,8 +135,8 @@ collections:
                         fields:
                           [
                             { label: "Description", required: true, name: "description", widget: "text" },
-                            { label: "Head", required: true, name: "head", widget: "string" },
-                            { label: "Icon", required: true, name: "icon", widget: "string" }
+                            { label: "Head", required: false, name: "head", widget: "string" },
+                            { label: "Icon", required false, name: "icon", widget: "string" }
                           ]
                       }
                   }
@@ -315,7 +315,7 @@ collections:
         name: "details"
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "details-page" }
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Details Title", name: "title", widget: "string" }
           - { label: "Details Description", name: "body", widget: "markdown" }
           - {
               label: "Details Gallery",
@@ -335,7 +335,7 @@ collections:
                 [
                   { label: "Browser Tab Title", name: "browserTitle", widget: "string"},
                   { label: "Title", name: "title", widget: "string" },
-                  { label: "Description", name: "description", widget: "string" },
+                  { label: "SEO Description", name: "description", widget: "string" },
                 ],
             }
       - file: "src/pages/faq/index.md"
@@ -385,7 +385,7 @@ collections:
               widget: "list",
               fields:
                 [
-                  { label: "Headding", name: "policyHead", widget: "string" },
+                  { label: "Heading", name: "policyHead", widget: "string", required: false},
                   { label: "Description", name: "policyDescription", widget: "text" }
                 ]
             }
