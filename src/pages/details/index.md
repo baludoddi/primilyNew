@@ -76,10 +76,7 @@ detailsGallery:
   imageAlt: routing image
 seo:
   browserTitle: Details | Primily
-  description: >-
-    JavaScript Wakanda is a meetup group that holds monthly meetups where
-    JavaScript developers get together for presentations and to meet others in
-    the community.
+  description: SEO page description
   title: Details | Primily
 ---
 
