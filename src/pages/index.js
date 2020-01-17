@@ -159,11 +159,10 @@ export const pageQuery = graphql`
         node {
           frontmatter {
             demo {
-              demoHead
-              description
-              demoImages {
-                src1
-                src2
+              sliderImages {
+                imageSrc
+                imagealt
+                imageText
               }
             }
           }
