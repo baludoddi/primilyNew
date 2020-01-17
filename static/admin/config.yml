@@ -30,7 +30,7 @@ collections:
                       [
                         { label: "Image src", name: "imageSrc", widget: "image" },
                         { label: "Image alt", name: "imagealt", widget: "string" },
-                        { label: "Image Text", name: "imageText", widget: "text" },
+                        { label: "Slider Text", name: "imageText", widget: "text" },
                       ]
                   }
                 ]
