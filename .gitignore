@@ -17,3 +17,6 @@ yarn-error.log
 .idea/
 src/components/SlideView/indexbk.js
 src/pages/home/index-Back.md
+src/pages/demo/indexBK.md
+src/templates/demo-page-BK.js
+static/admin/configBk.yml

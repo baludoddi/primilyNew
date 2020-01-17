@@ -234,27 +234,24 @@ collections:
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "demo-page" }
           - {
-              label: "Demo",
-              name: "demo",
-              required: true,
-              widget: "object",
-              fields:
-                [
-                  { label: "Demo Head", name: "demoHead", widget: "string" },
-                  { label: "Description", name: "description", widget: "string" },
-                  {
-                    label: "Demo Images",
-                    name: "demoImages",
-                    required: true,
-                    widget: "object",
-                    fields:
-                      [
-                        { label: "Sourse 1", name: "src1", widget: "image" },
-                        { label: "Sourse 2", name: "src2", widget: "image" }
-                      ]
-                  }
-                ],
-            }
+            label: "Demo",
+            name: "demo",
+            widget: "object",
+            fields:
+              [
+              {
+                label: "Slider Images",
+                name: "sliderImages",
+                widget: "list",
+                fields:
+                  [
+                  { label: "Image src", name: "imageSrc", widget: "image" },
+                  { label: "Image alt", name: "imagealt", widget: "string" },
+                  { label: "Slider Text", name: "imageText", widget: "text" },
+                  ]
+              }
+              ]
+          }
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
