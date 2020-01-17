@@ -1,9 +1,12 @@
 @import "./variables.scss";
 @import "./mixins.scss";
 
-.feature {
+.description {
+  &-icon {
+    color: #1A237E;;
+  }
   &-card {
-    color: #1A237E;
+    // height: 288px;
     @include respond-to("extrasmall") {
       height: 288px;
     }
@@ -74,74 +77,3 @@
   }
 }
 
-.developerGroups {
-  background-color: $background-medium;
-  color: $body-light;
-  @include medium-font();
-
-  h2 {
-    @include large-font();
-    margin-bottom: 40px;
-  }
-
-  ul li {
-    margin-bottom: 20px;
-  }
-
-  a {
-    @include link-border();
-  }
-}
-
-.galleryList {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-bottom: -20px;
-}
-
-.galleryList-item {
-  width: 350px;
-  margin-bottom: 20px;
-}
-
-.organizers {
-  @include medium-font();
-
-  &-title {
-    text-align: center;
-    margin-bottom: 40px;
-    @include large-font();
-
-    @include respond-to("small") {
-      margin-bottom: 80px;
-    }
-  }
-
-  &-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  &-listItem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 10px;
-  }
-
-  &-listItemImage {
-    margin-bottom: 20px;
-    border-radius: 3px;
-    height: 200px;
-
-    @include respond-to("small") {
-      height: 300px;
-    }
-  }
-
-  &-listItemName {
-    font-weight: 400;
-  }
-}

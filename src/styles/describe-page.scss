@@ -4,9 +4,10 @@
 .describe {
   &-card {
     // height: 288px;
+    color: #1A237E;
     @include respond-to("extrasmall") {
       height: 288px;
-    }  
+    }
     @include respond-to("medium") {
       height: 288px;
     }

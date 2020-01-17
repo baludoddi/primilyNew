@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 
 //import { Link, graphql, StaticQuery } from 'gatsby'
 import {graphql, StaticQuery} from 'gatsby'
-import '../styles/describe-page.scss';
+//import '../styles/describe-page.scss';
+import '../styles/description-page.scss';
 
 export class Description extends React.Component {
     render() {
@@ -11,14 +12,14 @@ export class Description extends React.Component {
         const {description: description} = this.props.data
         // console.log(this.props.data)
         return (
-            <div className="describe">
+            <div className="description">
 
                 <div className="container">
                     <div className="row">
-                        <div className="col s12"><br></br></div>
+                        <div className="col s12"><br/></div>
                     </div>
                     <div className="row">
-                        <div className="col s12"><br></br></div>
+                        <div className="col s12"><br/></div>
                     </div>
                     <div className="row">
                         <div className="col s4 center-align">
@@ -38,7 +39,8 @@ export class Description extends React.Component {
                                 <div className="row"></div>
                                 {description.cards.descriptionlist.map((card, index) => (
                                     <div className="row" key={index}>
-                                        <div className="col s1"><i className="Large material-icons">{card.icon}</i>
+                                        <div className="col s1 description-icon">
+                                            <i className="Large material-icons">{card.icon}</i>
                                         </div>
                                         <div className="col s11">
                                             <div className="feature-items">
