@@ -2,19 +2,27 @@
 templateKey: home-page
 home:
   sliderImages:
-    - imagealt: callallOverview_resize
-      imageSrc: /img/screen-home_resize.png
-      imageText: 'Take back control of your phone'
-    - imagealt: callOverview-1a
-      imageSrc: /img/screen-callmenu_resize.png
-      imageText: 'Text for image 2'
-    - imagealt: callOverview-3
-      imageSrc: /img/screen-schedule_resize.png
-      imageText: 'Text for image 3'
-    - imagealt: callOverview-2
-      imageSrc: /img/screen-settings_resize.png
-      imageText: 'Text for image 4'
-      
+    - imageSrc: /img/one-line.png
+      imageText: >-
+        Take back control of your phone with the Primily 2nd number and
+        Automated Call Assistant.
+      imagealt: callallOverview_resize
+    - imageSrc: /img/callOverview-1sm.png
+      imageText: >-
+        When you don't answer a phone call the Call Assistant take over and
+        presents the caller with a Call Menu.
+      imagealt: callOverview-1a
+    - imageSrc: /img/callOverview-2.png
+      imageText: >-
+        Along with stopping Robocalls, the caller is presented with a menu
+        selection to get your business hours, location and driving directions,
+        web site, voicemail and any other information you like. 
+      imagealt: callOverview-3
+    - imageSrc: /img/iphone-w1.png
+      imageText: >-
+        The Primily 2nd Number & Call Assistant can be setup in minutes with
+        your mobile phone.
+      imagealt: callOverview-2
 seo:
   browserTitle: Primily
   description: Make your own Automated Call Assistant by Primily
