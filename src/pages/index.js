@@ -108,8 +108,9 @@ export const pageQuery = graphql`
           frontmatter {
             home {
               sliderImages {
-                imagesrc
+                imageSrc
                 imagealt
+                imageText
               }
             }
             seo {

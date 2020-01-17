@@ -3,13 +3,18 @@ templateKey: home-page
 home:
   sliderImages:
     - imagealt: callallOverview_resize
-      imagesrc: /img/screen-home_resize.png
+      imageSrc: /img/screen-home_resize.png
+      imageText: 'Take back control of your phone'
     - imagealt: callOverview-1a
-      imagesrc: /img/screen-callmenu_resize.png
+      imageSrc: /img/screen-callmenu_resize.png
+      imageText: 'Text for image 2'
     - imagealt: callOverview-3
-      imagesrc: /img/screen-schedule_resize.png
+      imageSrc: /img/screen-schedule_resize.png
+      imageText: 'Text for image 3'
     - imagealt: callOverview-2
-      imagesrc: /img/screen-settings_resize.png
+      imageSrc: /img/screen-settings_resize.png
+      imageText: 'Text for image 4'
+      
 seo:
   browserTitle: Primily
   description: Make your own Automated Call Assistant by Primily

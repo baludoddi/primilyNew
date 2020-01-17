@@ -28,8 +28,9 @@ collections:
                     widget: "list",
                     fields:
                       [
-                        { label: "Image src", name: "imagesrc", widget: "image" },
+                        { label: "Image src", name: "imageSrc", widget: "image" },
                         { label: "Image alt", name: "imagealt", widget: "string" },
+                        { label: "Image Text", name: "imageText", widget: "text" },
                       ]
                   }
                 ]

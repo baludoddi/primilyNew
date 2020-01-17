@@ -33,12 +33,13 @@ const settings = {
 
 //export default class SlideView {content, className} extends React.Component {
 export const SlideView = ({content, className}) => (
+
     <Wrapper>
         <Slider {...settings}>
             {content.map((image, index) => (
                 <Page key={index}>
-                    <img src={image.imagesrc}  alt={image.imagealt}/>
-                    <Text>Text to add to slideText to add to slideText to add to slideText to add to slide</Text>
+                    <img src={image.imageSrc}  alt={image.imagealt}/>
+                    <Text>{image.imageText}</Text>
                 </Page>
             ))}
             {/*<Page><img src="/img/call-overview-sm.png"/></Page>

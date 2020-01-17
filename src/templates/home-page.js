@@ -53,8 +53,9 @@ export default () => (
                   frontmatter {
                     home {
                       sliderImages {
-                        imagesrc
+                        imageSrc
                         imagealt
+                        imageText
                       }
                     }
                   }
