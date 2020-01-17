@@ -12,7 +12,7 @@ home:
         When you don't answer a phone call the Call Assistant take over and
         presents the caller with a Call Menu.
       imagealt: callOverview-1a
-    - imageSrc: /img/callOverview-9-H386.png
+    - imageSrc: /img/callOverview-2-H386.png
       imageText: >-
         Along with stopping Robocalls, the caller is presented with a menu
         selection to get your business hours, location and driving directions,
