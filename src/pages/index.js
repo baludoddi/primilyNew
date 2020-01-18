@@ -65,17 +65,7 @@ class HomePage extends React.Component {
       seo: { title: seoTitle, description: seoDescription, browserTitle },
     } = home;
     // console.log(data.homePageData.edges[0].node)
-    // let upcomingMeetup = null;
-    // Find the next meetup that is closest to today
-    // data.allMarkdownRemark.edges.every(item => {
-    //   const { frontmatter: meetup } = item.node;
-    //   if (isAfter(meetup.rawDate, new Date())) {
-    //     upcomingMeetup = meetup;
-    //     return true;
-    //   } else {
-    //     return false;
-    //   }
-    // });
+
     return (
       <Layout footerData={footerData} navbarData={navbarData}>
         <Helmet>
