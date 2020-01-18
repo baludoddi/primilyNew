@@ -2,6 +2,9 @@
 templateKey: demo-page
 demo:
   sliderImages:
+    - imageSrc: /img/receptiones-H386.png
+      imageText: Primily Interactive Voice Response (IVR) with Automated Call Assistant
+      imagealt: receptiones-bw.png
     - imageSrc: /img/one-line-H386.png
       imageText: >-
         Take back control of your phone with the Primily 2nd number and
@@ -24,3 +27,4 @@ demo:
         your mobile phone.
       imagealt: callOverview-2
 ---
+
