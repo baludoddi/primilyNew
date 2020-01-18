@@ -37,7 +37,8 @@ export class Describe extends React.Component {
                                                     <p>{card.body}</p>
                                                 </div>
                                             </div>
-                                            {card.image ? <div className="col s12"><img src={card.image} className="responsive-img" alt=""/>
+                                            {card.image ? <div className="col s12"><img src={card.image}
+                                                                                        className="responsive-img"/>
                                             </div> : <div></div>}
                                         </div>
                                     </div>

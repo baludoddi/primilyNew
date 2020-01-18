@@ -16,7 +16,7 @@ import Layout from "../components/Layout";
 
 export const HomePageTemplate = ({ home }) => {
   return (
-    <>
+    <div>
       <div className="row"></div>
       <div className="row">
         <div className="col s12 m12 l12">
@@ -46,7 +46,7 @@ export const HomePageTemplate = ({ home }) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
