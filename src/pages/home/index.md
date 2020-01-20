@@ -2,6 +2,11 @@
 templateKey: home-page
 home:
   sliderImages:
+    - imageSrc: /img/receptiones-H386.png
+      imageText: >-
+        The Primily Automated Call Assistant. Enable your phone to have 24X7
+        call answering with an automated Call Menu 
+      imagealt: assistant
     - imageSrc: /img/one-line-H386.png
       imageText: >-
         Take back control of your phone with the Primily 2nd number and
